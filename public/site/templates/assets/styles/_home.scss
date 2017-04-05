@@ -1,0 +1,230 @@
+body.home {
+  #home-wrapper {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+  }
+  @media screen and (max-width:768px){
+    #home-wrapper {
+      background-position: center;
+    }
+  }
+  #thing {
+    margin-top: $vs-75p;
+
+    .--logo {
+      margin-left: 20px;
+      width: 150px;
+    }
+
+    .--bar {
+      height: 20px;
+      background-color: $color-primary;
+      background-image: $color-primary;
+      background-image: -webkit-linear-gradient(left, $color-primary , $color-primary - 30);
+      background-image: -o-linear-gradient(right, $color-primary, $color-primary - 30);
+      background-image: -moz-linear-gradient(right, $color-primary, $color-primary - 30);
+      background-image: linear-gradient(to right, $color-primary, $color-primary - 30);
+    }
+
+    @media screen and (min-width: 480px) {
+      .--bar {
+        height: 30px;
+      }
+    }
+
+    .k-banner p {
+      color: $gray-regular;
+    }
+  }
+  .map-wrapper {
+    max-width: 1180px;
+    margin-right: auto;
+    margin-bottom: 75px;
+    margin-left: auto;
+    background-image: url("../images/map-background.png");
+    height: 300px;
+    .map-wrapper-color {
+      height: 100%;
+      width: 100%;
+      background-color: rgba(255,255,255,0.8);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .map-wrapper-message {
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+        h2 {
+          color: black;
+          font-size: 32px;
+        }
+        p {
+          margin-top:5px;
+          color: $color-primary + 30;
+        }
+        a {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+  #pre-pricing {
+    max-width: 1180px * .8;
+    margin-right: auto;
+    margin-bottom: $vs-75p;
+    margin-left: auto;
+    h2 {
+      text-align: center;
+      color: $gray-dark;
+      margin-bottom: $vs-50p;
+    }
+    .price-badge{
+      figure {
+        background-color: $color-success;
+        display: flex;
+        flex-direction: column;
+        min-height: 150px;
+        padding: 20px;
+        color: $color-inverse;
+        border-radius: 20px;
+        h3 {
+          font-size: 1.5em;
+          margin-bottom: $vs-15p;
+        }
+        p {
+          margin-bottom: $vs-75p;
+        }
+        a {
+          color: white;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      &:last-child {
+        figure {
+          background-color: $color-warning;
+        }
+      }
+    }
+  }
+  #palette-colors li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    list-style: none;
+    border: 1px solid #000;
+  }
+  #grid-example {
+    text-align: center;
+
+    code {
+      display: block;
+      background-color: rgba(255,255,255,0.5);
+    }
+  }
+  .k-message {
+    background-color: #fab21f;
+    display: block;
+    padding-right: 20px;
+    padding-left: 20px;
+    .k-message-container {
+      margin-right: auto;
+      margin-left: auto;
+      max-width: 1180px;
+      display: flex;
+      align-items: center;
+      .k-message-center {
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        p {
+          font-size: 18px;
+          color: $color-inverse;
+          margin-right: 15px;
+          text-align: center;
+          a {
+            color: $color-inverse;
+            &:hover {
+              color: $color-inverse;
+            }
+            &:visited {
+              color: $color-inverse;
+            }
+          }
+        }
+      }
+      .k-message-close {
+        cursor: pointer;
+        padding: 20px;
+        img {
+          margin-left: auto;
+          max-width: 15px;
+          height: auto;
+        }
+        &:hover {
+          opacity: .8;
+        }
+      }
+    }
+  }
+  .k-auto-banner {
+    margin-right: auto;
+    margin-bottom: $vs-75p;
+    margin-left: auto;
+    max-width: 1180px * .8;
+    text-align: center;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+  .instagram {
+    background-color: #f8f8f8;
+    padding: 1px 0 75px 0;
+    .instagram-head {
+      display: flex;
+      padding: 0 20px;
+      .instagram-logo-container {
+        img {
+          width: 58px;
+        }
+      }
+      .instagram-text-container {
+        margin-left: 20px;
+        p {
+          margin-top: 5px;
+          color: $gray-regular;
+        }
+      }
+    }
+  }
+  .toggle-words {
+    display: none;
+  }
+  #instafeed {
+    width: 100%;
+  }
+  #instafeed a {
+    display: block;
+    float: left;
+    position: relative;
+    width: 50%;
+  }
+  @media screen and (min-width: 580px) {
+    #instafeed a {
+      width: 25%;
+    }
+  }
+  #instafeed a img {
+    display: block;
+    width: 90%;
+    height: 90%;
+    margin: 10px;
+  }
+}

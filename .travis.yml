@@ -1,0 +1,41 @@
+env:
+  global:
+    - PROJECT_NAME: "mi-bici"
+    # master SHA256-606c78f9bd55e946b34762b7f54b65177eaa37a3fc42559ea62712cf30431b2b
+    - secure: "LclcU0ornNj9OCXLoUUmeWvKRX959IBdM6Xq7yFBXtnOpXNYNzc1/ls2fte6kfcjZiuvVrOlbU1XUScuBMdoVr3QDeaH7gPNvPPI2l4/FlWqFQ/Wb7iuIIiJFrrkx+Rc13fQCAcyCVpWcznGnBmxo5sv6qh+Rve2fvphVM/diu9a0vLx3r0jRoimuRtv8ZYC4bKW1nHCKKzxwn7vmK3EzhY3Jz3izWl319I3LPHtwjD5ETWL1dz9Wia34C5YjrWhe45nion3acrdjQO+/HnGnUokuXkSPrxfo9jhbMWRTnExF9WE1JBe775GpTR7gAoj92Y45Td835wrSJ0J+zj3ik1CvPGgXir50bca50k1Oz+sJ+GjHlltToldhqm6jrDpMCT9gVa/C1yZwA5oFHUSks0+A3PmS5akfrLP7tbPhz1xRLCs+3clnHod2pulftdhT3WCv55F2XkldYF8M4rQrVSTh1DKPqOXbYXXDauLTwxqo+BoF/bojYahjnKewLVO7raxr8HpuKaJWjPPnudrfoT6KaSe71wh0E8Am5h1Fa/iBRiPNob3XvS3Elm5X1kuOrkVDlwxF3vwlTvncNjsP0X9MCQ+hg4y6RKM0L+YAh4xW6LAjH2o2WK/rEedUAKNlX17o2mR9bOzM7Ak9pYOLSsbX8unuwHqTgxytluT/Kk="
+    # beta SHA256-af7507b9411c78ff3df1efd621fbcb9ec9ab7057af1aa1e543dbca6a9c4020f0
+    - secure: "qnV2IlkvgzQ6LOFBJZIovht6OxLTUiNeri9zZLYlU9J3AGvUQ/tfUezlDoFkwv3+VLNdXVhVJullEnzZoKaUD7d0YMT7cLUn2Vga2e73som8OUH+AiTHare7jAw3qbkn5e+JI9X2a9bWWd7aShA59+MHQFSwxlWXLQ0jdvOx+AmRUNofg2jbbcpZQKm8PKRGng+Ve1+w3m1+0p30Bnk6PXC68kt/mFZx3d9mcsvcxEuEWWtU8i+mGSd6iS/Apo2+wrxNh+i2zLZnQ0iwg5wbbQ8HM28N6NRGWu7YmzcyVKiwIXWkpI/BTWAsI8IlhGNPcg1J3XuAAgU0nBH427VT4j2caLelmFtZUzgNTlJUj51QcXwizKLhhgKzbREAetNcWFDa31+asuzZp+ab48x0EQ+O3Y75yDua7rWomCfVDXLdJN3NxT3jtSh9NmFvVliMxV1bjUb7vYu9hPI2xpp+wy5s5p/x5P4b/5/ZkEPmOUBJvnDt6amjOBv+8gL5Cr0W3F9aF4yMu9EamZ/0c/C9RTcaFTpXM4AQgDgyOSsUdFpIyFf00hDgsoUlym7XfeGkadOYed7T7K8Vo5zgoMnic1kslP/iZWgsJusYVeyDeWKFvpJlvSiHHmxo2aVDsFDtrAT83nGDdBvPeIRM2Kq7992Zf7PUYyA5xqPxm61mQeQ="
+install:
+  - npm install -g csslint htmlhint
+  - wget -O /tmp/phantomjs-netlog.js https://gist.githubusercontent.com/memiux/0e8377f9361fefce64e848e74fa3232c/raw/phantomjs-netlog.js
+script:
+  - "find $PWD -path */public/site/templates/* -type f -name k-*.css -size +1c | xargs --no-run-if-empty csslint"
+  - "find $PWD -path */public/site/templates/* -type f -name *.html -size +1c | xargs --no-run-if-empty htmlhint"
+  - "find $PWD -path */public/site/templates/* -type f -name *.html | xargs --no-run-if-empty -I{} phantomjs --ignore-ssl-errors=true --ssl-protocol=any /tmp/phantomjs-netlog.js file://{}"
+notifications:
+  email: false
+  slack: krrrunch:Heq9HQZoEZT9rZJohu8in30e
+language: node_js
+node_js:
+  - "5.1"
+before_deploy:
+  - "wget -O /tmp/git-ftp https://gist.githubusercontent.com/memiux/f4f36ff274bd827aac573520242dea8a/raw/git-ftp && chmod +x /tmp/git-ftp"
+  - export GIT_FTP_URL_BRANCH=GIT_FTP_URL_$TRAVIS_BRANCH
+  - '/tmp/git-ftp add-scope $TRAVIS_BRANCH "${!GIT_FTP_URL_BRANCH}"'
+  - git config git-ftp.syncroot public
+  - npm install -g uglify-js
+  - gem install sass -v 3.4.22 --no-ri --no-rdoc
+  - ./public/site/templates/koi.sh -p -f
+deploy:
+  - provider: script
+    script: /tmp/git-ftp push -s $TRAVIS_BRANCH -v
+    skip_cleanup: true
+    on:
+      branch: master
+  - provider: script
+    script: /tmp/git-ftp push -s $TRAVIS_BRANCH -v -f
+    skip_cleanup: true
+    on:
+      branch: beta
+after_deploy:
+  - './cleanup.py "${!GIT_FTP_URL_BRANCH}"'

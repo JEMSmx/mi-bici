@@ -1,0 +1,32 @@
+.contact {
+  text-align: center;
+  margin-bottom: $vs-75p;
+  h2 {
+    color: $color-primary;
+    margin-bottom: $vs-25p;
+  }
+  a {
+    color: $color-primary;
+    text-decoration: none;
+    transition: color 150ms ease-in-out;
+    &:hover {
+      color: $color-danger;
+    }
+  }
+  hr {
+    margin-top: $vs-25p;
+    margin-bottom: $vs-25p;
+  }
+  .social-networks {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 40px;
+      height: auto;
+      margin-left: $vs-15p;
+    }
+  }
+  .customer-service {
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,36 @@
+section.media-press {
+  margin-bottom: $vs-75p;
+  h2 {
+    margin-bottom: $vs-50p;
+  }
+  .media-press-data {
+    border-top: 1px solid $gray-lighter;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    &:last-child {
+      border-bottom: 1px solid $gray-lighter;
+    }
+    .date {
+      margin-right: auto;
+      color:$gray-light
+    }
+    .name {
+      color: $color-secondary;
+      font-weight: bold;
+    }
+    .download {
+      margin-left: auto;
+      a {
+        color: $color-primary;
+        text-decoration: none;
+        transition: color 150ms ease-in-out;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

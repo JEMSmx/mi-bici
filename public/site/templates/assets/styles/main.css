@@ -1,0 +1,2391 @@
+/* line 2, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-color-primary {
+  color: #414141; }
+
+/* line 2, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-color-primary {
+  background-color: #414141; }
+
+/* line 3, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-color-secondary {
+  color: #d72538; }
+
+/* line 3, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-color-secondary {
+  background-color: #d72538; }
+
+/* line 4, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-color-inverse {
+  color: #fff; }
+
+/* line 4, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-color-inverse {
+  background-color: #fff; }
+
+/* line 5, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-color-success {
+  color: #10af9d; }
+
+/* line 5, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-color-success {
+  background-color: #10af9d; }
+
+/* line 6, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-color-info {
+  color: #5bc0de; }
+
+/* line 6, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-color-info {
+  background-color: #5bc0de; }
+
+/* line 7, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-color-warning {
+  color: #fbb324; }
+
+/* line 7, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-color-warning {
+  background-color: #fbb324; }
+
+/* line 8, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-color-danger {
+  color: #d72538; }
+
+/* line 8, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-color-danger {
+  background-color: #d72538; }
+
+/* line 11, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-gray-base {
+  color: black; }
+
+/* line 11, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-gray-base {
+  background-color: black; }
+
+/* line 12, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-gray-darker {
+  color: #262626; }
+
+/* line 12, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-gray-darker {
+  background-color: #262626; }
+
+/* line 13, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-gray-dark {
+  color: #595959; }
+
+/* line 13, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-gray-dark {
+  background-color: #595959; }
+
+/* line 14, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-gray-regular {
+  color: gray; }
+
+/* line 14, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-gray-regular {
+  background-color: gray; }
+
+/* line 15, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-gray-light {
+  color: #a6a6a6; }
+
+/* line 15, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-gray-light {
+  background-color: #a6a6a6; }
+
+/* line 16, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-gray-lighter {
+  color: #d9d9d9; }
+
+/* line 16, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-gray-lighter {
+  background-color: #d9d9d9; }
+
+/* line 17, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-gray-ghost {
+  color: #e6e6e6; }
+
+/* line 17, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-bg-gray-ghost {
+  background-color: #e6e6e6; }
+
+/* line 22, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-vs-50p {
+  margin-bottom: 50px; }
+
+/* line 23, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-vs-25p {
+  margin-bottom: 25px; }
+
+/* line 27, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  line-height: 1.4;
+  color: #414141; }
+
+/* line 37, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+h1, h2, h3, h4, h5, h6, p, figure, ul, li {
+  margin: 0;
+  padding: 0; }
+  /* line 40, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, p a, figure a, ul a, li a {
+    color: #d72538;
+    text-decoration: none;
+    transition: all 150ms ease-in-out; }
+    /* line 44, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hover, figure a:hover, ul a:hover, li a:hover {
+      text-decoration: underline; }
+
+/* line 49, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  line-height: 1;
+  color: black; }
+
+/* line 54, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+i, img {
+  vertical-align: middle; }
+
+/* line 57, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+img.k-sm {
+  width: 30px; }
+
+/* line 58, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+img.k-md {
+  width: 40px; }
+
+/* line 59, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+img.k-lg {
+  width: 50px; }
+
+/* line 60, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-xs {
+  font-size: 12px; }
+
+/* line 61, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-sm {
+  font-size: 14px; }
+
+/* line 62, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-md {
+  font-size: 16px; }
+
+/* line 63, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-lg {
+  font-size: 18px; }
+
+/* line 64, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-xl {
+  font-size: 2em; }
+
+/* line 67, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-header {
+  padding: 20px;
+  background-color: #fff;
+  background-image: url(../images/header-detail.svg);
+  background-repeat: no-repeat;
+  background-position-x: 100%;
+  background-position-y: 50%;
+  background-size: 40px; }
+  /* line 79, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-header .k-container {
+    display: table;
+    width: 100%; }
+  /* line 84, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-header .k-logo {
+    display: table-cell;
+    width: 150px;
+    vertical-align: middle; }
+    /* line 89, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-logo img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
+  /* line 96, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-header .k-navbar {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right; }
+    /* line 100, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar ul {
+      display: none;
+      margin: 0;
+      padding: 0; }
+    /* line 105, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar li {
+      display: inline-block;
+      list-style: none; }
+      /* line 109, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar li:last-child a {
+        border: none; }
+    /* line 114, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar a {
+      display: inline-block;
+      margin-top: 10px;
+      padding-right: 13px;
+      margin-bottom: 10px;
+      padding-left: 8px;
+      border-right: solid 1px #d9d9d9;
+      color: #595959;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      transition: color 150ms ease-in-out; }
+      /* line 127, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar a:hover {
+        color: #d72538; }
+      /* line 128, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar a:active {
+        color: black; }
+    /* line 130, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar .k-nav-responsive-elements {
+      display: none; }
+    /* line 133, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar .k-navbar-button a {
+      padding: 5px;
+      margin-left: 5px;
+      color: #fff;
+      background-color: #d72538;
+      border-radius: 10px; }
+      /* line 140, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar .k-navbar-button a:hover {
+        background-color: #eb394c; }
+    @media screen and (min-width: 510px) {
+      /* line 144, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar .k-navbar-button a {
+        margin-left: 30px; } }
+    /* line 149, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar .k-navbar-controls {
+      position: relative;
+      float: right;
+      width: 26px;
+      height: 26px;
+      padding: 6px;
+      color: #595959;
+      cursor: pointer;
+      user-select: none; }
+      /* line 159, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar .k-navbar-controls svg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }
+    /* line 168, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar .k-navbar-close {
+      display: none; }
+    /* line 172, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar.k-as-overlay {
+      position: fixed;
+      display: table;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      background-color: rgba(255, 255, 255, 0.95); }
+      /* line 182, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar.k-as-overlay ul {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center; }
+      /* line 188, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar.k-as-overlay li {
+        display: block; }
+      /* line 192, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar.k-as-overlay a {
+        font-size: 16px; }
+      /* line 196, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar.k-as-overlay .k-navbar-button a {
+        margin-left: 0; }
+      /* line 200, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar.k-as-overlay .k-navbar-controls {
+        position: absolute;
+        top: 25px;
+        right: 20px; }
+      /* line 206, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar.k-as-overlay .k-navbar-close {
+        display: inline; }
+      /* line 210, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar.k-as-overlay .k-navbar-hamburger {
+        display: none; }
+  /* line 215, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-header .k-session {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 25px; }
+    /* line 221, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-session .k-login-link img {
+      max-width: 19px;
+      vertical-align: top; }
+    /* line 226, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-session li {
+      display: inline-block;
+      list-style: none; }
+      /* line 230, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-session li:last-child a {
+        border: none; }
+    /* line 235, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-session a {
+      display: inline-block;
+      margin-top: 10px;
+      padding-right: 13px;
+      margin-bottom: 10px;
+      padding-left: 8px;
+      color: #595959;
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      text-decoration: none;
+      transition: color 150ms ease-in-out; }
+      /* line 247, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-session a:hover {
+        color: #d72538; }
+      /* line 248, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-session a:active {
+        color: black; }
+      /* line 249, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-session a img {
+        max-width: 30px; }
+    /* line 253, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-session .k-session-signup-button a {
+      padding: 4px 2px 4px 14px;
+      color: #fff;
+      background-color: #d72538;
+      border: none;
+      border-radius: 25px;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 150ms ease-in-out;
+      cursor: pointer; }
+      /* line 265, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-session .k-session-signup-button a span {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 17px;
+        height: 17px;
+        margin-right: 3px;
+        margin-left: 5px;
+        padding: 3px;
+        border-radius: 50px;
+        background-color: #fff; }
+        /* line 276, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+        .k-header .k-session .k-session-signup-button a span svg {
+          max-width: 15px;
+          display: none;
+          transition: all 150ms ease-in-out; }
+      /* line 282, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-session .k-session-signup-button a:hover {
+        background-color: #c31124; }
+        /* line 285, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+        .k-header .k-session .k-session-signup-button a:hover span svg {
+          display: block; }
+    @media screen and (min-width: 510px) {
+      /* line 292, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-session .k-navbar-button a {
+        margin-left: 30px; } }
+  @media screen and (max-width: 768px) {
+    /* line 298, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-session-button {
+      display: none; } }
+  @media screen and (min-width: 992px) {
+    /* line 304, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar {
+      display: table-cell; }
+      /* line 307, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-header .k-navbar ul {
+        display: block; }
+    /* line 311, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar:not(.k-as-overlay) .k-navbar-controls {
+      display: none; } }
+
+@media screen and (max-width: 992px) {
+  /* line 317, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-header {
+    background-image: none; }
+    /* line 319, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-session {
+      display: none; }
+    /* line 323, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-header .k-navbar a {
+      border-right: none; } }
+
+/* line 331, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-page-header-flex {
+  text-align: center;
+  padding-right: 10%;
+  padding-left: 10%; }
+  /* line 335, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-page-header-flex h1 {
+    margin-bottom: 15px;
+    font-size: 48px;
+    color: #fff; }
+  /* line 340, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-page-header-flex p {
+    font-size: 28px;
+    color: #fff; }
+  /* line 344, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-page-header-flex a {
+    color: white;
+    text-decoration: none; }
+    /* line 347, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-page-header-flex a:hover {
+      text-decoration: underline; }
+
+/* line 352, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-page-header {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1180px;
+  margin: 0 auto; }
+  /* line 360, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-page-header h1 {
+    margin-bottom: 15px;
+    font-size: 48px;
+    color: #fff; }
+  /* line 366, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-page-header p {
+    font-size: 28px;
+    color: #d9d9d9; }
+
+/* line 371, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-page-header-80 {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 944px;
+  margin: 0 auto; }
+  @media screen and (max-width: 992px) {
+    /* line 371, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-page-header-80 {
+      padding-right: 20px;
+      padding-left: 20px; } }
+  /* line 381, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-page-header-80 h1 {
+    margin-bottom: 5px;
+    font-size: 36px;
+    color: #fff; }
+  /* line 387, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-page-header-80 p {
+    font-size: 22px;
+    color: #d9d9d9; }
+
+/* line 394, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-section {
+  margin-top: 25px; }
+
+/* line 397, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-section-80 {
+  margin-top: 40px;
+  max-width: 944px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px; }
+
+@media screen and (min-width: 480px) {
+  /* line 411, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-section {
+    margin-top: 75px; } }
+
+/* line 423, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article h2.k-heading,
+.k-article h3.k-heading,
+.k-article h4.k-heading,
+.k-article p,
+.k-article ul,
+.k-article ol {
+  margin-bottom: 25px; }
+
+/* line 427, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article ol,
+.k-article ul {
+  padding-left: 15px; }
+  /* line 429, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-article ol li,
+  .k-article ul li {
+    padding-bottom: 10px; }
+    /* line 431, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-article ol li:last-child,
+    .k-article ul li:last-child {
+      padding-bottom: 0; }
+
+/* line 436, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article blockquote {
+  display: block;
+  padding: 15px 20px 15px 45px;
+  position: relative;
+  /*Font*/
+  font-size: 20px;
+  line-height: 1.2;
+  color: #666;
+  text-align: justify; }
+
+/* line 446, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article blockquote::before {
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px; }
+
+/* line 458, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article blockquote::after {
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: 'Roboto', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px; }
+
+/* line 472, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article a {
+  color: #d72538;
+  text-decoration: none; }
+  /* line 475, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-article a:hover {
+    text-decoration: underline; }
+  /* line 478, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-article a:visited {
+    color: #cd1b2e; }
+
+/* line 482, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article p + h2.k-heading {
+  margin: 30px 0 10px 0; }
+
+/* line 483, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article ul + h2.k-heading {
+  margin-top: 50px; }
+
+/* line 484, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article p:last-child {
+  margin-bottom: 75px;
+  overflow: hidden; }
+
+/* line 488, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article p.k-sm:last-child {
+  margin-bottom: 50px; }
+
+/* line 490, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article h1 {
+  font-size: 36px;
+  font-weight: 700; }
+
+/* line 494, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article h2 {
+  font-size: 24px;
+  font-weight: 700; }
+
+/* line 498, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article h3 {
+  font-size: 18px;
+  font-weight: 700; }
+
+/* line 502, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article h4 {
+  font-size: 16px;
+  font-weight: 700; }
+
+/* line 506, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article p {
+  font-size: 16px; }
+
+/* line 509, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article hr {
+  margin: 30px 0;
+  border-bottom: solid 2px gray; }
+
+/* line 513, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-article .vertical-split {
+  display: flex;
+  margin-bottom: 30px; }
+  /* line 516, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-article .vertical-split div {
+    width: 50%; }
+    /* line 518, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-article .vertical-split div:first-child {
+      padding-right: 15px; }
+  /* line 522, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-article .vertical-split img {
+    max-width: 100%; }
+  /* line 526, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-article .vertical-split p:last-child {
+    margin: 0; }
+  @media screen and (max-width: 768px) {
+    /* line 513, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-article .vertical-split {
+      flex-direction: column; }
+      /* line 532, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-article .vertical-split div {
+        width: 100%;
+        margin-bottom: 15px; } }
+
+/* line 541, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-banner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  text-align: center; }
+  /* line 549, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-banner .k-heading {
+    margin-bottom: 15px; }
+  /* line 551, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-banner p {
+    padding-right: 10%;
+    padding-left: 10%;
+    color: #595959; }
+
+/* line 559, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-jumbotron {
+  background: #414141; }
+  /* line 561, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-jumbotron .k-jumbotron-color {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6); }
+    /* line 569, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-jumbotron .k-jumbotron-color .k-heading {
+      margin: 0;
+      color: #fff;
+      font-weight: 100; }
+    /* line 574, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-jumbotron .k-jumbotron-color span {
+      font-weight: bold; }
+    /* line 577, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-jumbotron .k-jumbotron-color p {
+      margin-top: 5px;
+      color: #e6e6e6; }
+    /* line 581, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-jumbotron .k-jumbotron-color a {
+      text-decoration: none;
+      color: #e6e6e6; }
+      /* line 584, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-jumbotron .k-jumbotron-color a:hover {
+        color: #d9d9d9; }
+
+/* line 592, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-figure {
+  margin-bottom: 75px;
+  text-align: center; }
+  /* line 596, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-figure a {
+    display: block;
+    text-decoration: none;
+    color: inherit; }
+    /* line 600, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-figure a:hover {
+      text-decoration: none; }
+  /* line 605, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-figure .k-container {
+    margin-bottom: 25px; }
+    /* line 608, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-figure .k-container img {
+      width: 80px; }
+  /* line 610, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-figure .k-container-img {
+    height: 150px;
+    width: 150px;
+    margin-right: auto;
+    margin-bottom: 25px;
+    margin-left: auto;
+    position: relative; }
+    /* line 617, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-figure .k-container-img img {
+      max-height: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto; }
+  /* line 627, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-figure .k-heading {
+    margin-bottom: 5px; }
+  /* line 630, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-figure p {
+    font-size: 18px;
+    color: gray; }
+
+/* line 637, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-hr {
+  overflow: hidden;
+  clear: both;
+  margin: 0;
+  height: 1px;
+  border: none;
+  background-color: #e6e6e6; }
+
+/* line 647, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-heading {
+  font-family: 'Roboto', sans-serif; }
+
+/* line 652, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-media {
+  display: table;
+  margin-bottom: 75px; }
+  /* line 656, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-media .k-media-left {
+    display: table-cell; }
+    /* line 659, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-media .k-media-left.k-sm {
+      width: 30px;
+      padding-right: 18px; }
+    /* line 664, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-media .k-media-left.k-md {
+      width: 40px;
+      padding-right: 20px; }
+    /* line 669, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-media .k-media-left.k-lg {
+      width: 50px;
+      padding-right: 22px; }
+  /* line 675, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-media .k-media-body {
+    display: table-cell;
+    vertical-align: top; }
+  /* line 680, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-media .k-heading {
+    margin-bottom: 15px; }
+    /* line 683, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-media .k-heading i, .k-media .k-heading img {
+      margin-right: 20px; }
+
+/* line 688, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-button {
+  display: inline-block;
+  margin-bottom: 5px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px; }
+  /* line 695, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-button.k-as-block {
+    display: block; }
+  /* line 697, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-button.k-sm {
+    padding: 4px 6px 4px 6px;
+    font-size: 12px; }
+  /* line 702, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-button.k-md {
+    padding: 8px; }
+  /* line 706, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-button.k-lg {
+    padding: 12px;
+    font-size: 18px; }
+  /* line 711, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-button.k-bg-color-inverse {
+    border: 2px solid #414141; }
+  /* line 715, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-button.k-color-primary:hover {
+    color: #fff;
+    background-color: #414141; }
+
+/* line 720, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-signup-button {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center; }
+  /* line 725, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-signup-button a {
+    text-decoration: none !important; }
+  /* line 728, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-signup-button button {
+    padding: 5px 6px 4px 23px;
+    color: #fff;
+    background-color: #d72538;
+    border: none;
+    border-radius: 25px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+    cursor: pointer; }
+    /* line 742, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-signup-button button span {
+      display: flex;
+      width: 15px;
+      height: 15px;
+      margin-right: 3px;
+      margin-left: 6px;
+      padding: 7px;
+      border-radius: 50px;
+      background-color: #fff; }
+      /* line 751, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-signup-button button span svg {
+        max-width: 15px;
+        display: none;
+        transition: all 150ms ease-in-out; }
+    /* line 757, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-signup-button button:hover {
+      background-color: #c31124; }
+      /* line 760, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-signup-button button:hover span svg {
+        display: block; }
+
+/* line 767, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-find-a-bike-button {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center; }
+  /* line 771, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-find-a-bike-button a {
+    text-decoration: none !important; }
+  /* line 774, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-find-a-bike-button button {
+    padding: 6px 6px 5px 20px;
+    color: #10af9d;
+    background-color: rgba(16, 175, 157, 0);
+    border: 2px solid #10af9d;
+    border-radius: 30px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 150ms ease-in-out;
+    cursor: pointer; }
+    /* line 788, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-find-a-bike-button button span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25px;
+      height: 25px;
+      margin-right: 3px;
+      margin-left: 5px;
+      padding: 2px;
+      border-radius: 50px;
+      background-color: #10af9d; }
+      /* line 799, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-find-a-bike-button button span svg {
+        max-width: 15px;
+        display: none;
+        transition: all 150ms ease-in-out; }
+    /* line 805, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-find-a-bike-button button:hover {
+      background-color: rgba(16, 175, 157, 0.1); }
+      /* line 808, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-find-a-bike-button button:hover span svg {
+        display: block; }
+
+/* line 816, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-annual-badge-button a {
+  text-decoration: none !important; }
+
+/* line 819, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-annual-badge-button button {
+  padding: 6px 3px 5px 20px;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  font-size: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 150ms ease-in-out;
+  cursor: pointer; }
+  /* line 833, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-annual-badge-button button span {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 5px;
+    padding: 7px;
+    border-radius: 50px;
+    background-color: #fff; }
+    /* line 842, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-annual-badge-button button span svg {
+      max-width: 15px;
+      display: none;
+      transition: all 150ms ease-in-out; }
+  /* line 848, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-annual-badge-button button:hover {
+    background-color: #c31124; }
+    /* line 851, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-annual-badge-button button:hover span svg {
+      display: block; }
+
+/* line 861, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+tr td {
+  border: none; }
+
+/* line 867, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-footer {
+  margin-top: 20px;
+  padding-top: 25px;
+  background-color: #e6e6e6; }
+  /* line 872, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-footer .k-heading {
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  /* line 877, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-footer .k-sitemap .k-container {
+    display: block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 25px; }
+    /* line 883, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-sitemap .k-container li {
+      margin-bottom: 2px;
+      list-style: none; }
+    /* line 888, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-sitemap .k-container a {
+      color: #a6a6a6;
+      font-size: 12px;
+      text-decoration: none; }
+      /* line 893, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-footer .k-sitemap .k-container a:hover {
+        color: #414141;
+        text-decoration: underline; }
+  @media screen and (min-width: 480px) {
+    /* line 901, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-sitemap .k-container {
+      margin-right: 40px; } }
+  /* line 906, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-footer .k-address {
+    text-align: right; }
+    /* line 909, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-address address {
+      font-style: normal; }
+    /* line 911, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-address small {
+      display: block;
+      margin-bottom: 4px; }
+    /* line 916, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-address a {
+      color: #595959;
+      text-decoration: none; }
+      /* line 920, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-footer .k-address a:hover i {
+        color: #262626; }
+  /* line 924, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-footer .k-details {
+    clear: both;
+    padding: 15px 20px 15px 20px;
+    border-top: 1px solid #d9d9d9; }
+    /* line 929, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-details small {
+      font-size: 10px;
+      color: gray; }
+    /* line 934, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-details ul {
+      float: right; }
+    /* line 936, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-details li {
+      display: inline-block;
+      list-style: none; }
+    /* line 941, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-details a {
+      padding: 5px;
+      font-size: 10px;
+      text-decoration: none;
+      color: #a6a6a6; }
+      /* line 947, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-footer .k-details a:hover {
+        color: gray; }
+  @media screen and (min-width: 480px) {
+    /* line 952, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-footer .k-details {
+      padding-right: 0;
+      padding-left: 0; } }
+
+/* line 960, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+dl {
+  margin: 0;
+  padding: 20px;
+  border-bottom: solid 1px #d9d9d9; }
+  /* line 964, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  dl:first-child {
+    border-top: solid 1px #d9d9d9; }
+  /* line 967, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  dl:last-child {
+    margin-bottom: 75px; }
+  /* line 970, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  dl dt {
+    display: flex;
+    font-size: 20px;
+    cursor: pointer;
+    color: #595959;
+    transition: all 150ms ease-in-out; }
+    /* line 976, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    dl dt:hover {
+      color: black; }
+      /* line 978, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      dl dt:hover img {
+        display: block; }
+    /* line 982, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    dl dt img {
+      display: none;
+      margin-left: auto;
+      max-height: 20px;
+      color: #262626; }
+  /* line 989, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  dl dd {
+    display: none;
+    margin-top: 5px;
+    margin-left: 0;
+    font-size: 18px;
+    color: #595959; }
+
+/* line 999, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.open-data {
+  margin-bottom: 75px; }
+  /* line 1001, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-data .unit:first-child {
+    padding-left: 10px;
+    border-right: 1px solid gray; }
+    @media screen and (max-width: 768px) {
+      /* line 1001, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .open-data .unit:first-child {
+        border-right: none; } }
+  /* line 1008, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-data .head-data {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px; }
+    /* line 1014, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .open-data .head-data img {
+      max-height: 40px;
+      margin-right: 15px; }
+  /* line 1019, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-data p {
+    margin-bottom: 0; }
+  /* line 1023, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-data .data-widget h2 {
+    margin-bottom: 15px; }
+  /* line 1026, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-data .data-widget p {
+    margin-bottom: 15px; }
+  /* line 1029, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-data .data-widget ul {
+    margin-bottom: 25px; }
+  /* line 1032, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-data .data-widget li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 5px; }
+    /* line 1037, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .open-data .data-widget li img {
+      max-height: 20px;
+      margin-right: 15px; }
+
+/* line 1044, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.data-year {
+  margin-top: 75px;
+  max-width: 944px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px; }
+
+/* line 1052, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.open-badge-container {
+  display: none;
+  margin-left: 20px; }
+  /* line 1055, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-badge-container .unit:first-child {
+    padding-left: 10px;
+    border-right: none; }
+  /* line 1059, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-badge-container li {
+    margin: 5px 0; }
+
+/* line 1063, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.open-badge {
+  display: inline-block;
+  background-color: #EBEBEB;
+  border-radius: 10px;
+  padding: 15px; }
+  /* line 1068, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-badge:first-child {
+    margin-right: 15px; }
+  /* line 1071, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-badge h3 {
+    margin-bottom: 15px; }
+  /* line 1074, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-badge ul {
+    list-style: none;
+    display: flex; }
+  /* line 1078, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-badge a {
+    text-decoration: none;
+    color: #595959;
+    transition: color 0.25px; }
+    /* line 1082, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .open-badge a:hover {
+      color: #d72538; }
+    /* line 1086, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .open-badge a:last-child li {
+      margin-right: 0; }
+  /* line 1091, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .open-badge li {
+    font-size: 15px;
+    margin-right: 15px; }
+    /* line 1094, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .open-badge li img {
+      margin-right: 10px; }
+
+/* line 1100, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.data-download h2 {
+  margin-bottom: 15px; }
+
+/* line 1103, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.data-download p {
+  margin-bottom: 15px; }
+
+/* line 1108, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.open-dl:last-child {
+  margin-bottom: 25px !important; }
+
+/* line 1112, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.fb-comments {
+  display: flex !important;
+  justify-content: center;
+  margin-bottom: 25px; }
+
+@media screen and (max-width: 768px) {
+  /* line 1117, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .power-bi-desktop {
+    display: hidden; } }
+
+/* line 1122, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.power-bi-mobile {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    /* line 1122, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .power-bi-mobile {
+      display: block; } }
+
+/* line 1129, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0; }
+
+/* line 1141, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.complement-info-card--check-map-250 {
+  padding: 0 !important;
+  background-color: #10af9d;
+  background-image: url("../images/degollado-for-background.png");
+  background-size: cover; }
+  /* line 1146, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .complement-info-card--check-map-250 .color-layer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6%;
+    min-height: 250px;
+    background-color: rgba(255, 255, 255, 0.8); }
+    /* line 1154, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--check-map-250 .color-layer .k-heading-xl {
+      font-size: 30px; }
+    /* line 1157, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--check-map-250 .color-layer h3, .complement-info-card--check-map-250 .color-layer p, .complement-info-card--check-map-250 .color-layer a {
+      margin-bottom: 15px; }
+    /* line 1160, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--check-map-250 .color-layer img {
+      height: 200px;
+      align-self: center; }
+    /* line 1164, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--check-map-250 .color-layer a {
+      color: #d72538;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 150ms ease-in-out; }
+      /* line 1169, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .complement-info-card--check-map-250 .color-layer a:hover {
+        color: #c31124; }
+
+/* line 1175, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.complement-info-card--meet-the-bike {
+  padding: 0 !important;
+  background-color: #10af9d;
+  background-image: url("../images/paraninfo-for-background.png");
+  background-size: cover; }
+  /* line 1180, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .complement-info-card--meet-the-bike .color-layer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6%;
+    min-height: 345px;
+    background-color: rgba(255, 255, 255, 0.8); }
+    /* line 1188, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--meet-the-bike .color-layer .k-heading-xl {
+      font-size: 30px; }
+    /* line 1191, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--meet-the-bike .color-layer h3, .complement-info-card--meet-the-bike .color-layer p, .complement-info-card--meet-the-bike .color-layer a {
+      margin-bottom: 15px; }
+    /* line 1194, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--meet-the-bike .color-layer img {
+      height: 200px;
+      align-self: center; }
+    /* line 1198, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--meet-the-bike .color-layer a {
+      color: #d72538;
+      font-weight: bold;
+      text-decoration: none;
+      transition: color 150ms ease-in-out; }
+      /* line 1203, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .complement-info-card--meet-the-bike .color-layer a:hover {
+        color: #c31124; }
+
+/* line 1209, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.complement-info-card--register-250 {
+  padding: 0 !important;
+  background-color: #d72538; }
+  /* line 1212, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .complement-info-card--register-250 .color-layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 6%;
+    min-height: 250px; }
+    /* line 1220, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--register-250 .color-layer .k-heading-xl {
+      font-size: 30px; }
+    /* line 1223, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--register-250 .color-layer h3, .complement-info-card--register-250 .color-layer p {
+      margin-bottom: 15px;
+      color: #fff; }
+
+/* line 1229, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.complement-info-card--register {
+  padding: 0 !important;
+  background-color: #d72538; }
+  /* line 1232, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .complement-info-card--register .color-layer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 6%;
+    min-height: 345px; }
+    /* line 1240, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--register .color-layer .k-heading-xl {
+      font-size: 30px; }
+    /* line 1243, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .complement-info-card--register .color-layer h3, .complement-info-card--register .color-layer p {
+      margin-bottom: 15px;
+      color: #fff; }
+
+/* line 1251, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-showcase, .k-showcase-split-two {
+  display: flex;
+  justify-content: Space-between;
+  align-items: center; }
+  /* line 1255, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-showcase--item {
+    background-image: url("");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%; }
+    /* line 1261, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-showcase--item--color {
+      min-height: 345px;
+      background-color: transparent;
+      padding: 6%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      /* line 1269, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-showcase--item--color h3 {
+        font-size: 2em;
+        margin-bottom: 15px; }
+      /* line 1273, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+      .k-showcase--item--color p {
+        font-size: 1.333em;
+        color: #a6a6a6; }
+
+/* line 1282, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-showcase-split-two--item {
+  width: 50%;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  @media screen and (max-width: 768px) {
+    /* line 1282, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-showcase-split-two--item {
+      width: 100%; } }
+  /* line 1291, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-showcase-split-two--item .k-showcase--item--color {
+    align-items: flex-start; }
+
+/* line 1295, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+.k-showcase-split-two .k-showcase-image-responsive {
+  display: none; }
+
+@media screen and (max-width: 768px) {
+  /* line 1280, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+  .k-showcase-split-two {
+    flex-direction: column; }
+    /* line 1300, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-showcase-split-two .k-showcase-image {
+      display: none; }
+    /* line 1303, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
+    .k-showcase-split-two .k-showcase-image-responsive {
+      display: flex; } }
+
+/* line 2, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home #home-wrapper {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px; }
+
+@media screen and (max-width: 768px) {
+  /* line 8, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home #home-wrapper {
+    background-position: center; } }
+
+/* line 12, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home #thing {
+  margin-top: 75px; }
+  /* line 15, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home #thing .--logo {
+    margin-left: 20px;
+    width: 150px; }
+  /* line 20, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home #thing .--bar {
+    height: 20px;
+    background-color: #414141;
+    background-image: #414141;
+    background-image: -webkit-linear-gradient(left, #414141, #232323);
+    background-image: -o-linear-gradient(right, #414141, #232323);
+    background-image: -moz-linear-gradient(right, #414141, #232323);
+    background-image: linear-gradient(to right, #414141, #232323); }
+  @media screen and (min-width: 480px) {
+    /* line 31, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+    body.home #thing .--bar {
+      height: 30px; } }
+  /* line 36, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home #thing .k-banner p {
+    color: gray; }
+
+/* line 40, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home .map-wrapper {
+  max-width: 1180px;
+  margin-right: auto;
+  margin-bottom: 75px;
+  margin-left: auto;
+  background-image: url("../images/map-background.png");
+  height: 300px; }
+  /* line 47, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home .map-wrapper .map-wrapper-color {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    /* line 55, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+    body.home .map-wrapper .map-wrapper-color .map-wrapper-message {
+      padding-right: 20px;
+      padding-left: 20px;
+      text-align: center; }
+      /* line 59, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+      body.home .map-wrapper .map-wrapper-color .map-wrapper-message h2 {
+        color: black;
+        font-size: 32px; }
+      /* line 63, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+      body.home .map-wrapper .map-wrapper-color .map-wrapper-message p {
+        margin-top: 5px;
+        color: #5f5f5f; }
+      /* line 67, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+      body.home .map-wrapper .map-wrapper-color .map-wrapper-message a {
+        color: #d72538; }
+
+/* line 73, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home #pre-pricing {
+  max-width: 944px;
+  margin-right: auto;
+  margin-bottom: 75px;
+  margin-left: auto; }
+  /* line 78, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home #pre-pricing h2 {
+    text-align: center;
+    color: #595959;
+    margin-bottom: 50px; }
+  /* line 84, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home #pre-pricing .price-badge figure {
+    background-color: #10af9d;
+    display: flex;
+    flex-direction: column;
+    min-height: 150px;
+    padding: 20px;
+    color: #fff;
+    border-radius: 20px; }
+    /* line 92, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+    body.home #pre-pricing .price-badge figure h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px; }
+    /* line 96, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+    body.home #pre-pricing .price-badge figure p {
+      margin-bottom: 75px; }
+    /* line 99, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+    body.home #pre-pricing .price-badge figure a {
+      color: white;
+      text-decoration: none; }
+      /* line 102, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+      body.home #pre-pricing .price-badge figure a:hover {
+        text-decoration: underline; }
+  /* line 108, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home #pre-pricing .price-badge:last-child figure {
+    background-color: #fbb324; }
+
+/* line 114, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home #palette-colors li {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  list-style: none;
+  border: 1px solid #000; }
+
+/* line 123, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home #grid-example {
+  text-align: center; }
+  /* line 126, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home #grid-example code {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.5); }
+
+/* line 131, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home .k-message {
+  background-color: #fab21f;
+  display: block;
+  padding-right: 20px;
+  padding-left: 20px; }
+  /* line 136, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home .k-message .k-message-container {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1180px;
+    display: flex;
+    align-items: center; }
+    /* line 142, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+    body.home .k-message .k-message-container .k-message-center {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px; }
+      /* line 146, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+      body.home .k-message .k-message-container .k-message-center p {
+        font-size: 18px;
+        color: #fff;
+        margin-right: 15px;
+        text-align: center; }
+        /* line 151, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+        body.home .k-message .k-message-container .k-message-center p a {
+          color: #fff; }
+          /* line 153, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+          body.home .k-message .k-message-container .k-message-center p a:hover {
+            color: #fff; }
+          /* line 156, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+          body.home .k-message .k-message-container .k-message-center p a:visited {
+            color: #fff; }
+    /* line 162, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+    body.home .k-message .k-message-container .k-message-close {
+      cursor: pointer;
+      padding: 20px; }
+      /* line 165, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+      body.home .k-message .k-message-container .k-message-close img {
+        margin-left: auto;
+        max-width: 15px;
+        height: auto; }
+      /* line 170, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+      body.home .k-message .k-message-container .k-message-close:hover {
+        opacity: .8; }
+
+/* line 176, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home .k-auto-banner {
+  margin-right: auto;
+  margin-bottom: 75px;
+  margin-left: auto;
+  max-width: 944px;
+  text-align: center; }
+  /* line 182, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home .k-auto-banner img {
+    max-width: 100%;
+    height: auto; }
+
+/* line 187, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home .instagram {
+  background-color: #f8f8f8;
+  padding: 1px 0 75px 0; }
+  /* line 190, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home .instagram .instagram-head {
+    display: flex;
+    padding: 0 20px; }
+    /* line 194, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+    body.home .instagram .instagram-head .instagram-logo-container img {
+      width: 58px; }
+    /* line 198, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+    body.home .instagram .instagram-head .instagram-text-container {
+      margin-left: 20px; }
+      /* line 200, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+      body.home .instagram .instagram-head .instagram-text-container p {
+        margin-top: 5px;
+        color: gray; }
+
+/* line 207, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home .toggle-words {
+  display: none; }
+
+/* line 210, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home #instafeed {
+  width: 100%; }
+
+/* line 213, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home #instafeed a {
+  display: block;
+  float: left;
+  position: relative;
+  width: 50%; }
+
+@media screen and (min-width: 580px) {
+  /* line 220, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+  body.home #instafeed a {
+    width: 25%; } }
+
+/* line 224, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
+body.home #instafeed a img {
+  display: block;
+  width: 90%;
+  height: 90%;
+  margin: 10px; }
+
+/* line 1, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_media.scss */
+section.media-press {
+  margin-bottom: 75px; }
+  /* line 3, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_media.scss */
+  section.media-press h2 {
+    margin-bottom: 50px; }
+  /* line 6, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_media.scss */
+  section.media-press .media-press-data {
+    border-top: 1px solid #d9d9d9;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center; }
+    /* line 13, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_media.scss */
+    section.media-press .media-press-data:last-child {
+      border-bottom: 1px solid #d9d9d9; }
+    /* line 16, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_media.scss */
+    section.media-press .media-press-data .date {
+      margin-right: auto;
+      color: #a6a6a6; }
+    /* line 20, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_media.scss */
+    section.media-press .media-press-data .name {
+      color: #d72538;
+      font-weight: bold; }
+    /* line 24, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_media.scss */
+    section.media-press .media-press-data .download {
+      margin-left: auto; }
+      /* line 26, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_media.scss */
+      section.media-press .media-press-data .download a {
+        color: #414141;
+        text-decoration: none;
+        transition: color 150ms ease-in-out; }
+        /* line 30, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_media.scss */
+        section.media-press .media-press-data .download a:hover {
+          text-decoration: underline; }
+
+/* line 1, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_contact.scss */
+.contact {
+  text-align: center;
+  margin-bottom: 75px; }
+  /* line 4, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_contact.scss */
+  .contact h2 {
+    color: #414141;
+    margin-bottom: 25px; }
+  /* line 8, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_contact.scss */
+  .contact a {
+    color: #414141;
+    text-decoration: none;
+    transition: color 150ms ease-in-out; }
+    /* line 12, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_contact.scss */
+    .contact a:hover {
+      color: #d72538; }
+  /* line 16, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_contact.scss */
+  .contact hr {
+    margin-top: 25px;
+    margin-bottom: 25px; }
+  /* line 20, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_contact.scss */
+  .contact .social-networks {
+    display: flex;
+    justify-content: center; }
+    /* line 23, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_contact.scss */
+    .contact .social-networks img {
+      width: 40px;
+      height: auto;
+      margin-left: 15px; }
+  /* line 29, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_contact.scss */
+  .contact .customer-service {
+    margin-top: 10px; }
+
+/* line 1, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+section.pricing {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 944px;
+  margin-bottom: 50px; }
+  /* line 6, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+  section.pricing h2 {
+    text-align: center;
+    margin-bottom: 50px; }
+  /* line 10, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+  section.pricing figure.badge-annual {
+    background-color: #10af9d;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px #10af9d;
+    color: white; }
+    /* line 16, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: white; }
+    /* line 21, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual p.k-xl {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 15px; }
+      /* line 25, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual p.k-xl sup {
+        top: -0.25em; }
+      /* line 28, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual p.k-xl span {
+        font-size: .5em; }
+    /* line 32, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual p {
+      margin-bottom: 15px; }
+      /* line 34, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual p strong {
+        font-size: 1.5em; }
+    /* line 38, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual p.k-xs {
+      font-size: 12px; }
+    /* line 41, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual a {
+      color: white;
+      text-decoration: none; }
+      /* line 44, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual a:hover {
+        text-decoration: underline; }
+    /* line 48, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual .badge-footer {
+      display: flex;
+      height: 45px;
+      align-items: center;
+      width: 100%; }
+      /* line 53, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual .badge-footer .right-side {
+        margin-left: auto; }
+    /* line 58, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual .k-annual-badge-button a {
+      text-decoration: none !important; }
+    /* line 61, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual .k-annual-badge-button button {
+      padding: 6px 3px 5px 20px;
+      color: #fff;
+      background-color: #10af9d;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      font-size: 19px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 150ms ease-in-out;
+      cursor: pointer; }
+      /* line 75, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual .k-annual-badge-button button span {
+        display: flex;
+        width: 10px;
+        height: 10px;
+        margin-right: 3px;
+        margin-left: 5px;
+        padding: 7px;
+        border-radius: 50px;
+        background-color: #fff; }
+        /* line 84, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+        section.pricing figure.badge-annual .k-annual-badge-button button span svg {
+          max-width: 15px;
+          display: none;
+          transition: all 150ms ease-in-out; }
+      /* line 90, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual .k-annual-badge-button button:hover {
+        background-color: #009b89; }
+        /* line 93, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+        section.pricing figure.badge-annual .k-annual-badge-button button:hover span svg {
+          display: block; }
+  /* line 101, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+  section.pricing figure.badge-annual-pricing {
+    background-color: #10af9d;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px #10af9d;
+    color: white; }
+    /* line 107, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual-pricing h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: white; }
+    /* line 112, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual-pricing p.k-xl {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 15px; }
+      /* line 116, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual-pricing p.k-xl sup {
+        top: -0.25em; }
+      /* line 119, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual-pricing p.k-xl span {
+        font-weight: 400; }
+    /* line 123, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual-pricing p {
+      margin-bottom: 15px; }
+      /* line 125, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual-pricing p strong {
+        font-size: 1.5em; }
+    /* line 129, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual-pricing p.k-xs {
+      font-size: 12px; }
+    /* line 132, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual-pricing a {
+      color: white;
+      text-decoration: none; }
+      /* line 135, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual-pricing a:hover {
+        text-decoration: underline; }
+    /* line 139, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual-pricing .badge-footer {
+      display: flex;
+      height: 45px;
+      align-items: center;
+      width: 100%; }
+      /* line 144, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual-pricing .badge-footer .right-side {
+        margin-left: auto; }
+    /* line 149, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual-pricing .k-annual-badge-button a {
+      text-decoration: none !important; }
+    /* line 152, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-annual-pricing .k-annual-badge-button button {
+      padding: 6px 3px 5px 20px;
+      color: #fff;
+      background-color: #10af9d;
+      border: 2px solid #fff;
+      border-radius: 20px;
+      font-size: 19px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 150ms ease-in-out;
+      cursor: pointer; }
+      /* line 166, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual-pricing .k-annual-badge-button button span {
+        display: flex;
+        width: 10px;
+        height: 10px;
+        margin-right: 3px;
+        margin-left: 5px;
+        padding: 7px;
+        border-radius: 50px;
+        background-color: #fff; }
+        /* line 175, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+        section.pricing figure.badge-annual-pricing .k-annual-badge-button button span svg {
+          max-width: 15px;
+          display: none;
+          transition: all 150ms ease-in-out; }
+      /* line 181, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-annual-pricing .k-annual-badge-button button:hover {
+        background-color: #009b89; }
+        /* line 184, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+        section.pricing figure.badge-annual-pricing .k-annual-badge-button button:hover span svg {
+          display: block; }
+  /* line 192, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+  section.pricing figure.badge-temporary {
+    background-color: transparent;
+    border: solid 3px #fbb324;
+    padding: 20px;
+    border-radius: 20px;
+    color: #fbb324; }
+    /* line 198, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-temporary h3 {
+      font-size: 1.5em;
+      margin-bottom: 15px;
+      color: #fbb324; }
+    /* line 203, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-temporary p.k-xl {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: 15px; }
+      /* line 207, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-temporary p.k-xl sup {
+        top: -0.25em; }
+      /* line 210, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-temporary p.k-xl span {
+        font-weight: 400; }
+    /* line 214, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-temporary p {
+      margin-bottom: 15px; }
+      /* line 216, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-temporary p strong {
+        font-size: 1.5em; }
+    /* line 218, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-temporary p.k-xs {
+      font-size: 12px; }
+    /* line 221, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-temporary a {
+      color: #fbb324;
+      text-decoration: none; }
+      /* line 224, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-temporary a:hover {
+        text-decoration: underline; }
+    /* line 228, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+    section.pricing figure.badge-temporary .badge-footer {
+      display: flex;
+      height: 45px;
+      align-items: center;
+      width: 100%; }
+      /* line 233, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pricing.scss */
+      section.pricing figure.badge-temporary .badge-footer .right-side {
+        margin-left: auto; }
+
+/* line 3, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_map.scss */
+body.mapa .k-jumbotron .k-page-header-map {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 944px;
+  margin: 0 auto; }
+  /* line 10, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_map.scss */
+  body.mapa .k-jumbotron .k-page-header-map ul {
+    list-style: none;
+    display: flex; }
+    /* line 13, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_map.scss */
+    body.mapa .k-jumbotron .k-page-header-map ul li {
+      width: 33%; }
+      /* line 15, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_map.scss */
+      body.mapa .k-jumbotron .k-page-header-map ul li p {
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white; }
+        /* line 21, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_map.scss */
+        body.mapa .k-jumbotron .k-page-header-map ul li p img {
+          width: 25px;
+          margin-right: 15px; }
+
+@media screen and (max-width: 768px) {
+  /* line 2, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_map.scss */
+  body.mapa .k-jumbotron {
+    flex-direction: column; }
+    /* line 31, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_map.scss */
+    body.mapa .k-jumbotron li {
+      width: 100%; }
+      /* line 33, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_map.scss */
+      body.mapa .k-jumbotron li p {
+        font-size: 9px; } }
+
+/* line 12, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+footer {
+  background-color: #ebebeb;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden; }
+  @media (min-width: 569px) {
+    /* line 12, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    footer {
+      font-size: 18px; } }
+  @media (min-width: 768px) {
+    /* line 12, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    footer {
+      font-size: 16px; } }
+  @media (min-width: 992px) {
+    /* line 12, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    footer {
+      font-size: 18px; } }
+
+/* line 29, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+.footer-container {
+  text-align: center;
+  padding: 26px 0 10px;
+  position: relative; }
+  /* line 33, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-container:before {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50px;
+    height: 100px;
+    background: url("../images/mi-bici-footer-circle.svg") no-repeat;
+    background-size: cover;
+    margin: auto; }
+    @media (min-width: 768px) {
+      /* line 33, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-container:before {
+        width: 11px; } }
+    @media (min-width: 814px) {
+      /* line 33, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-container:before {
+        width: 50px; } }
+    @media (min-width: 990px) {
+      /* line 33, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-container:before {
+        width: 34px; } }
+    @media (min-width: 1000px) {
+      /* line 33, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-container:before {
+        width: 50px; } }
+  /* line 57, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-container ul {
+    padding: 0;
+    margin: 0;
+    list-style: none; }
+  /* line 62, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-container .grid {
+    max-width: 1200px;
+    margin: 0 auto; }
+    @media (min-width: 569px) {
+      /* line 62, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-container .grid {
+        width: 568px; } }
+    @media (min-width: 768px) {
+      /* line 62, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-container .grid {
+        width: 768px;
+        text-align: left; } }
+    @media (min-width: 992px) {
+      /* line 62, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-container .grid {
+        width: 992px; } }
+    @media (min-width: 1200px) {
+      /* line 62, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-container .grid {
+        width: 1200px; } }
+
+@media screen and (max-width: 768px) {
+  /* line 83, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .unit.one-quarter.unit {
+    width: 50%; } }
+
+@media (min-width: 568px) {
+  /* line 90, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-column:nth-child(3) {
+    clear: both; } }
+
+@media (min-width: 768px) {
+  /* line 90, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-column:nth-child(3) {
+    clear: none; } }
+
+/* line 98, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+.footer-column .footer-social {
+  font-size: 0;
+  margin-top: 8px; }
+  /* line 101, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-column .footer-social li {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 9px; }
+    /* line 105, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-column .footer-social li:first-child {
+      margin-left: 0; }
+    /* line 108, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-column .footer-social li a {
+      color: #414141;
+      font-size: 28px;
+      transition: color 150ms ease-in-out; }
+      /* line 112, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-column .footer-social li a img {
+        width: 25px;
+        opacity: .8;
+        transition: all 150ms ease-in-out; }
+        /* line 116, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+        .footer-column .footer-social li a img:hover {
+          opacity: 1; }
+      @media (min-width: 768px) {
+        /* line 108, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+        .footer-column .footer-social li a {
+          font-size: 24px; } }
+      /* line 123, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-column .footer-social li a:hover {
+        color: #d72538; }
+
+/* line 132, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+.footer-links-list li {
+  line-height: 32px; }
+  /* line 135, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-links-list li:first-child a {
+    font-weight: 700;
+    color: black; }
+  /* line 140, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-links-list li a {
+    color: #414141;
+    text-decoration: none;
+    transition: color 150ms ease-in-out; }
+    /* line 144, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-links-list li a:hover {
+      color: #d72538; }
+
+/* line 151, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+.footer-logos {
+  max-width: 280px;
+  margin: 0 auto; }
+  @media (min-width: 569px) {
+    /* line 151, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-logos {
+      max-width: none; } }
+  @media (min-width: 768px) {
+    /* line 151, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-logos {
+      max-width: 280px; } }
+  @media screen and (max-width: 768px) {
+    /* line 151, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-logos {
+      max-width: 390px; } }
+  /* line 163, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-logos a {
+    display: inline-block;
+    vertical-align: middle; }
+    /* line 166, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-logos a:first-child {
+      margin-bottom: 30px; }
+    /* line 169, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-logos a:last-child {
+      margin-left: 12px; }
+    @media (min-width: 768px) {
+      /* line 172, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-logos a:not(:first-child) {
+        max-width: 70px; } }
+    @media (min-width: 992px) {
+      /* line 172, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-logos a:not(:first-child) {
+        max-width: none; } }
+  /* line 181, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-logos select {
+    margin-top: 15px;
+    height: 40px;
+    width: 70%;
+    color: #262626;
+    border: 2px solid #262626;
+    background: transparent; }
+
+/* line 191, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+.app-links {
+  margin-top: 18px;
+  font-size: 0; }
+  /* line 194, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .app-links a {
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none; }
+    /* line 198, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .app-links a:last-child {
+      margin-left: 8px; }
+    @media (min-width: 569px) {
+      /* line 194, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .app-links a {
+        width: 114px; } }
+    @media (min-width: 768px) {
+      /* line 194, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .app-links a {
+        width: 82px; } }
+    @media (min-width: 992px) {
+      /* line 194, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .app-links a {
+        width: 110px; } }
+    @media (min-width: 1200px) {
+      /* line 194, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .app-links a {
+        width: auto; } }
+
+/* line 216, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+.footer-bottom {
+  background-color: #4e4e4e;
+  font-size: 14px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center; }
+  @media (min-width: 569px) {
+    /* line 216, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-bottom {
+      font-size: 12px; } }
+  @media (min-width: 768px) {
+    /* line 216, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-bottom {
+      font-size: 14px; } }
+  /* line 231, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-bottom a {
+    color: #fff;
+    text-decoration: none; }
+    /* line 234, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-bottom a:hover {
+      color: #ebebeb; }
+  /* line 238, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-bottom .grid {
+    margin: 15px auto 0 auto;
+    padding: 25px; }
+    /* line 241, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-bottom .grid span {
+      margin: 0 15px; }
+    @media screen and (max-width: 569px) {
+      /* line 238, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-bottom .grid {
+        padding: 0 20px; } }
+    @media (min-width: 569px) {
+      /* line 238, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-bottom .grid {
+        width: 568px;
+        padding: 0 20px; } }
+    @media (min-width: 768px) {
+      /* line 238, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-bottom .grid {
+        width: 768px;
+        padding: 0 20px; } }
+    @media (min-width: 992px) {
+      /* line 238, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-bottom .grid {
+        width: 992px; } }
+    @media (min-width: 1200px) {
+      /* line 238, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+      .footer-bottom .grid {
+        width: 1200px; } }
+    /* line 261, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-bottom .grid:first-child {
+      margin: 25px auto 0 auto; }
+    /* line 264, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+    .footer-bottom .grid:last-child {
+      margin: 15px auto 25px auto; }
+  /* line 269, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+  .footer-bottom .legal a {
+    font-weight: 800; }
+
+/* line 275, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_footer.scss */
+.bkt-icon {
+  min-height: 16px;
+  margin-left: 5px;
+  margin-bottom: 3px; }
+
+/* line 1, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+#pasos-main-wrap {
+  position: relative;
+  font-family: 'Roboto', Arial, sans-serif;
+  overflow: hidden; }
+  /* line 7, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #pasos-main-wrap.num-2 #counter-wrap .counter-circle {
+    background-color: #0c9f8d; }
+    /* line 9, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+    #pasos-main-wrap.num-2 #counter-wrap .counter-circle span {
+      opacity: 0; }
+      /* line 11, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+      #pasos-main-wrap.num-2 #counter-wrap .counter-circle span:nth-child(2) {
+        opacity: 1; }
+  /* line 20, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #pasos-main-wrap.num-3 #counter-wrap .counter-circle {
+    background-color: #ca2538; }
+    /* line 22, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+    #pasos-main-wrap.num-3 #counter-wrap .counter-circle span {
+      opacity: 0; }
+      /* line 24, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+      #pasos-main-wrap.num-3 #counter-wrap .counter-circle span:nth-child(3) {
+        opacity: 1; }
+  /* line 33, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #pasos-main-wrap.section-1 .bg-img:last-child {
+    opacity: 0; }
+  /* line 40, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #pasos-main-wrap.section-2 .bg-img:last-child, #pasos-main-wrap.section-2 .bg-img:nth-last-child(2) {
+    opacity: 0; }
+  /* line 47, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #pasos-main-wrap.section-3 .bg-img:last-child, #pasos-main-wrap.section-3 .bg-img:nth-last-child(2), #pasos-main-wrap.section-3 .bg-img:nth-last-child(3) {
+    opacity: 0; }
+  /* line 54, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #pasos-main-wrap.section-4 .bg-img:last-child, #pasos-main-wrap.section-4 .bg-img:nth-last-child(2), #pasos-main-wrap.section-4 .bg-img:nth-last-child(3), #pasos-main-wrap.section-4 .bg-img:nth-last-child(4) {
+    opacity: 0; }
+  /* line 61, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #pasos-main-wrap.section-5 .bg-img:last-child, #pasos-main-wrap.section-5 .bg-img:nth-last-child(2), #pasos-main-wrap.section-5 .bg-img:nth-last-child(3), #pasos-main-wrap.section-5 .bg-img:nth-last-child(4), #pasos-main-wrap.section-5 .bg-img:nth-last-child(5) {
+    opacity: 0; }
+  /* line 68, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #pasos-main-wrap.section-6 .bg-img:last-child, #pasos-main-wrap.section-6 .bg-img:nth-last-child(2), #pasos-main-wrap.section-6 .bg-img:nth-last-child(3), #pasos-main-wrap.section-6 .bg-img:nth-last-child(4), #pasos-main-wrap.section-6 .bg-img:nth-last-child(5), #pasos-main-wrap.section-6 .bg-img:nth-last-child(6) {
+    opacity: 0; }
+  /* line 73, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #pasos-main-wrap .pasos-section {
+    font-size: 0;
+    text-align: right;
+    box-sizing: border-box; }
+    /* line 77, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+    #pasos-main-wrap .pasos-section .heading {
+      font-size: 48px;
+      line-height: 48px;
+      font-weight: 700; }
+    /* line 82, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+    #pasos-main-wrap .pasos-section > div {
+      width: 50%;
+      display: inline-block;
+      vertical-align: top;
+      z-index: 4;
+      position: relative; }
+      @media only screen and (max-width: 768px) {
+        /* line 82, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+        #pasos-main-wrap .pasos-section > div {
+          width: 100%; } }
+    /* line 92, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+    #pasos-main-wrap .pasos-section .text {
+      height: 100vh;
+      font-size: 18px;
+      text-align: left;
+      transition: all 150ms ease-in-out;
+      padding: 10px 15px;
+      background-color: #f6f6f6;
+      padding-left: 50px;
+      box-sizing: border-box; }
+      /* line 101, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+      #pasos-main-wrap .pasos-section .text h2 {
+        margin: 0; }
+
+/* line 108, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+.bg-img {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: 3;
+  transition: all 800ms ease-in-out; }
+
+/* line 121, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+.text-wrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  left: 70px;
+  right: 70px;
+  max-width: 100%; }
+  /* line 129, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  .text-wrap p {
+    font-size: 20px;
+    margin-top: 15px; }
+
+/* line 135, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+.trigger {
+  top: 0 !important;
+  position: static !important;
+  width: auto !important;
+  opacity: 0; }
+
+/* line 142, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+#counter-wrap {
+  position: absolute;
+  z-index: 6;
+  text-align: center;
+  left: 0;
+  right: 0;
+  transition: all 400ms ease-in-out;
+  opacity: 0; }
+  /* line 150, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #counter-wrap.is-visible {
+    opacity: 1;
+    top: 50% !important;
+    transform: translateY(-50%); }
+  /* line 155, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+  #counter-wrap .counter-circle {
+    height: 100px;
+    width: 100px;
+    background-color: #f3ad1d;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 100px;
+    position: relative;
+    transition: all 300ms ease-in-out; }
+    /* line 164, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+    #counter-wrap .counter-circle span {
+      transform: translate3d(0, 0, 0);
+      font-size: 60px;
+      font-weight: 700;
+      position: absolute;
+      left: 0;
+      right: 0;
+      transition: opacity 300ms ease-in-out;
+      color: white;
+      opacity: 0; }
+      /* line 174, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+      #counter-wrap .counter-circle span:nth-child(1) {
+        opacity: 1; }
+  @media only screen and (max-width: 768px) {
+    /* line 142, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_pasos-section.scss */
+    #counter-wrap {
+      display: none; } }
+
+/* line 2, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_site-map.scss */
+body.site-map ul ul {
+  margin-left: 20px; }
+
+/*# sourceMappingURL=main.css.map */

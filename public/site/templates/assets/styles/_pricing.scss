@@ -1,0 +1,238 @@
+section.pricing {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1180px * .8;
+  margin-bottom: $vs-50p;
+  h2 {
+    text-align: center;
+    margin-bottom: $vs-50p;
+  }
+  figure.badge-annual {
+    background-color: $color-success;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px $color-success;
+    color: white;
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: $vs-15p;
+      color: white;
+    }
+    p.k-xl {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: $vs-15p;
+      sup {
+        top: -0.25em;
+      }
+      span{
+        font-size: .5em;
+      }
+    }
+    p {
+      margin-bottom: $vs-15p;
+      strong {
+        font-size: 1.5em;
+      }
+    }
+    p.k-xs{
+      font-size: 12px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .badge-footer {
+      display: flex;
+      height: 45px;
+      align-items: center;
+      width: 100%;
+      .right-side {
+        margin-left: auto;
+      }
+    }
+    .k-annual-badge-button {
+      a {
+        text-decoration: none !important;
+      }
+      button {
+        padding: 6px 3px 5px 20px;
+        color: $color-inverse;
+        background-color: $color-success;
+        border: 2px solid $color-inverse;
+        border-radius: 20px;
+        font-size: 19px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 150ms ease-in-out;
+        cursor: pointer;
+        span {
+          display: flex;
+          width: 10px;
+          height: 10px;
+          margin-right: 3px;
+          margin-left: 5px;
+          padding: 7px;
+          border-radius: 50px;
+          background-color: $color-inverse;
+          svg {
+            max-width: 15px;
+            display: none;
+            transition: all 150ms ease-in-out;
+          }
+        }
+        &:hover {
+          background-color: $color-success - 20;
+          span {
+            svg {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  figure.badge-annual-pricing {
+    background-color: $color-success;
+    padding: 20px;
+    border-radius: 20px;
+    border: solid 3px $color-success;
+    color: white;
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: $vs-15p;
+      color: white;
+    }
+    p.k-xl {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: $vs-15p;
+      sup {
+        top: -0.25em;
+      }
+      span{
+        font-weight: 400;
+      }
+    }
+    p {
+      margin-bottom: $vs-15p;
+      strong {
+        font-size: 1.5em;
+      }
+    }
+    p.k-xs{
+      font-size: 12px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .badge-footer {
+      display: flex;
+      height: 45px;
+      align-items: center;
+      width: 100%;
+      .right-side {
+        margin-left: auto;
+      }
+    }
+    .k-annual-badge-button {
+      a {
+        text-decoration: none !important;
+      }
+      button {
+        padding: 6px 3px 5px 20px;
+        color: $color-inverse;
+        background-color: $color-success;
+        border: 2px solid $color-inverse;
+        border-radius: 20px;
+        font-size: 19px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 150ms ease-in-out;
+        cursor: pointer;
+        span {
+          display: flex;
+          width: 10px;
+          height: 10px;
+          margin-right: 3px;
+          margin-left: 5px;
+          padding: 7px;
+          border-radius: 50px;
+          background-color: $color-inverse;
+          svg {
+            max-width: 15px;
+            display: none;
+            transition: all 150ms ease-in-out;
+          }
+        }
+        &:hover {
+          background-color: $color-success - 20;
+          span {
+            svg {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  figure.badge-temporary {
+    background-color: transparent;
+    border: solid 3px $color-warning;
+    padding: 20px;
+    border-radius: 20px;
+    color: $color-warning;
+    h3 {
+      font-size: 1.5em;
+      margin-bottom: $vs-15p;
+      color: $color-warning;
+    }
+    p.k-xl {
+      font-size: 3em;
+      font-weight: bold;
+      margin-bottom: $vs-15p;
+      sup {
+        top: -0.25em;
+      }
+      span{
+        font-weight: 400;
+      }
+    }
+    p {
+      margin-bottom: $vs-15p;
+      strong { font-size: 1.5em; }
+    }
+    p.k-xs{
+      font-size: 12px;
+    }
+    a {
+      color: $color-warning;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .badge-footer {
+      display: flex;
+      height: 45px;
+      align-items: center;
+      width: 100%;
+      .right-side {
+        margin-left: auto;
+      }
+    }
+  }
+}

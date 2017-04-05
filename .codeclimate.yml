@@ -1,0 +1,10 @@
+---
+engines:
+  csslint:
+    enabled: true
+ratings:
+  paths:
+  - "**.css"
+exclude_paths:
+- "**/*"
+- "!public/site/templates/styles/k-*.css"

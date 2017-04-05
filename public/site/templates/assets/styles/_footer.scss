@@ -1,0 +1,279 @@
+// *------------------- Footer --------------------*
+// font family
+$font-family-base: 'Roboto', Helvetica, Arial, sans-serif;
+$headings-font-family: $font-family-base;
+
+// media query
+$screen-xs-min: 569px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+$screen-xs-max: $screen-sm-min - 1;
+footer {
+    background-color: darken($color-inverse, 8%);
+    font-family: $font-family-base;
+    font-size: 18px;
+    position: relative;
+    overflow: hidden;
+    @media (min-width: $screen-xs-min) {
+        font-size: 18px;
+    }
+    @media (min-width: $screen-sm-min) {
+        font-size: 16px;
+    }
+    @media (min-width: $screen-md-min) {
+        font-size: 18px;
+    }
+}
+
+.footer-container {
+    text-align: center;
+    padding: 26px 0 10px;
+    position: relative;
+        &:before {
+        content:'';
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 50px;
+        height: 100px;
+        background: url('../images/mi-bici-footer-circle.svg') no-repeat;
+        background-size: cover;
+        margin: auto;
+        @media (min-width:$screen-sm-min) {
+            width: 11px;
+        }
+        @media (min-width: 814px) {
+            width: 50px;
+        }
+        @media (min-width: 990px) {
+            width: 34px;
+        }
+        @media (min-width: 1000px) {
+             width: 50px;
+        }
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    .grid {
+        max-width: 1200px;
+        margin: 0 auto;
+        @media (min-width: $screen-xs-min) {
+        width: 568px;
+        }
+        @media (min-width: $screen-sm-min) {
+        width: 768px;
+        text-align: left;
+        }
+        @media (min-width: $screen-md-min) {
+        width: 992px;
+        }
+        @media (min-width: $screen-lg-min) {
+        width: 1200px;
+        }
+    }
+}
+
+.unit.one-quarter {
+  @media screen and (max-width: 768px){
+    &.unit{
+      width:50%;
+    }
+  }
+}
+
+.footer-column {
+  &:nth-child(3) {
+      @media (min-width: 568px) {
+          clear: both;
+      }
+      @media (min-width: $screen-sm-min) {
+        clear: none;
+      }
+  }
+    .footer-social {
+        font-size: 0;
+        margin-top: 8px;
+        li {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 9px;
+            &:first-child {
+                margin-left: 0;
+            }
+            a {
+              color: $color-primary;
+              font-size: 28px;
+              transition: color 150ms ease-in-out;
+              img {
+                width: 25px;
+                opacity: .8;
+                transition: all 150ms ease-in-out;
+                &:hover {
+                  opacity: 1;
+                }
+              }
+              @media (min-width: 768px) {
+                  font-size: 24px;
+              }
+              &:hover {
+                  color: $color-secondary;
+              }
+            }
+        }
+    }
+}
+
+.footer-links-list {
+    li {
+        line-height: 32px;
+        &:first-child {
+            a {
+              font-weight: 700;
+              color: black;
+            }
+        }
+        a {
+            color: $color-primary;
+            text-decoration: none;
+            transition: color 150ms ease-in-out;
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+}
+
+.footer-logos {
+  max-width: 280px;
+  margin: 0 auto;
+  @media (min-width: $screen-xs-min) {
+      max-width: none;
+  }
+  @media (min-width: $screen-sm-min) {
+      max-width: 280px;
+  }
+  @media screen and (max-width:$screen-sm-min) {
+      max-width: 390px;
+  }
+  a {
+      display: inline-block;
+      vertical-align: middle;
+      &:first-child {
+          margin-bottom: 30px;
+      }
+      &:last-child {
+          margin-left: 12px;
+      }
+      &:not(:first-child) {
+          @media (min-width: $screen-sm-min) {
+              max-width: 70px;
+          }
+          @media (min-width: $screen-md-min) {
+              max-width: none;
+          }
+      }
+  }
+  select {
+    margin-top: 15px;
+    height: 40px;
+    width: 70%;
+    color: $gray-darker;
+    border: 2px solid $gray-darker;
+    background: transparent;
+  }
+}
+
+.app-links {
+    margin-top: 18px;
+    font-size: 0;
+    a {
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        &:last-child {
+            margin-left: 8px;
+        }
+        @media (min-width: $screen-xs-min) {
+            width: 114px;
+        }
+        @media (min-width: $screen-sm-min) {
+            width: 82px;
+        }
+        @media (min-width: $screen-md-min) {
+            width: 110px;
+        }
+        @media (min-width: $screen-lg-min) {
+            width: auto;
+        }
+    }
+}
+
+.footer-bottom {
+  background-color: darken(desaturate($color-inverse, 1.2821), 69.4118);
+  font-size: 14px;
+  color: $color-inverse;
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  @media (min-width: $screen-xs-min) {
+    font-size: 12px;
+  }
+  @media (min-width: $screen-sm-min) {
+    font-size: 14px;
+  }
+  a {
+    color: $color-inverse;
+    text-decoration: none;
+    &:hover {
+        color: $color-inverse - 20;
+    }
+  }
+  .grid {
+    margin: $vs-15p auto 0 auto;
+    padding: $vs-25p;
+    span {
+      margin:0 $vs-15p;
+    }
+    @media screen and (max-width: $screen-xs-min) {
+      padding: 0 20px;
+    }
+     @media (min-width: $screen-xs-min) {
+      width: 568px;
+      padding: 0 20px;
+    }
+    @media (min-width: $screen-sm-min) {
+      width: 768px;
+      padding: 0 20px;
+    }
+    @media (min-width: $screen-md-min) {
+      width: 992px;
+    }
+    @media (min-width: $screen-lg-min) {
+      width: 1200px;
+    }
+    &:first-child {
+      margin: $vs-25p auto 0 auto;
+    }
+    &:last-child {
+      margin: $vs-15p auto $vs-25p auto;
+    }
+  }
+  .legal {
+    a {
+      font-weight: 800;
+    }
+  }
+}
+
+.bkt-icon {
+    min-height: 16px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
