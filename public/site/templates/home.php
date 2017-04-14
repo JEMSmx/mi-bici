@@ -1,21 +1,4 @@
 <?php include('./_head.php'); ?>
-<script type="text/javascript">
-  var text1="<?php echo __("millones de viajes"); ?>";
-  var text2="<?php echo __("vanguardia"); ?>";
-  var text3="<?php echo __("destinos"); ?>";
-  var text4="<?php echo __("ciudad"); ?>";
-  var text5="<?php echo __("tecnología"); ?>";
-  var text6="<?php echo __("comunidad"); ?>";
-  var text7="<?php echo __("miles de usuarios"); ?>";
-  var text = [text1,text2,text3,text4,text5,text6,text7];
-  var counter = 0;
-  setInterval(change, 4500);
-  function change() {
-    document.getElementById("changeText").innerHTML = text[counter];
-      counter++;
-      if(counter >= text.length) { counter = 0; }
-  }
-</script>
   <section class="k-message" id="home-message">
     <div class="k-message-container">
       <div class="k-message-center">
@@ -172,7 +155,7 @@
   <section class="k-section k-auto-banner">
   <a href="<?php echo $page->url1; ?>">
   <?php if($page->img1){
-          $img = $page->img1->size(800, 200, array( 'upscaling' => false, 'cropping' => true, 'quality' => 90 )); ?>
+          $img = $page->img1->size(800, 200, array('upscaling' => true, 'cropping' => false, 'quality' => 90)); ?>
     <img src="<?php echo $img->url ?>" alt="">
   <?php } ?>
   </a>
@@ -203,16 +186,10 @@
 <?php include('./_foot.php'); ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.js"></script>
-<script>
-
-</script>
-<script>
+<script type="text/javascript">
    function toggMessage(){
     $("#home-message").slideToggle("");
-
   }
-</script>
-<script type="text/javascript">
   var userFeed = new Instafeed({
     get: 'user',
     userId: '1413909578',
@@ -225,10 +202,23 @@
     links: false
   });
   userFeed.run();
-</script>
-<script>
     AOS.init({
         easing: 'ease-in-back',
         duration: 1000
     });
+  var text1="<?php echo __("millones de viajes"); ?>";
+  var text2="<?php echo __("vanguardia"); ?>";
+  var text3="<?php echo __("destinos"); ?>";
+  var text4="<?php echo __("ciudad"); ?>";
+  var text5="<?php echo __("tecnología"); ?>";
+  var text6="<?php echo __("comunidad"); ?>";
+  var text7="<?php echo __("miles de usuarios"); ?>";
+  var text = [text1,text2,text3,text4,text5,text6,text7];
+  var counter = 0;
+  setInterval(change, 4500);
+  function change() {
+    document.getElementById("changeText").innerHTML = text[counter];
+      counter++;
+      if(counter >= text.length) { counter = 0; }
+  }
 </script>
