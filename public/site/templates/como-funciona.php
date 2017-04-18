@@ -118,24 +118,18 @@
 
         trigger.stick_in_parent({spacer: false, offset_top: 142})
         .on("sticky_kit:stick", function(e) {
-            //section.removeClass('active');
-          //$(this).parents('.pasos-section').addClass('active');
            section.parent().removeClass('intro-section section-1 section-2 section-3 section-4 section-5 section-6 num-1 num-2 num-3');
            $(this).parents('#pasos-main-wrap').addClass($(this).parents('.pasos-section').attr('id'));
            $(this).parents('#pasos-main-wrap').addClass($(this).attr('data-step'));
           })
 
         .on("sticky_kit:unbottom", function(e) {
-           //section.removeClass('active');
-           //$(this).parents('section').addClass('active');
           section.parent().removeClass('intro-section section-1 section-2 section-3 section-4 section-5 section-6 num-1 num-2 num-3');
           $(this).parents('#pasos-main-wrap').addClass($(this).parents('.pasos-section').attr('id'));
           $(this).parents('#pasos-main-wrap').addClass($(this).attr('data-step'));
           })
 
         $(document.body).trigger("sticky_kit:recalc");
-
-        //----  sticky-kit instance for counter
 
         var counter = $('#counter-wrap');
         counter.stick_in_parent({spacer: false, offset_top: 290})

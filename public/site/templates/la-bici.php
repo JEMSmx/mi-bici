@@ -27,7 +27,7 @@
         </div>
         <!--  Luces  -->
         <div class="k-showcase-split-two">
-          <div class="k-showcase-split-two--item k-showcase-image" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/luces-traseras.png')">
+          <div class="k-showcase-split-two--item k-showcase-image" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/luces-traseras.jpg')">
             <div class="k-showcase--item--color">
             </div>
           </div>
@@ -37,7 +37,7 @@
               <p><?php echo __("LEDs frontales y traseros, integrados en la estructura de la bicicleta. Encienden gracias a la energía producida por el movimiento de las ruedas (neumáticos). Para tu seguridad, un dispositivo hace que permanezcan encendidas por algunos minutos mientras la bicicleta no está en movimiento."); ?></p>
             </div>
           </div>
-          <div class="k-showcase-split-two--item k-showcase-image-responsive" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/luces-traseras.png')">
+          <div class="k-showcase-split-two--item k-showcase-image-responsive" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/luces-traseras.jpg')">
             <div class="k-showcase--item--color">
             </div>
           </div>
@@ -51,14 +51,14 @@
               <?php echo __("Cómodo y resistente. Diseñado y fabricado con materiales para reducir impactos. La  escala numérica en el poste te permite  ajustar la altura del asiento de forma rápida y accesible. Para que seas más visible, contiene reflejantes en la parte trasera."); ?></p>
             </div>
           </div>
-          <div class="k-showcase-split-two--item" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/poste-asiento.png')">
+          <div class="k-showcase-split-two--item" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/poste-asiento.jpg')">
             <div class="k-showcase--item--color">
             </div>
           </div>
         </div>
         <!--  Parrilla y canasta-->
         <div class="k-showcase-split-two">
-          <div class="k-showcase-split-two--item k-showcase-image" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/parrilla-delantera.png')">
+          <div class="k-showcase-split-two--item k-showcase-image" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/parrilla-delantera.jpg')">
             <div class="k-showcase--item--color">
             </div>
           </div>
@@ -68,7 +68,7 @@
               <p><?php echo __("Práctico accesorio donde podrás cargar tus pertenencias de manera segura, cuenta con elásticos y varias opciones de sujeción."); ?></p>
             </div>
           </div>
-          <div class="k-showcase-split-two--item k-showcase-image-responsive" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/parrilla-delantera.png')">
+          <div class="k-showcase-split-two--item k-showcase-image-responsive" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/parrilla-delantera.jpg')">
             <div class="k-showcase--item--color">
             </div>
           </div>
@@ -81,14 +81,14 @@
               <p><?php echo __("Tres diferentes velocidades integradas que puedes seleccionar desde el control de giro en el puño. Facilita el arranque y desplazamiento en las pendientes de la ciudad."); ?></p>
             </div>
           </div>
-          <div class="k-showcase-split-two--item"  style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/tres-velocidades.png')">
+          <div class="k-showcase-split-two--item"  style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/tres-velocidades.jpg')">
             <div class="k-showcase--item--color">
             </div>
           </div>
         </div>
         <!--  Cubre cadena y salpicaderas-->
         <div class="k-showcase-split-two">
-          <div class="k-showcase-split-two--item k-showcase-image" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/cubrecadena-salpicaderas.png')">
+          <div class="k-showcase-split-two--item k-showcase-image" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/cubrecadena-salpicaderas.jpg')">
             <div class="k-showcase--item--color">
             </div>
           </div>
@@ -98,7 +98,7 @@
               <p><?php echo __("Elementos que evitan que manches tu ropa al pedalear y además, elimina riesgos de que te atasques con algún elemento de la rueda trasera (¡con las faldas por ejemplo!)."); ?></p>
             </div>
           </div>
-          <div class="k-showcase-split-two--item k-showcase-image-responsive" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/cubrecadena-salpicaderas.png')">
+          <div class="k-showcase-split-two--item k-showcase-image-responsive" style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/cubrecadena-salpicaderas.jpg')">
             <div class="k-showcase--item--color">
             </div>
           </div>
@@ -111,7 +111,7 @@
               <p><?php echo __("Sistema de seguridad que te permite  tomar o dejar una bicicleta de forma automática en las estaciones. Mantiene ancladas las bicicletas en las estaciones de manera segura."); ?> </p>
             </div>
           </div>
-          <div class="k-showcase-split-two--item"  style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/anclaje.png')">
+          <div class="k-showcase-split-two--item"  style="background-image:  url('<?php echo $config->urls->templates; ?>static/455375-147357/images/anclaje.jpg')">
             <div class="k-showcase--item--color">
             </div>
           </div>

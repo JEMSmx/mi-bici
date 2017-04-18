@@ -11,7 +11,7 @@
     <h2 class="k-heading"><strong><?php echo __("¿Qué es la suscripción temporal?"); ?></strong></h2>
     <p><?php echo __("Acceso ilimitado a las bicicletas MIBICI por un periodo de 1, 3 ó 7 días y en los horarios de servicio"); ?> <br>
       <?php echo __("Se genera un código en la pantalla del quiosco de la estación que debe ser tecleado en el puerto de anclaje para liberar una bicicleta."); ?></p>
-    <p align="center"><img alt="" src="<?php echo $config->urls->templates; ?>static/455375-147357/images/degollado-for-susc-temp.png" style="max-width:100%"></p>
+    <p align="center"><img alt="" src="<?php echo $config->urls->templates; ?>static/455375-147357/images/degollado-for-susc-temp.jpg" style="max-width:100%"></p>
     <h2 class="k-heading"><strong><?php echo __("¿Qué incluye la suscripción temporal?"); ?></strong></h2>
     <p>
        <?php echo __("Todos los viajes que realices de una estación a otra en menos de 30 minutos están incluidos en tu suscripción"); ?> <br>
