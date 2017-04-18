@@ -1207,7 +1207,7 @@ dl {
 .complement-info-card--check-map-250 {
   padding: 0 !important;
   background-color: #10af9d;
-  background-image: url("../images/degollado-for-background.png");
+  background-image: url("../images/degollado-for-background.jpg");
   background-size: cover; }
   /* line 1146, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
   .complement-info-card--check-map-250 .color-layer {
@@ -1242,7 +1242,7 @@ dl {
 .complement-info-card--meet-the-bike {
   padding: 0 !important;
   background-color: #10af9d;
-  background-image: url("../images/paraninfo-for-background.png");
+  background-image: url("../images/paraninfo-for-background.jpg");
   background-size: cover; }
   /* line 1180, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/main.scss */
   .complement-info-card--meet-the-bike .color-layer {
@@ -1416,7 +1416,7 @@ body.home .map-wrapper {
   margin-right: auto;
   margin-bottom: 75px;
   margin-left: auto;
-  background-image: url("../images/map-background.png");
+  background-image: url("../images/map-background.jpg");
   height: 300px; }
   /* line 47, /Users/ErickLeos/Dropbox/Dev/mi-bici/public/site/templates/assets/styles/_home.scss */
   body.home .map-wrapper .map-wrapper-color {

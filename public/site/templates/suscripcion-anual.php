@@ -15,7 +15,7 @@
       <?php echo __("horarios de servicio"); ?></a> <br>
       <?php echo __("Recibirás la llave MIBICI que te permite liberar automáticamente la bicicleta en cualquiera de las estaciones por un costo de $365.00 MXN."); ?>
     </p>
-    <p align="center"><img alt="" src="<?php echo $config->urls->templates; ?>static/455375-147357/images/susc-anual.png" style="max-width:100%"></p>
+    <p align="center"><img alt="" src="<?php echo $config->urls->templates; ?>static/455375-147357/images/susc-anual.jpg" style="max-width:100%"></p>
     <h2 class="k-heading"><strong><?php echo __("¿Qué incluye la suscripción anual?"); ?></strong></h2>
     <p><?php echo __("Todos los viajes que realices de una estación a otra en menos de 30 minutos están incluidos en tu suscripción."); ?> <br>
    <?php echo __(" Es decir: viajes ilimitados de menos 30 minutos sin cargo extra durante el periodo de la suscripción adquirida."); ?></p>

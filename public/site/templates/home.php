@@ -153,10 +153,10 @@
 
 <?php if($page->active){ ?>
   <section class="k-section k-auto-banner">
-  <a href="<?php echo $page->url1; ?>">
+  <a href="<?php echo $page->url1; ?>" target="_blank">
   <?php if($page->img1){
           $img = $page->img1->size(800, 200, array('upscaling' => true, 'cropping' => false, 'quality' => 90)); ?>
-    <img src="<?php echo $img->url ?>" alt="">
+    <img src="<?php echo $img->url ?>">
   <?php } ?>
   </a>
   </section>
