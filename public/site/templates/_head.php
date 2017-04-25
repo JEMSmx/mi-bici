@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
+  <html lang="<?php echo (isset($_COOKIE['language'])) ? ($_COOKIE['language']=='1087') ? 'es':'en':'es'; ?>">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title><?php echo $page->title; ?> |  <?php echo __("MIBICI"); ?> </title>
