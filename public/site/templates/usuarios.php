@@ -10,6 +10,4 @@
   <section class="k-section-80 wrap wider">
     <iframe frameborder="0" height="1000px" scrolling="no" src="https://amg.bktbp.com/usuario" width="100%" style="margin-bottom: 75px;"></iframe>
   </section>
-
-
 <?php include("./_foot.php"); ?>
