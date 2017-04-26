@@ -12,6 +12,4 @@
       <?php echo $page->body; ?>
     </article>
   </section>
-
-
 <?php include("./_foot.php"); ?>

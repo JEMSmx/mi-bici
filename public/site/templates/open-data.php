@@ -118,7 +118,6 @@
   }
 </style>
   <!-- Section: More info <(^_^<) 4 -->
-
 <?php include("./_foot.php"); ?>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {

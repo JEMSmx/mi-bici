@@ -2,7 +2,7 @@
         <div class="footer-container">
             <div class="grid">
             <div class="footer-logos unit one-quarter">
-                <a href="<?php echo $config->urls->root; ?>"><img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/mi-bici-logo-footer.svg" alt="<?php echo __("MiBici"); ?>" /></a>
+                <a href="<?php echo $config->urls->root; ?>"><img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/mi-bici-logo-footer.svg" alt="<?php echo __("MIBICI"); ?>" /></a>
                 <a href="http://www.jalisco.gob.mx/" target="_blank"><img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/mi-bici-jalisco-logo.svg" alt="<?php echo __("Gobierno del estado de Jalisco"); ?>" /></a>
                 <a href="http://www.jalisco.gob.mx/es/gobierno/organismos/IMTJ" target="_blank">
                 <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/mi-bici-imtj-logo.svg" alt="<?php echo __("IMTJ"); ?>" /></a>
@@ -41,7 +41,7 @@
                     <li><a href="<?php echo $pages->get(1092)->url; ?>" alt="<?php echo $pages->get(1092)->title; ?>"><?php echo $pages->get(1092)->title; ?></a></li>
                 </ul>
                 <ul class="footer-social">
-                    <li><a href="https://www.facebook.com/MiBiciPublica/?fref=ts" target="_blank" rel="noreferrer">
+                    <li><a href="https://www.facebook.com/MiBiciPublica/?fref=ts" alt="<?php echo __("Facebook MIBICI"); ?>" target="_blank" rel="noreferrer">
                     <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/facebook-alt-icon.svg" alt="<?php echo __("Facebook MIBICI"); ?>">
                     <span class="sr-only"><?php echo __("Sigue a MiBici en Facebook"); ?></span></a></li>
                     <li><a href="https://twitter.com/MiBiciPublica" target="_blank" rel="noreferrer"><img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/twitter-alt-icon.svg" alt="<?php echo __("Twitter MIBICI"); ?>">
@@ -75,7 +75,7 @@
     </footer>
           <!-- schema card -->
     <div itemscope itemtype="https://schema.org/Organization" class="sr-only">
-        <div itemprop="legalName"><?php echo __("MiBici"); ?></div>
+        <div itemprop="legalName"><?php echo __("MIBICI"); ?></div>
             <div itemprop="description"><?php echo __("Excelente auto-servicio de renta de bicicletas en el área metropolitana"); ?></div>
             <div itemprop="areaServed"><?php echo __("Jalisco, México"); ?></div>
         </div>
