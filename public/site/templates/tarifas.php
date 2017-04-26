@@ -1,5 +1,4 @@
 <?php include("./_head.php"); ?>
-
   <!-- Jumbotron: Page header -->
   <div class="k-jumbotron">
     <div class="k-page-header-80">
@@ -7,7 +6,6 @@
       <p><?php echo __("Conoce las diferentes opciones para acceder a MIBICI y elige la que más te convenga"); ?></p>
     </div>
   </div>
-
   <section class="k-section-80 pricing">
     <div class="grid">
       <div class="unit half">

@@ -6,24 +6,18 @@
       <p><?php echo $page->summary; ?></p>
     </div>
   </div>
-
-
   <section class="k-section-80">
-    <!-- Question 1-->
-
     <?php $questions=$pages->find("template=questions");
       foreach($questions as $number=>$question){ ?>
     <dl onclick="showAnsw(<?php echo $number ?>);">
       <dt>
         <?php echo $question->title; ?>
-<!--         <img id="chev-down-<?php echo $number ?>" src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/plus-icon.svg" alt=""><img id="chev-up-<?php echo $number ?>" src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/minus-icon.svg" alt="" style="display:none;">-->
       </dt>
       <dd id="answ-<?php echo $number ?>">
         <?php echo $question->answer; ?>
       </dd>
     </dl>
     <?php } ?>
-
   </section>
 <?php include("./_foot.php"); ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>

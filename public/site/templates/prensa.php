@@ -6,7 +6,6 @@
       <p><?php echo __("Información oficial y recursos gráficos para prensa del sistema de bicicleta pública MIBICI"); ?></p>
     </div>
   </div>
-
   <section class="k-section-80 media-press">
     <h2><?php echo __("Comunicados de prensa"); ?></h2>
     <?php $posts=$pages->find("template=posts, type.id=1");
@@ -29,9 +28,7 @@
       </div>
     </div>
     <?php } ?>
-
   </section>
-
   <section class="k-section-80 media-press">
     <h2><?php echo __("Fotografías para uso en prensa"); ?></h2>
     <?php $posts=$pages->find("template=posts, type.id=2");
@@ -55,7 +52,4 @@
     </div>
     <?php }?>
   </section>
-
-
 <?php include('./_foot.php'); ?>
-
