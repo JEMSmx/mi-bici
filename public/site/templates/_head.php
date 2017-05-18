@@ -12,11 +12,9 @@
   <meta property="og:title"              content="<?php echo __("MIBICI"); ?> | <?php echo $page->title; ?>" />
   <meta property="og:description"        content="<?php echo $page->summary; ?>" />
   <meta property="og:image"              content="https://www.mibici.net/site/assets/files/1/portada-1.jpg" />
-
-  <link rel="canonical" href="<?php echo $page->httpUrl(); ?>" />
-  <link rel="alternate" hreflang="en" href="<?php echo $page->httpUrl(); ?>" />
-  <link rel="alternate" hreflang="es" href="<?php echo $page->httpUrl(); ?>" />
-
+  <link rel="canonical" href="https://www.mibici.net" />
+  <link rel="alternate" hreflang="en" href="<?php echo str_replace("es", "en", $page->httpUrl()); ?>"; />
+  <link rel="alternate" hreflang="es" href="<?php echo str_replace("en", "es", $page->httpUrl()); ?>" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" integrity="sha256-K3Njjl2oe0gjRteXwX01fQD5fkk9JFFBdUHy/h38ggY=" crossorigin="anonymous" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
