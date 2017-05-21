@@ -10,7 +10,7 @@
     <div class="grid">
       <div class="unit half" align="center">
         <div class="head-data">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/icon-viajes.png" alt="<?php echo __("Total de viajes realizados"); ?>">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/icon-viajes.png" alt="<?php echo __("Total de viajes realizados"); ?>">
           <h2> <?php echo __("Total de viajes realizados"); ?></h2>
         </div>
         <div class="body-data">
@@ -21,7 +21,7 @@
       </div>
       <div class="unit half" align="center">
         <div class="head-data">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/user-icon.png" alt="<?php echo __("Usuarios registrados"); ?>">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/user-icon.png" alt="<?php echo __("Usuarios registrados"); ?>">
           <h2> <?php echo __("Registros totales"); ?></h2>
         </div>
         <div class="body-data">
@@ -127,7 +127,6 @@
   js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=1242879259163026";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
 setInterval(loadApi,1000);

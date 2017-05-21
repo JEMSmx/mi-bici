@@ -5,7 +5,7 @@
         <p><?php echo $page->notification ?></p>
       </div>
       <div class="k-message-close" onclick="toggMessage()">
-        <img src="<?php echo $config->urls->templates; ?>static/455375-1490396449/images/times.svg" alt="">
+        <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/times.svg" alt="">
       </div>
     </div>
   </section>
@@ -41,7 +41,7 @@
       <div class="unit one-third">
           <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100">
             <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-              <div class="k-container-img" style="width: 198px"><img src="<?php echo $config->urls->templates; ?>static/455375-1490396449/images/devuelve-icon.svg"></div>
+              <div class="k-container-img" style="width: 198px"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/devuelve-icon.svg"></div>
               <figcaption>
                 <h2 class="k-heading"><?php echo __("Libera"); ?></h2>
                 <p><?php echo __("Bicicletas siempre a tu disposición"); ?></p>
@@ -53,7 +53,7 @@
       <div class="unit one-third">
         <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="400">
           <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-            <div class="k-container-img"><img src="<?php echo $config->urls->templates; ?>static/455375-1490396449/images/pedalea-icon.svg"></div>
+            <div class="k-container-img"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/pedalea-icon.svg"></div>
             <figcaption>
               <h2 class="k-heading"><?php echo __("Pedalea"); ?></h2>
               <p><?php echo __("¡Disfruta la ciudad!"); ?></p>
@@ -65,7 +65,7 @@
       <div class="unit one-third">
         <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="800">
           <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-            <div class="k-container-img" style="width: 156px"><img src="<?php echo $config->urls->templates; ?>static/455375-1490396449/images/libera-icon.svg"></div>
+            <div class="k-container-img" style="width: 156px"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/libera-icon.svg"></div>
             <figcaption>
               <h2 class="k-heading"><?php echo __("Devuelve"); ?></h2>
               <p><?php echo __("Alguien más espera por ella."); ?></p>
@@ -161,14 +161,13 @@
   </a>
   </section>
 <?php } ?>
-
   <!-- Instafeed -->
   <div class="instagram">
     <section class="k-section-80">
       <div class="grid">
       <div class="instagram-head">
         <div class="instagram-logo-container">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1490396449/images/instagram-icon.svg" alt="">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/instagram-icon.svg" alt="">
         </div>
         <div class="instagram-text-container">
           <h2 class="k-xl"><?php echo __("MIBICI en fotografías #MIBICIpública"); ?></h2>
@@ -182,30 +181,12 @@
       </div>
     </section>
   </div>
-
 <?php include('./_foot.php'); ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.js"></script>
 <script type="text/javascript">
-   function toggMessage(){
+  function toggMessage(){
     $("#home-message").slideToggle("");
   }
-  var userFeed = new Instafeed({
-    get: 'user',
-    userId: '1413909578',
-    clientId: '107493f39f8844368cbbfe8a44677e06',
-    accessToken: '1413909578.1677ed0.f50956cea40a4df7b0fcca22c10c9130',
-    resolution: 'standard_resolution',
-    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
-    sortBy: 'most-recent',
-    limit: 8,
-    links: false
-  });
-  userFeed.run();
-    AOS.init({
-        easing: 'ease-in-back',
-        duration: 1000
-    });
   var text1="<?php echo __("millones de viajes"); ?>";
   var text2="<?php echo __("vanguardia"); ?>";
   var text3="<?php echo __("destinos"); ?>";
@@ -215,10 +196,28 @@
   var text7="<?php echo __("miles de usuarios"); ?>";
   var text = [text1,text2,text3,text4,text5,text6,text7];
   var counter = 0;
-  setInterval(change, 4500);
   function change() {
     document.getElementById("changeText").innerHTML = text[counter];
       counter++;
-      if(counter >= text.length) { counter = 0; }
+      if(counter >= text.length) counter = 0; 
   }
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '1413909578',
+    clientId: '107493f39f8844368cbbfe8a44677e06',
+    accessToken: '1413909578.1677ed0.f50956cea40a4df7b0fcca22c10c9130',
+    resolution: 'low_resolution',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+    sortBy: 'most-recent',
+    limit: 8,
+    links: false
+  });
+$(document).ready(function() {
+  userFeed.run();
+    AOS.init({
+        easing: 'ease-in-back',
+        duration: 1000
+    });
+  setInterval(change, 4500);
+});
 </script>

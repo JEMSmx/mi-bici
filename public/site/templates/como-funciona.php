@@ -101,13 +101,13 @@
       </div>
      </section>
       <span aria-hidden="true" id="bg-images">
-      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-1485995688/images/como-funciona-6.gif');"></span>
-      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-1485995688/images/como-funciona-6.gif');"></span>
-      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-1485995688/images/como-funciona-5.gif');"></span>
-      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-1485995688/images/como-funciona-4.gif');"></span>
-      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-1485995688/images/como-funciona-3.gif');"></span>
-      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-1485995688/images/como-funciona-2.gif');"></span>
-      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-1485995688/images/como-funciona-1.png')" ></span>
+      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-147357/images/como-funciona-6.gif');"></span>
+      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-147357/images/como-funciona-6.gif');"></span>
+      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-147357/images/como-funciona-5.gif');"></span>
+      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-147357/images/como-funciona-4.gif');"></span>
+      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-147357/images/como-funciona-3.gif');"></span>
+      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-147357/images/como-funciona-2.gif');"></span>
+      <span class="bg-img" style="background-image: url('<?php echo $config->urls->templates; ?>static/455375-147357/images/como-funciona-1.png')" ></span>
       </span>
     </main>
     <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
@@ -157,7 +157,7 @@
           <?php echo __("las necesidades de la ciudad."); ?></p>
           <a href="<?php echo $pages->get(1093)->url; ?>" alt="<?php echo $pages->get(1093)->title; ?>">
           <?php echo __("Conoce más"); ?></a>
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/foto-bici.png" alt="<?php echo __("MIBICI Bicicleta de Gudalajara"); ?>" align="center">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/foto-bici.png" alt="<?php echo __("MIBICI Bicicleta de Gudalajara"); ?>" align="center">
         </div>
       </div>
       <div class="unit half complement-info-card--register">

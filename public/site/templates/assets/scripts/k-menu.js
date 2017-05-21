@@ -29,5 +29,5 @@ function changeLan(path){
   else
     val='1087';
   createCookie('language', val, '7');
-  location.href="<?php echo $config->urls->root; ?>"+document.getElementById("lang").value+path;
+  location.href="/"+document.getElementById("lang").value+path;
 }

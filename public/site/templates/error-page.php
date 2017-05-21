@@ -16,6 +16,4 @@
       </div>
     </div>
   </section>
-
-
 <?php include("./_foot.php"); ?>

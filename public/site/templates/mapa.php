@@ -32,7 +32,6 @@
     <div itemprop="description"><?php echo __("Excelente auto-servicio de renta de bicicletas en el área metropolitana"); ?></div>
     <div itemprop="areaServed"><?php echo __("Jalisco, México"); ?></div>
   </div>
-  <script src="<?php echo $config->urls->templates; ?>static/455375-147357/scripts/main.min.js"></script>
   <script type="text/javascript">
     $(document).ready(function () {
       var height_window=$(window).height();

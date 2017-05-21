@@ -27,16 +27,16 @@
         <h2><?php echo __("Redes"); ?></h2>
         <div class="social-networks">
           <a href="https://www.facebook.com/MiBiciPublica" target="_blank" alt="Facebook MIBICI">
-            <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/facebook.svg" alt="">
+            <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/facebook.svg" alt="">
           </a>
           <a href="https://twitter.com/MiBiciPublica" target="_blank" alt="Twitter MIBICI">
-            <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/twitter.svg" alt="">
+            <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/twitter.svg" alt="">
           </a>
           <a href="http://instagram.com/mibicipublica" target="_blank" alt="instagram MIBICI">
-            <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/instagram.svg" alt="">
+            <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/instagram.svg" alt="">
           </a>
           <a href="https://www.youtube.com/user/MiBiciPublica/" target="_blank" alt="Youtube MIBICI">
-            <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/youtube.svg" alt="">
+            <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/youtube.svg" alt="">
           </a>
         </div>
       </div>
@@ -59,6 +59,4 @@
       </div>
     </div>
   </section>
-
-
 <?php include("./_foot.php"); ?>
