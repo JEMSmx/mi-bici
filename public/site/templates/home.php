@@ -195,7 +195,7 @@
     userId: '1413909578',
     clientId: '107493f39f8844368cbbfe8a44677e06',
     accessToken: '1413909578.1677ed0.f50956cea40a4df7b0fcca22c10c9130',
-    resolution: 'standard_resolution',
+    resolution: 'thumbnail',
     template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
     sortBy: 'most-recent',
     limit: 8,
