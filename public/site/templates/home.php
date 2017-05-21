@@ -5,7 +5,7 @@
         <p><?php echo $page->notification ?></p>
       </div>
       <div class="k-message-close" onclick="toggMessage()">
-        <img src="<?php echo $config->urls->templates; ?>static/455375-1490396449/images/times.svg" alt="">
+        <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/times.svg" alt="">
       </div>
     </div>
   </section>
@@ -41,7 +41,7 @@
       <div class="unit one-third">
           <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100">
             <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-              <div class="k-container-img" style="width: 198px"><img src="<?php echo $config->urls->templates; ?>static/455375-1490396449/images/devuelve-icon.svg"></div>
+              <div class="k-container-img" style="width: 198px"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/devuelve-icon.svg"></div>
               <figcaption>
                 <h2 class="k-heading"><?php echo __("Libera"); ?></h2>
                 <p><?php echo __("Bicicletas siempre a tu disposición"); ?></p>
@@ -53,7 +53,7 @@
       <div class="unit one-third">
         <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="400">
           <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-            <div class="k-container-img"><img src="<?php echo $config->urls->templates; ?>static/455375-1490396449/images/pedalea-icon.svg"></div>
+            <div class="k-container-img"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/pedalea-icon.svg"></div>
             <figcaption>
               <h2 class="k-heading"><?php echo __("Pedalea"); ?></h2>
               <p><?php echo __("¡Disfruta la ciudad!"); ?></p>
@@ -65,7 +65,7 @@
       <div class="unit one-third">
         <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="800">
           <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-            <div class="k-container-img" style="width: 156px"><img src="<?php echo $config->urls->templates; ?>static/455375-1490396449/images/libera-icon.svg"></div>
+            <div class="k-container-img" style="width: 156px"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/libera-icon.svg"></div>
             <figcaption>
               <h2 class="k-heading"><?php echo __("Devuelve"); ?></h2>
               <p><?php echo __("Alguien más espera por ella."); ?></p>
@@ -168,7 +168,7 @@
       <div class="grid">
       <div class="instagram-head">
         <div class="instagram-logo-container">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1490396449/images/instagram-icon.svg" alt="">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/instagram-icon.svg" alt="">
         </div>
         <div class="instagram-text-container">
           <h2 class="k-xl"><?php echo __("MIBICI en fotografías #MIBICIpública"); ?></h2>

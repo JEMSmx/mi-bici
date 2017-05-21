@@ -12,16 +12,16 @@
   <meta property="og:title"              content="<?php echo __("MIBICI"); ?> | <?php echo $page->title; ?>" />
   <meta property="og:description"        content="<?php echo $page->summary; ?>" />
   <meta property="og:image"              content="https://www.mibici.net/site/assets/files/1/portada-1.jpg" />
-  <link rel="canonical" href="https://www.mibici.net" />
-  <link rel="alternate" hreflang="en" href="<?php echo str_replace("es", "en", $page->httpUrl()); ?>"; />
-  <link rel="alternate" hreflang="es" href="<?php echo str_replace("en", "es", $page->httpUrl()); ?>" />
+  <link rel="canonical" href="<?php echo 'https://www.mibici.net'.$page->localPath(($_COOKIE['language'])); ?>" />
+  <link rel="alternate" hreflang="en" href="<?php echo 'https://www.mibici.net'.$page->localPath(1089); ?>"; />
+  <link rel="alternate" hreflang="es" href="<?php echo 'https://www.mibici.net'.$page->localPath(1087); ?>" />
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" integrity="sha256-K3Njjl2oe0gjRteXwX01fQD5fkk9JFFBdUHy/h38ggY=" crossorigin="anonymous" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
   <link href="https://cdn.rawgit.com/cobyism/gridism/0.2.2/gridism.css" rel="stylesheet">
-  <link href="<?php echo $config->urls->templates; ?>static/455375-1485995688/styles/main.css" rel="stylesheet">
-  <link rel="apple-touch-icon" href="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/favicon-180x180.png">
-  <link rel="shortcut icon" href="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/favicon-64x64.png">
+  <link href="<?php echo $config->urls->templates; ?>static/455375-147357/styles/main.css" rel="stylesheet">
+  <link rel="apple-touch-icon" href="<?php echo $config->urls->templates; ?>static/455375-147357/images/favicon-180x180.png">
+  <link rel="shortcut icon" href="<?php echo $config->urls->templates; ?>static/455375-147357/images/favicon-64x64.png">
 </head>
 <body class="<?php echo ($page->template=='home') ? 'home':k::page_name(); ?> >">
 <svg style="display: none;">
@@ -36,7 +36,7 @@
   <header class="k-header">
     <div class="wrap wider grid">
       <div class="k-container">
-        <a href="<?php echo $config->urls->root ?>" class="k-logo"><img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/mibici-logo.svg" alt="<?php echo __("MiBici"); ?>"></a>
+        <a href="<?php echo $config->urls->root ?>" class="k-logo"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/mibici-logo.svg" alt="<?php echo __("MiBici"); ?>"></a>
         <nav class="k-navbar">
           <ul>
             <li><a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>"><?php echo $pages->get(1090)->title; ?></a></li>
@@ -56,7 +56,7 @@
           <ul>
             <li class="k-login-link">
               <a href="<?php echo $pages->get(1096)->url; ?>" alt="<?php echo $pages->get(1096)->title; ?>">
-               <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/user-icon.png" alt="<?php echo __("Iniciar sesión"); ?>"> 
+               <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/user-icon.png" alt="<?php echo __("Iniciar sesión"); ?>"> 
                <?php echo __("Iniciar sesión"); ?>
               </a>
             </li>

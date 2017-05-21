@@ -10,7 +10,7 @@
     <div class="grid">
       <div class="unit half" align="center">
         <div class="head-data">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/icon-viajes.png" alt="<?php echo __("Total de viajes realizados"); ?>">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/icon-viajes.png" alt="<?php echo __("Total de viajes realizados"); ?>">
           <h2> <?php echo __("Total de viajes realizados"); ?></h2>
         </div>
         <div class="body-data">
@@ -21,7 +21,7 @@
       </div>
       <div class="unit half" align="center">
         <div class="head-data">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1485995688/images/user-icon.png" alt="<?php echo __("Usuarios registrados"); ?>">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/user-icon.png" alt="<?php echo __("Usuarios registrados"); ?>">
           <h2> <?php echo __("Registros totales"); ?></h2>
         </div>
         <div class="body-data">
