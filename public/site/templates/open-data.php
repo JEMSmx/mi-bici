@@ -127,7 +127,6 @@
   js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.8&appId=1242879259163026";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script>
 $(document).ready(function(){
 setInterval(loadApi,1000);

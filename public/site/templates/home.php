@@ -161,7 +161,6 @@
   </a>
   </section>
 <?php } ?>
-
   <!-- Instafeed -->
   <div class="instagram">
     <section class="k-section-80">
@@ -182,30 +181,12 @@
       </div>
     </section>
   </div>
-
 <?php include('./_foot.php'); ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.js"></script>
 <script type="text/javascript">
-   function toggMessage(){
+  function toggMessage(){
     $("#home-message").slideToggle("");
   }
-  var userFeed = new Instafeed({
-    get: 'user',
-    userId: '1413909578',
-    clientId: '107493f39f8844368cbbfe8a44677e06',
-    accessToken: '1413909578.1677ed0.f50956cea40a4df7b0fcca22c10c9130',
-    resolution: 'thumbnail',
-    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
-    sortBy: 'most-recent',
-    limit: 8,
-    links: false
-  });
-  userFeed.run();
-    AOS.init({
-        easing: 'ease-in-back',
-        duration: 1000
-    });
   var text1="<?php echo __("millones de viajes"); ?>";
   var text2="<?php echo __("vanguardia"); ?>";
   var text3="<?php echo __("destinos"); ?>";
@@ -215,10 +196,28 @@
   var text7="<?php echo __("miles de usuarios"); ?>";
   var text = [text1,text2,text3,text4,text5,text6,text7];
   var counter = 0;
-  setInterval(change, 4500);
   function change() {
     document.getElementById("changeText").innerHTML = text[counter];
       counter++;
-      if(counter >= text.length) { counter = 0; }
+      if(counter >= text.length) counter = 0; 
   }
+  var userFeed = new Instafeed({
+    get: 'user',
+    userId: '1413909578',
+    clientId: '107493f39f8844368cbbfe8a44677e06',
+    accessToken: '1413909578.1677ed0.f50956cea40a4df7b0fcca22c10c9130',
+    resolution: 'low_resolution',
+    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /></a>',
+    sortBy: 'most-recent',
+    limit: 8,
+    links: false
+  });
+$(document).ready(function() {
+  userFeed.run();
+    AOS.init({
+        easing: 'ease-in-back',
+        duration: 1000
+    });
+  setInterval(change, 4500);
+});
 </script>
