@@ -5,19 +5,19 @@
       <ul>
         <li>
           <p>
-           <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/full-station-icon.png" alt="<?php echo __("Estación llena"); ?>">
+           <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/full-station-icon.png" alt="<?php echo __("Estación llena"); ?>">
           <?php echo __("Estación llena"); ?>
           </p>
         </li>
         <li>
           <p>
-            <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/out-of-service-station-icon.png" alt="<?php echo __("Estación vacía"); ?>">
+            <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/out-of-service-station-icon.png" alt="<?php echo __("Estación vacía"); ?>">
             <?php echo __("Estación vacía"); ?>
           </p>
         </li>
         <li>
           <p>
-            <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/empty-station-icon.png" alt="<?php echo __("Fuera de servicio"); ?>">
+            <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/empty-station-icon.png" alt="<?php echo __("Fuera de servicio"); ?>">
             <?php echo __("Fuera de servicio"); ?>
           </p>
         </li>
