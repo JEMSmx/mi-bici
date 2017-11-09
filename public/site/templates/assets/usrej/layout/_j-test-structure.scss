@@ -1,0 +1,50 @@
+body.test {
+  height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+.intro {
+  width:100vw;
+  min-height: 100vh;
+  align-items: center !important;
+  justify-content: center !important;
+  h2 {
+    color: $color-success;
+    text-transform: none;
+  }
+}
+.test-structure{
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: all 650ms ease-in-out;
+  transition: all 650ms ease-in-out;
+  .unit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
+    &:first-of-type {
+      align-items: flex-start;
+    }
+  }
+  &.hide-top {
+    top: -100vh
+  }
+  &.hide-bottom {
+    top: 100vh;
+  }
+  &.hide-left {
+    left: -100vw;
+  }
+  &.hide-right {
+    left: 100vw;
+  }
+}
