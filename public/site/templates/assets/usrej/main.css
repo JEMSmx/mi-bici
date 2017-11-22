@@ -369,7 +369,7 @@ body.test {
           border-bottom-color: #29dbb9;
           display: table-cell;
           width: 40px; }
-      #morphing-content .morphing-aniversary .user-info .user-info {
+      .morphing-content .morphing-aniversary .user-info .user-info {
         display: flex;
         align-items: center;
         justify-content: space-between; }
