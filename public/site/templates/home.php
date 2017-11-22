@@ -9,31 +9,673 @@
       </div>
     </div>
   </section>
-  <!-- Jumbotron: Home -->
-  <div class="k-jumbotron" id="home-wrapper" style="background-image: url(<?php echo $page->banner->url ?>)">
-      <div class="k-jumbotron-color">
-        <div class="k-page-header-flex">
-          <h1 class="k-heading">
-            <span><?php //echo __("MIBICI"); ?></span> 
-            <?php //echo __("somos"); ?>
-            <span id="changeText"><?php //echo __("miles de usuarios"); ?></span>
-          </h1>
-          <p><?php //echo __("Súmate al sistema de transporte eficiente de la ciudad"); ?></p>
-          <div class="k-signup-button">
-            <a href="<?php echo $pages->get(1095)->url; ?>" alt="<?php echo $pages->get(1095)->title; ?>">
-              <button>
-              <?php echo __("Regístrate"); ?>
-                <span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15px" height="15px"><path d="M23.9 13.8L13.1 3C12 1.8 10 1.8 8.9 3c-1.2 1.2-1.2 3.1 0 4.2l8.8 8.8-8.8 8.8c-1.2 1.2-1.2 3.1 0 4.2 1.2 1.2 3.1 1.2 4.2 0l10.8-10.8c.6-.6.9-1.4.9-2.2 0-.8-.3-1.6-.9-2.2z" fill="#de223d"/></svg>
-                </span>
-              </button>
-            </a>
-          </div>
-          <a href="<?php echo $pages->get(1090
-          )->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>"><?php echo __("Conoce MIBICI"); ?></a>
-        </div>
+   <section class="j-workspace aniverary-hero">
+    <article class="j-wrap">
+      <div class="head-container">
+        <img src="https://www.mibici.net/site/templates/static/455375-1495356493/images/mibici-logo.svg" alt="" height="90px;">
+        <h1>Gracias a tí</h1>
+        <a href="/es/registro/" alt="Registro">
+          <button>
+          Regístrate                <span>
+             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15px" height="15px"><path d="M23.9 13.8L13.1 3C12 1.8 10 1.8 8.9 3c-1.2 1.2-1.2 3.1 0 4.2l8.8 8.8-8.8 8.8c-1.2 1.2-1.2 3.1 0 4.2 1.2 1.2 3.1 1.2 4.2 0l10.8-10.8c.6-.6.9-1.4.9-2.2 0-.8-.3-1.6-.9-2.2z" fill="#de223d"></path></svg>
+            </span>
+          </button>
+        </a>
       </div>
-    </div>
+      <ul>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+        <!-- Foto Usuario -->
+        <a href="">
+          <li>
+            <img src="https://dummyimage.com/256x256/000/fff" alt="">
+          </li>
+        </a>
+      </ul>
+    </article>
+  </section>
+  <!-- Jumbotron: Home -->
+  
   <!-- Liber,Pedalea,Devuelve -->
   <section class="k-section wrap wider">
     <div class="grid no-gutters">
