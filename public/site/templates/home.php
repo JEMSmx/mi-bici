@@ -1,4 +1,103 @@
 <?php include('./_head.php'); ?>
+<style type="text/css">
+  .morphing-btn-wrap {
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.morphing-btn {
+  -webkit-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
+  -moz-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
+  -o-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
+  transition: color 0.3s 0.2s, width 0.2s 0s;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.morphing-btn_circle {
+  color: transparent !important;
+  padding-left: 0;
+  padding-right: 0;
+  width: 35.6px !important;
+
+  /* Override inline style rule */
+  -webkit-transition: color 0.2s 0s, width .3s 0.2s;
+  -moz-transition: color 0.2s 0s, width .3s 0.2s;
+  -o-transition: color 0.2s 0s, width .3s 0.2s;
+  transition: color 0.2s 0s, width .3s 0.2s;
+}
+
+.morphing-btn-clone {
+  position: fixed;
+  background: #FF6666;
+  border-radius: 50%;
+  z-index: 3;
+  -webkit-transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
+  -moz-transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
+  -o-transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
+  transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.morphing-btn-clone_visible {
+  display: block;
+  -webkit-transform: scale(1) !important;
+  -moz-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  -o-transform: scale(1) !important;
+  transform: scale(1) !important;
+}
+
+.fancybox-morphing .fancybox-bg {
+  background: #FF6666;
+  opacity: 1;
+}
+
+.fancybox-morphing .fancybox-toolbar {
+  top: 20px;
+  right: 40px;
+}
+
+.fancybox-morphing .fancybox-button--close {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: #fff;
+}
+
+.fancybox-morphing .fancybox-button--close::after, 
+.fancybox-morphing .fancybox-button--close::before {
+    height: 1.55px;
+    width: 22px;
+    left: calc(50% - 11px);
+}
+
+.fancybox-morphing .fancybox-button--close:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* Styling for element used in example */
+
+#morphing-content {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+#morphing-content a {
+  color: #fff;
+}
+.hidden{
+  display: none;
+}
+</style>
   <section class="k-message" id="home-message">
     <div class="k-message-container">
       <div class="k-message-center">
@@ -12,7 +111,7 @@
    <section class="j-workspace aniverary-hero">
     <article class="j-wrap">
       <div class="head-container">
-        <img src="https://www.mibici.net/site/templates/static/455375-1495356493/images/mibici-logo.svg" alt="" height="90px;">
+        <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/mibici-logo.svg" alt="" height="90px;">
         <h1><?php echo __("Gracias a tí"); ?></h1>
         <a href="/es/registro/" alt="Registro">
           <button>
@@ -24,17 +123,22 @@
       </div>
       <ul>
         <!-- Foto Usuario -->
-         <?php $users=$pages->find("template=usertres");  
+      <?php $users=$pages->find("template=usertres");  
          foreach($users as $user){ 
           $image = $user->img1;
               if($image) {
                 $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
-        <a href="">
+        <a data-morphing id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" class="btn">
           <li>
-            <img src="<?= $img->url; ?>" alt="<?= $img->title; ?>">
+            <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
           </li>
         </a>
+
+        <div id="morphing-content" class="hidden">
+          <?= $user->body;?>
+      </div>
         <?php } ?>
+        
       </ul>
     </article>
   </section>
@@ -189,23 +293,10 @@
   </div>
 <?php include('./_foot.php'); ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
 <script type="text/javascript">
   function toggMessage(){
     $("#home-message").slideToggle("");
-  }
-  var text1="<?php echo __("millones de viajes"); ?>";
-  var text2="<?php echo __("vanguardia"); ?>";
-  var text3="<?php echo __("destinos"); ?>";
-  var text4="<?php echo __("ciudad"); ?>";
-  var text5="<?php echo __("tecnología"); ?>";
-  var text6="<?php echo __("comunidad"); ?>";
-  var text7="<?php echo __("miles de usuarios"); ?>";
-  var text = [text1,text2,text3,text4,text5,text6,text7];
-  var counter = 0;
-  function change() {
-    document.getElementById("changeText").innerHTML = text[counter];
-      counter++;
-      if(counter >= text.length) counter = 0; 
   }
   var userFeed = new Instafeed({
     get: 'user',
@@ -226,4 +317,157 @@ $(document).ready(function() {
     });
   //setInterval(change, 4500);
 });
+$.fn.fancyMorph = function( opts ) {
+  var Morphing = function( $btn, opts ) {
+    var self = this;
+
+    self.opts = $.extend({
+      animationEffect : false,
+      infobar    : false,
+      buttons    : ['close'],
+      smallBtn   : false,
+      touch      : false,
+      baseClass  : 'fancybox-morphing',
+      afterClose : function() {
+        self.close();
+      }
+    }, opts);
+
+    self.init( $btn );
+  };
+
+  Morphing.prototype.init = function( $btn ) {
+    var self = this;
+
+    self.$btn = $btn.addClass('morphing-btn');
+
+    self.$clone = $('<div class="morphing-btn-clone" />')
+      .hide()
+      .insertAfter( $btn );
+
+    // Add wrapping element and set initial width used for positioning
+    $btn.wrap( '<span class="morphing-btn-wrap"></span>' ).on('click', function(e) {
+      e.preventDefault();
+
+      self.start();
+    });
+
+  };
+
+  Morphing.prototype.start = function() {
+    var self = this;
+
+    if ( self.$btn.hasClass('morphing-btn_circle') ) {
+      return;
+    }
+
+    // Set initial width, because it is not possible to start CSS transition from "auto"
+    self.$btn.width( self.$btn.width() ).parent().width( self.$btn.outerWidth() );
+
+    self.$btn.off('.fm').on("transitionend.fm webkitTransitionEnd.fm oTransitionEnd.fm MSTransitionEnd.fm", function(e) {
+
+      if ( e.originalEvent.propertyName === 'width' ) {
+        self.$btn.off('.fm');
+
+        self.animateBg();
+      }
+
+    }).addClass('morphing-btn_circle');
+
+  };
+
+  Morphing.prototype.animateBg = function() {
+    var self = this;
+
+    self.scaleBg();
+
+    self.$clone.show();
+
+    // Trigger repaint
+    self.$clone[0].offsetHeight;
+
+    self.$clone.off('.fm').on("transitionend.fm webkitTransitionEnd.fm oTransitionEnd.fm MSTransitionEnd.fm", function(e) {
+      self.$clone.off('.fm');
+
+      self.complete();
+
+    }).addClass('morphing-btn-clone_visible');
+  };
+
+  Morphing.prototype.scaleBg = function() {
+    var self = this;
+
+    var $clone = self.$clone;
+    var scale  = self.getScale();
+    var $btn   = self.$btn;
+    var pos    = $btn.offset();
+
+    $clone.css({
+      top       : pos.top  + $btn.outerHeight() * 0.5 - ( $btn.outerHeight() * scale * 0.5 ) - $(window).scrollTop(),
+      left      : pos.left + $btn.outerWidth()  * 0.5 - ( $btn.outerWidth()  * scale * 0.5 ) - $(window).scrollLeft(),
+      width     : $btn.outerWidth()  * scale,
+      height    : $btn.outerHeight() * scale,
+      transform : 'scale(' + ( 1 / scale ) + ')'
+    });
+  };
+
+  Morphing.prototype.getScale = function() {
+    var $btn    = this.$btn,
+        radius  = $btn.outerWidth() * 0.5,
+        left    = $btn.offset().left + radius - $(window).scrollLeft(),
+        top     = $btn.offset().top  + radius - $(window).scrollTop(),
+        windowW = $(window).width(),
+        windowH = $(window).height();
+
+    var maxDistHor  = ( left > windowW / 2 ) ? left : ( windowW - left ),
+        maxDistVert = ( top > windowH / 2 )  ? top  : ( windowH - top );
+
+    return Math.ceil(Math.sqrt( Math.pow( maxDistHor, 2 ) + Math.pow( maxDistVert, 2 ) ) / radius );
+  };
+
+  Morphing.prototype.complete = function() {
+    var self = this;
+    var $btn = self.$btn;
+
+    $.fancybox.open({ src : $btn.data('src') || $btn.attr('href') }, self.opts);
+
+    $(window).on('resize.fm', function() {
+      //self.scaleBg();
+    });
+  };
+
+  Morphing.prototype.close = function() {
+    var self   = this;
+    var $clone = self.$clone;
+
+    self.scaleBg();
+
+    $clone.one('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function(e) {
+      $clone.hide();
+
+      self.$btn.removeClass('morphing-btn_circle');
+    });
+
+    $clone.removeClass('morphing-btn-clone_visible');
+
+    $(window).off('resize.fm');
+  };
+
+  // Init
+  this.each(function() {
+    var $this = $(this);
+
+    if ( !$this.data("morphing") ) {
+      $this.data( "morphing", new Morphing( $this, opts ) );
+    }
+
+  });
+
+  return this;
+};
+
+$("[data-morphing]").fancyMorph({
+  hash : 'morphing'
+});
+
 </script>
