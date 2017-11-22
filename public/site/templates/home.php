@@ -79,7 +79,7 @@
 
 /* Styling for element used in example */
 
-#morphing-content {
+.morphing-content {
   margin: 0;
   position: relative;
   background: transparent;
@@ -91,7 +91,7 @@
   backface-visibility: hidden;
 }
 
-#morphing-content a {
+.morphing-content a {
   color: #fff;
 }
 .hidden{
@@ -104,23 +104,15 @@
         <p><?php echo $page->notification ?></p>
       </div>
       <div class="k-message-close" onclick="toggMessage()">
-        <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/times.svg" alt="">
+        <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/times.svg" alt="">
       </div>
     </div>
   </section>
    <section class="j-workspace aniverary-hero">
     <article class="j-wrap">
       <div class="head-container">
-        <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/mibici-logo.svg" alt="" height="90px;">
-        <h1><?php echo __("Gracias a tí"); ?></h1>
-        <a href="/es/registro/" alt="Registro">
-          <button>
-          <?php echo __("Regístrate"); ?>                <span>
-             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15px" height="15px"><path d="M23.9 13.8L13.1 3C12 1.8 10 1.8 8.9 3c-1.2 1.2-1.2 3.1 0 4.2l8.8 8.8-8.8 8.8c-1.2 1.2-1.2 3.1 0 4.2 1.2 1.2 3.1 1.2 4.2 0l10.8-10.8c.6-.6.9-1.4.9-2.2 0-.8-.3-1.6-.9-2.2z" fill="#de223d"></path></svg>
-            </span>
-          </button>
-        </a>
-      </div>
+      </div>  
+    
       <ul>
         <!-- Foto Usuario -->
       <?php $users=$pages->find("template=usertres");  
@@ -134,7 +126,7 @@
           </li>
         </a>
 
-        <div id="morphing-content" class="hidden">
+        <div id="morphing-content<?= $user->id;?>" class="morphing-content hidden">
           <?= $user->body;?>
       </div>
         <?php } ?>
