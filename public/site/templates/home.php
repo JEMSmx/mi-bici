@@ -16,7 +16,7 @@
     
       <ul>
         <!-- Foto Usuario -->
-      <?php $users=$pages->find("template=usertres");  
+      <?php $users=$pages->find("template=usertres, sort=random");  
          foreach($users as $user){ 
           $image = $user->img1;
               if($image) {
@@ -30,16 +30,16 @@
         <div id="morphing-content<?= $user->id;?>" class="morphing-content" style="display: none;">
           <div class="morphing-aniversary">
             <div class="user-photo" style="background-image: url('<?= $user->img1->url;?>');">
-              <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>">
+              <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="200" height="200">
             </div>
             <div class="user-info">
-              <h2><?= $user->title;?></h2>
+              <h2 class="aniversary-head"><?= $user->title;?></h2>
               <p>
                 <?= $user->body;?>
               </p>
               <div class="user-footer">
-                <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/icon-gracias-a-ti.svg" alt="">
-                <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/icon-tercer-aniversario.svg" alt="">
+                <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/icon-gracias-a-ti.svg" width="200" height="200">
+                <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/icon-tercer-aniversario.svg" width="200" height="200">
               </div>
             </div>
           </div>
