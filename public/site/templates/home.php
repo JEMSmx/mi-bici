@@ -1,103 +1,4 @@
 <?php include('./_head.php'); ?>
-<style type="text/css">
-  .morphing-btn-wrap {
-  display: inline-block;
-  position: relative;
-  text-align: center;
-}
-
-.morphing-btn {
-  -webkit-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
-  -moz-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
-  -o-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
-  transition: color 0.3s 0.2s, width 0.2s 0s;
-  white-space: nowrap;
-  box-sizing: border-box;
-}
-
-.morphing-btn_circle {
-  color: transparent !important;
-  padding-left: 0;
-  padding-right: 0;
-  width: 35.6px !important;
-
-  /* Override inline style rule */
-  -webkit-transition: color 0.2s 0s, width .3s 0.2s;
-  -moz-transition: color 0.2s 0s, width .3s 0.2s;
-  -o-transition: color 0.2s 0s, width .3s 0.2s;
-  transition: color 0.2s 0s, width .3s 0.2s;
-}
-
-.morphing-btn-clone {
-  position: fixed;
-  background: #FF6666;
-  border-radius: 50%;
-  z-index: 3;
-  -webkit-transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
-  -moz-transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
-  -o-transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
-  transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.morphing-btn-clone_visible {
-  display: block;
-  -webkit-transform: scale(1) !important;
-  -moz-transform: scale(1) !important;
-  -ms-transform: scale(1) !important;
-  -o-transform: scale(1) !important;
-  transform: scale(1) !important;
-}
-
-.fancybox-morphing .fancybox-bg {
-  background: #FF6666;
-  opacity: 1;
-}
-
-.fancybox-morphing .fancybox-toolbar {
-  top: 20px;
-  right: 40px;
-}
-
-.fancybox-morphing .fancybox-button--close {
-  background: rgba(0, 0, 0, 0.2);
-  border-radius: 50%;
-  color: #fff;
-}
-
-.fancybox-morphing .fancybox-button--close::after, 
-.fancybox-morphing .fancybox-button--close::before {
-    height: 1.55px;
-    width: 22px;
-    left: calc(50% - 11px);
-}
-
-.fancybox-morphing .fancybox-button--close:hover {
-  background: rgba(0, 0, 0, 0.25);
-}
-
-/* Styling for element used in example */
-
-.morphing-content {
-  margin: 0;
-  position: relative;
-  background: transparent;
-  color: #fff;
-  padding: 6em 10vw;
-  line-height: 2;
-  z-index: 3;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.morphing-content a {
-  color: #fff;
-}
-.hidden{
-  display: none;
-}
-</style>
   <section class="k-message" id="home-message">
     <div class="k-message-container">
       <div class="k-message-center">
@@ -126,9 +27,23 @@
           </li>
         </a>
 
-        <div id="morphing-content<?= $user->id;?>" class="morphing-content hidden">
-          <?= $user->body;?>
-      </div>
+        <div id="morphing-content<?= $user->id;?>" class="morphing-content" style="display: none;">
+          <div class="morphing-aniversary">
+            <div class="user-photo">
+              <img src="<?= $user->img1->url;?>" alt="<?= $user->title; ?>">
+            </div>
+            <div class="user-info">
+              <h2><?= $user->title;?></h2>
+              <p>
+                <?= $user->body;?>
+              </p>
+              <div class="user-footer">
+                <img src="https://dummyimage.com/200x150/000/fff" alt="">
+                <img src="https://dummyimage.com/200x150/000/fff" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
         <?php } ?>
         
       </ul>

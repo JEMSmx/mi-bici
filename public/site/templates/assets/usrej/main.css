@@ -261,6 +261,119 @@ body.test {
         transform: scale(1.05);
         /* Standard syntax */ }
 
+.morphing-btn-wrap {
+  display: inline-block;
+  position: relative;
+  text-align: center; }
+
+.morphing-btn {
+  -webkit-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
+  -moz-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
+  -o-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
+  transition: color 0.3s 0.2s, width 0.2s 0s;
+  white-space: nowrap;
+  box-sizing: border-box; }
+
+.morphing-btn_circle {
+  color: transparent !important;
+  padding-left: 0;
+  padding-right: 0;
+  width: 35.6px !important;
+  /* Override inline style rule */
+  -webkit-transition: color 0.2s 0s, width .3s 0.2s;
+  -moz-transition: color 0.2s 0s, width .3s 0.2s;
+  -o-transition: color 0.2s 0s, width .3s 0.2s;
+  transition: color 0.2s 0s, width .3s 0.2s; }
+
+.morphing-btn-clone {
+  position: fixed;
+  background: #5e4099;
+  border-radius: 50%;
+  z-index: 3;
+  -webkit-transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -moz-transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -o-transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  transition: all 0.5s cubic-bezier(0.65, 0.05, 0.36, 1);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.morphing-btn-clone_visible {
+  display: block;
+  -webkit-transform: scale(1) !important;
+  -moz-transform: scale(1) !important;
+  -ms-transform: scale(1) !important;
+  -o-transform: scale(1) !important;
+  transform: scale(1) !important; }
+
+.fancybox-morphing .fancybox-bg {
+  background: #5e4099;
+  opacity: 1; }
+
+.fancybox-morphing .fancybox-toolbar {
+  top: 20px;
+  right: 40px; }
+
+.fancybox-morphing .fancybox-button--close {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  color: #fff; }
+
+.fancybox-morphing .fancybox-button--close::after,
+.fancybox-morphing .fancybox-button--close::before {
+  height: 1.55px;
+  width: 22px;
+  left: calc(50% - 11px); }
+
+.fancybox-morphing .fancybox-button--close:hover {
+  background: rgba(0, 0, 0, 0.25); }
+
+/* Styling for element used in example */
+.morphing-content {
+  margin: 0;
+  position: relative;
+  background: transparent;
+  color: #fff;
+  padding: 6em 10vw;
+  line-height: 2;
+  z-index: 3;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+  .morphing-content a {
+    color: #fff; }
+  .morphing-content .morphing-aniversary {
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .morphing-content .morphing-aniversary .user-photo {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      margin-right: 16px;
+      width: 500px;
+      height: 500px;
+      background-color: #5e4099;
+      background-blend-mode: luminosity;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-image: url("https://rouleur.cc/editorial/wp-content/uploads/2015/11/PeterSaganMarshallKappel_0.jpg"); }
+    .morphing-content .morphing-aniversary .user-info {
+      width: 50%; }
+      .morphing-content .morphing-aniversary .user-info h2 {
+        margin-bottom: 0; }
+        .morphing-content .morphing-aniversary .user-info h2:after {
+          content: " ";
+          border-bottom-style: solid;
+          border-bottom-width: 2px;
+          border-bottom-color: #29dbb9;
+          display: table-cell;
+          width: 40px; }
+      #morphing-content .morphing-aniversary .user-info .user-info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+
 button, .btn-solid {
   width: 100%;
   max-width: 320px;
