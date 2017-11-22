@@ -236,13 +236,22 @@ body.test {
     height: 100%;
     padding: 0;
     margin: 0;
-    background-color: black; }
+    background-color: rgba(0, 0, 0, 0.65); }
     .aniverary-hero ul img {
-      max-height: 108px; }
-    .aniverary-hero ul li {
+      margin: 0;
       max-height: 108px;
       transition: all 250ms ease-in-out;
-      margin: 0; }
+      -webkit-filter: grayscale(100%);
+      /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%); }
+      .aniverary-hero ul img:hover {
+        -webkit-filter: grayscale(0);
+        /* Safari 6.0 - 9.0 */
+        filter: grayscale(0); }
+    .aniverary-hero ul li {
+      max-height: 108px;
+      margin: 0;
+      transition: all 250ms ease-in-out; }
       .aniverary-hero ul li:hover {
         box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
         -ms-transform: scale(1.05);
@@ -251,8 +260,6 @@ body.test {
         /* Safari */
         transform: scale(1.05);
         /* Standard syntax */ }
-      .aniverary-hero ul li img {
-        margin: 0; }
 
 button, .btn-solid {
   width: 100%;
