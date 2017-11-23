@@ -349,7 +349,7 @@ body.test {
       display: flex;
       justify-content: flex-start;
       align-items: flex-end;
-      margin-right: 16px;
+      margin-right: 32px;
       width: 500px;
       height: 500px;
       background-color: #5e4099;
@@ -366,6 +366,8 @@ body.test {
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
+      .morphing-content .morphing-aniversary .user-info .user-body {
+        margin-top: 32px; }
       .morphing-content .morphing-aniversary .user-info h2.aniversary-head {
         margin-bottom: 0;
         color: white;

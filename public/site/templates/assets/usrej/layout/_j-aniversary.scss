@@ -151,7 +151,7 @@ $anversary-image-size: 108px;
       display: flex;
       justify-content: flex-start;
       align-items: flex-end;
-      margin-right: 16px;
+      margin-right: 32px;
       width: 500px;
       height: 500px;
       background-color: rgb(94, 64, 153);
@@ -170,6 +170,9 @@ $anversary-image-size: 108px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      .user-body {
+        margin-top: 32px;
+      }
       h2.aniversary-head{
         margin-bottom: 0;
         color: white;
