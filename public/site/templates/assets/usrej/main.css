@@ -358,21 +358,35 @@ body.test {
       background-position: center;
       background-repeat: no-repeat;
       background-image: url("https://rouleur.cc/editorial/wp-content/uploads/2015/11/PeterSaganMarshallKappel_0.jpg"); }
+      .morphing-content .morphing-aniversary .user-photo img {
+        margin: 24px; }
     .morphing-content .morphing-aniversary .user-info {
-      width: 50%; }
-      .morphing-content .morphing-aniversary .user-info h2 {
-        margin-bottom: 0; }
-        .morphing-content .morphing-aniversary .user-info h2:after {
+      width: 50%;
+      height: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .morphing-content .morphing-aniversary .user-info h2.aniversary-head {
+        margin-bottom: 0;
+        color: white;
+        font-size: 32px;
+        font-weight: bold; }
+        .morphing-content .morphing-aniversary .user-info h2.aniversary-head:after {
           content: " ";
           border-bottom-style: solid;
           border-bottom-width: 2px;
           border-bottom-color: #29dbb9;
           display: table-cell;
           width: 40px; }
-      .morphing-content .morphing-aniversary .user-info .user-info {
+      .morphing-content .morphing-aniversary .user-info p {
+        margin-top: 16px;
+        font-size: 18px;
+        line-height: 1.3; }
+      .morphing-content .morphing-aniversary .user-info .user-footer {
         display: flex;
+        justify-content: space-between;
         align-items: center;
-        justify-content: space-between; }
+        margin-bottom: 32px; }
 
 button, .btn-solid {
   width: 100%;
