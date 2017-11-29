@@ -12,7 +12,8 @@
    <section class="j-workspace aniverary-hero">
     <article class="j-wrap">
       <div class="head-container">
-      </div>  
+          <img src="<?php echo $config->urls->templates; ?>assets/images/tres-aniversario-logo.svg" alt="Mi Bici 3er Aniversario" height="160px">
+      </div>
     
       <ul>
         <!-- Foto Usuario -->
