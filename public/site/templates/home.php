@@ -22,14 +22,13 @@
           $image = $user->img1;
               if($image) {
                 $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
-        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;">
+        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-modal="true">
           <li>
             <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
           </li>
         </a>
 
         <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
-          <button data-fancybox-close class="btn" style="display: none">Close me</button>
           <div class="morphing-aniversary">
             <div class="user-photo" style="background-image: url('<?= $user->img1->url;?>');">
               <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
@@ -55,14 +54,13 @@
           $image = $user->img1;
               if($image) {
                 $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
-        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;">
+        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-modal="true">
           <li>
             <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
           </li>
         </a>
 
         <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
-          <button data-fancybox-close class="btn" style="display: none">Close me</button>
           <div class="morphing-aniversary">
             <div class="user-photo" style="background-image: url('<?= $user->img1->url;?>');">
               <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
