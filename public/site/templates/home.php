@@ -30,7 +30,10 @@
 
         <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
           <div class="morphing-aniversary">
-            <div class="user-photo" style="background-image: url('<?= $user->img1->url;?>');">
+            <?php $imgusr=$user->img1;
+                  if($imgusr) {
+                     $imgnw = $imgusr->size(600, 600, array('quality' => 80, 'upscaling' => false, 'cropping' => true)); } ?>
+            <div class="user-photo" style="background-image: url('<?= $imgnw->url;?>');">
               <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
             </div>
             <div class="user-info">
@@ -62,7 +65,10 @@
 
         <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
           <div class="morphing-aniversary">
-            <div class="user-photo" style="background-image: url('<?= $user->img1->url;?>');">
+            <?php $imgusr=$user->img1;
+                  if($imgusr) {
+                     $imgnw = $imgusr->size(600, 600, array('quality' => 80, 'upscaling' => false, 'cropping' => true)); } ?>
+            <div class="user-photo" style="background-image: url('<?= $imgnw->url;?>');">
               <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
             </div>
             <div class="user-info">
