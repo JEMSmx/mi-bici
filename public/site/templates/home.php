@@ -21,30 +21,32 @@
           $image = $user->img1;
               if($image) {
                 $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
-        <a data-morphing id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" class="btn">
+        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" class="btn">
           <li>
             <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
           </li>
         </a>
 
-        <div id="morphing-content<?= $user->id;?>" class="morphing-content" style="display: none;">
+        <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;background-color: #5e4099;">
           <div class="morphing-aniversary">
             <div class="user-photo" style="background-image: url('<?= $user->img1->url;?>');">
-              <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
+              <img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
             </div>
             <div class="user-info">
-              <h2 class="aniversary-head"><?= $user->title;?></h2>
-              <p>
-                <?= $user->body;?>
-              </p>
+              <div class="user-body">
+                     <h2 class="aniversary-head"><?= $user->title;?></h2>
+                    <p><span><?= $user->subtitle;?></span></p>
+                    <p> <?= $user->body;?></p>    
+               </div>
               <div class="user-footer">
-                <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/icon-gracias-a-ti.svg" width="166">
-                <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/icon-tercer-aniversario.svg" width="200" height="92">
+                <img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/icon-gracias-a-ti.svg" width="166">
+                <img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/icon-tercer-aniversario.svg" width="200" height="92">
               </div>
             </div>
           </div>
         </div>
         <?php } ?>
+        
         
       </ul>
     </article>
@@ -58,7 +60,7 @@
       <div class="unit one-third">
           <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100">
             <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-              <div class="k-container-img" style="width: 198px"><img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/devuelve-icon.svg"></div>
+              <div class="k-container-img" style="width: 198px"><img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/devuelve-icon.svg"></div>
               <figcaption>
                 <h2 class="k-heading"><?php echo __("Libera"); ?></h2>
                 <p><?php echo __("Bicicletas siempre a tu disposición"); ?></p>
@@ -70,7 +72,7 @@
       <div class="unit one-third">
         <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="400">
           <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-            <div class="k-container-img"><img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/pedalea-icon.svg"></div>
+            <div class="k-container-img"><img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/pedalea-icon.svg"></div>
             <figcaption>
               <h2 class="k-heading"><?php echo __("Pedalea"); ?></h2>
               <p><?php echo __("¡Disfruta la ciudad!"); ?></p>
@@ -82,7 +84,7 @@
       <div class="unit one-third">
         <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="800">
           <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-            <div class="k-container-img" style="width: 156px"><img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/libera-icon.svg"></div>
+            <div class="k-container-img" style="width: 156px"><img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/libera-icon.svg"></div>
             <figcaption>
               <h2 class="k-heading"><?php echo __("Devuelve"); ?></h2>
               <p><?php echo __("Alguien más espera por ella."); ?></p>
@@ -224,157 +226,4 @@ $(document).ready(function() {
     });
   //setInterval(change, 4500);
 });
-$.fn.fancyMorph = function( opts ) {
-  var Morphing = function( $btn, opts ) {
-    var self = this;
-
-    self.opts = $.extend({
-      animationEffect : false,
-      infobar    : false,
-      buttons    : ['close'],
-      smallBtn   : false,
-      touch      : false,
-      baseClass  : 'fancybox-morphing',
-      afterClose : function() {
-        self.close();
-      }
-    }, opts);
-
-    self.init( $btn );
-  };
-
-  Morphing.prototype.init = function( $btn ) {
-    var self = this;
-
-    self.$btn = $btn.addClass('morphing-btn');
-
-    self.$clone = $('<div class="morphing-btn-clone" />')
-      .hide()
-      .insertAfter( $btn );
-
-    // Add wrapping element and set initial width used for positioning
-    $btn.wrap( '<span class="morphing-btn-wrap"></span>' ).on('click', function(e) {
-      e.preventDefault();
-
-      self.start();
-    });
-
-  };
-
-  Morphing.prototype.start = function() {
-    var self = this;
-
-    if ( self.$btn.hasClass('morphing-btn_circle') ) {
-      return;
-    }
-
-    // Set initial width, because it is not possible to start CSS transition from "auto"
-    self.$btn.width( self.$btn.width() ).parent().width( self.$btn.outerWidth() );
-
-    self.$btn.off('.fm').on("transitionend.fm webkitTransitionEnd.fm oTransitionEnd.fm MSTransitionEnd.fm", function(e) {
-
-      if ( e.originalEvent.propertyName === 'width' ) {
-        self.$btn.off('.fm');
-
-        self.animateBg();
-      }
-
-    }).addClass('morphing-btn_circle');
-
-  };
-
-  Morphing.prototype.animateBg = function() {
-    var self = this;
-
-    self.scaleBg();
-
-    self.$clone.show();
-
-    // Trigger repaint
-    self.$clone[0].offsetHeight;
-
-    self.$clone.off('.fm').on("transitionend.fm webkitTransitionEnd.fm oTransitionEnd.fm MSTransitionEnd.fm", function(e) {
-      self.$clone.off('.fm');
-
-      self.complete();
-
-    }).addClass('morphing-btn-clone_visible');
-  };
-
-  Morphing.prototype.scaleBg = function() {
-    var self = this;
-
-    var $clone = self.$clone;
-    var scale  = self.getScale();
-    var $btn   = self.$btn;
-    var pos    = $btn.offset();
-
-    $clone.css({
-      top       : pos.top  + $btn.outerHeight() * 0.5 - ( $btn.outerHeight() * scale * 0.5 ) - $(window).scrollTop(),
-      left      : pos.left + $btn.outerWidth()  * 0.5 - ( $btn.outerWidth()  * scale * 0.5 ) - $(window).scrollLeft(),
-      width     : $btn.outerWidth()  * scale,
-      height    : $btn.outerHeight() * scale,
-      transform : 'scale(' + ( 1 / scale ) + ')'
-    });
-  };
-
-  Morphing.prototype.getScale = function() {
-    var $btn    = this.$btn,
-        radius  = $btn.outerWidth() * 0.5,
-        left    = $btn.offset().left + radius - $(window).scrollLeft(),
-        top     = $btn.offset().top  + radius - $(window).scrollTop(),
-        windowW = $(window).width(),
-        windowH = $(window).height();
-
-    var maxDistHor  = ( left > windowW / 2 ) ? left : ( windowW - left ),
-        maxDistVert = ( top > windowH / 2 )  ? top  : ( windowH - top );
-
-    return Math.ceil(Math.sqrt( Math.pow( maxDistHor, 2 ) + Math.pow( maxDistVert, 2 ) ) / radius );
-  };
-
-  Morphing.prototype.complete = function() {
-    var self = this;
-    var $btn = self.$btn;
-
-    $.fancybox.open({ src : $btn.data('src') || $btn.attr('href') }, self.opts);
-
-    $(window).on('resize.fm', function() {
-      //self.scaleBg();
-    });
-  };
-
-  Morphing.prototype.close = function() {
-    var self   = this;
-    var $clone = self.$clone;
-
-    self.scaleBg();
-
-    $clone.one('transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd', function(e) {
-      $clone.hide();
-
-      self.$btn.removeClass('morphing-btn_circle');
-    });
-
-    $clone.removeClass('morphing-btn-clone_visible');
-
-    $(window).off('resize.fm');
-  };
-
-  // Init
-  this.each(function() {
-    var $this = $(this);
-
-    if ( !$this.data("morphing") ) {
-      $this.data( "morphing", new Morphing( $this, opts ) );
-    }
-
-  });
-
-  return this;
-};
-
-$("[data-morphing]").fancyMorph({
-  hash : 'morphing'
-});
-
 </script>

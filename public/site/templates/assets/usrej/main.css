@@ -344,7 +344,26 @@ body.test {
     max-width: 960px;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    background-color: #5e4099; }
+    @media screen and (max-width: 768px) {
+      .morphing-content .morphing-aniversary {
+        flex-direction: column;
+        width: fit-content;
+        padding: 16px; }
+        .morphing-content .morphing-aniversary .user-photo {
+          width: 250px;
+          height: 250px;
+          margin: 0; }
+        .morphing-content .morphing-aniversary .user-info {
+          width: 250px;
+          height: auto;
+          flex-direction: column; }
+        .morphing-content .morphing-aniversary .user-footer img:first-of-type {
+          width: 40%;
+          margin-right: 10%; }
+        .morphing-content .morphing-aniversary .user-footer img:last-of-type {
+          width: 30%; } }
     .morphing-content .morphing-aniversary .user-photo {
       display: flex;
       justify-content: flex-start;
@@ -381,14 +400,52 @@ body.test {
           display: table-cell;
           width: 40px; }
       .morphing-content .morphing-aniversary .user-info p {
-        margin-top: 16px;
         font-size: 18px;
         line-height: 1.3; }
+        .morphing-content .morphing-aniversary .user-info p span {
+          font-weight: 700;
+          font-size: 20px; }
+        .morphing-content .morphing-aniversary .user-info p:last-of-type {
+          margin-top: 16px; }
       .morphing-content .morphing-aniversary .user-info .user-footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 32px; }
+
+.animated-modal {
+  border-radius: 4px;
+  overflow: hidden;
+  
+  transform: translateY(-50px);
+  transition: all .7s;
+}
+
+.animated-modal h2,
+.animated-modal p {
+  transform: translateY(-50px);
+  opacity: 0;
+  
+  transition-property: transform, opacity;
+  transition-duration: .4s;
+}
+
+/* Final state */
+.fancybox-slide--current .animated-modal,
+.fancybox-slide--current .animated-modal h2,
+.fancybox-slide--current .animated-modal p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Reveal content with different delays */
+.fancybox-slide--current .animated-modal h2 {
+  transition-delay: .1s;
+}
+
+.fancybox-slide--current .animated-modal p {
+  transition-delay: .3s;
+}
 
 button, .btn-solid {
   width: 100%;

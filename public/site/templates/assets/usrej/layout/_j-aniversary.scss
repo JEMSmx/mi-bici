@@ -147,6 +147,33 @@ $anversary-image-size: 108px;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #5e4099;
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+      width: fit-content;
+      padding: 16px;
+      .user-photo {
+        width: 250px;
+        height: 250px;
+        margin: 0;
+      }
+      .user-info {
+        width: 250px;
+        height: auto;
+        flex-direction: column;
+      }
+      .user-footer {
+        img {
+          &:first-of-type {
+            width: 40%;
+            margin-right: 10%;
+          }
+          &:last-of-type {
+            width: 30%;
+          }
+        }
+      }
+    }
     .user-photo {
       display: flex;
       justify-content: flex-start;
@@ -188,9 +215,15 @@ $anversary-image-size: 108px;
         }
       }
       p {
-        margin-top: 16px;
         font-size: 18px;
         line-height: 1.3;
+        span {
+          font-weight: 700;
+          font-size: 20px;
+        }
+        &:last-of-type{
+          margin-top: 16px;
+        }
       }
       .user-footer {
         display: flex;
