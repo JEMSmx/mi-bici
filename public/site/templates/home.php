@@ -29,6 +29,7 @@
         </a>
 
         <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
+          <button data-fancybox-close class="btn" style="display: none">Close me</button>
           <div class="morphing-aniversary">
             <div class="user-photo" style="background-image: url('<?= $user->img1->url;?>');">
               <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
@@ -61,6 +62,7 @@
         </a>
 
         <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
+          <button data-fancybox-close class="btn" style="display: none">Close me</button>
           <div class="morphing-aniversary">
             <div class="user-photo" style="background-image: url('<?= $user->img1->url;?>');">
               <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
