@@ -22,7 +22,7 @@
           $image = $user->img1;
               if($image) {
                 $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
-        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" class="btn">
+        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;">
           <li>
             <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
           </li>
@@ -54,7 +54,7 @@
           $image = $user->img1;
               if($image) {
                 $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
-        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" class="btn">
+        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;">
           <li>
             <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
           </li>
