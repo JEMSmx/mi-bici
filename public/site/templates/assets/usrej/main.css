@@ -243,11 +243,11 @@ body.test {
       transition: all 250ms ease-in-out;
       -webkit-filter: grayscale(100%);
       /* Safari 6.0 - 9.0 */
-      filter: grayscale(100%); }
+      filter: brightness(20%); }
       .aniverary-hero ul img:hover {
         -webkit-filter: grayscale(0);
         /* Safari 6.0 - 9.0 */
-        filter: grayscale(0); }
+        filter: brightness(100%); }
     .aniverary-hero ul li {
       max-height: 108px;
       margin: 0;
@@ -346,24 +346,6 @@ body.test {
     justify-content: center;
     align-items: center;
     background-color: #5e4099; }
-    @media screen and (max-width: 768px) {
-      .morphing-content .morphing-aniversary {
-        flex-direction: column;
-        width: fit-content;
-        padding: 16px; }
-        .morphing-content .morphing-aniversary .user-photo {
-          width: 250px;
-          height: 250px;
-          margin: 0; }
-        .morphing-content .morphing-aniversary .user-info {
-          width: 250px;
-          height: auto;
-          flex-direction: column; }
-        .morphing-content .morphing-aniversary .user-footer img:first-of-type {
-          width: 40%;
-          margin-right: 10%; }
-        .morphing-content .morphing-aniversary .user-footer img:last-of-type {
-          width: 30%; } }
     .morphing-content .morphing-aniversary .user-photo {
       display: flex;
       justify-content: flex-start;
@@ -412,7 +394,26 @@ body.test {
         justify-content: space-between;
         align-items: center;
         margin-bottom: 32px; }
-
+    @media screen and (max-width: 768px) {
+      .morphing-content .morphing-aniversary {
+        flex-direction: column;
+        width: fit-content;
+        padding: 16px; }
+        .morphing-content .morphing-aniversary .user-photo {
+          width: 250px;
+          height: 250px;
+          margin: 0; }
+          .morphing-content .morphing-aniversary .user-photo img {
+            width: 30%; }
+        .morphing-content .morphing-aniversary .user-info {
+          width: 250px;
+          height: auto;
+          flex-direction: column; }
+        .morphing-content .morphing-aniversary .user-footer img:first-of-type {
+          width: 40%;
+          margin-right: 10%; }
+        .morphing-content .morphing-aniversary .user-footer img:last-of-type {
+          width: 30%; } }
 .animated-modal {
   border-radius: 4px;
   overflow: hidden;

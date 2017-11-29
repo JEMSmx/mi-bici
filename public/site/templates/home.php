@@ -47,6 +47,38 @@
           </div>
         </div>
         <?php } ?>
+        <?php $cuantos=$users->count();
+              $limit=78-$cuantos;
+              $users=$pages->find("template=usertres, sort=random, limit=$limit");  
+         foreach($users as $user){ 
+          $image = $user->img1;
+              if($image) {
+                $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
+        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" class="btn">
+          <li>
+            <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
+          </li>
+        </a>
+
+        <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
+          <div class="morphing-aniversary">
+            <div class="user-photo" style="background-image: url('<?= $user->img1->url;?>');">
+              <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
+            </div>
+            <div class="user-info">
+              <div class="user-body">
+                     <h2 class="aniversary-head"><?= $user->title;?></h2>
+                    <p><span><?= $user->subtitle;?></span></p>
+                    <p> <?= $user->body;?></p>    
+               </div>
+              <div class="user-footer">
+                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-gracias-a-ti.svg" width="166">
+                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-tercer-aniversario.svg" width="200" height="92">
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php } ?>
         
         
       </ul>

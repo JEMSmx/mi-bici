@@ -30,10 +30,10 @@ $anversary-image-size: 108px;
       max-height: $anversary-image-size;
       transition: all 250ms ease-in-out;
       -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(100%);
+      filter: brightness(20%);
       &:hover {
         -webkit-filter: grayscale(0); /* Safari 6.0 - 9.0 */
-        filter: grayscale(0);
+        filter: brightness(100%);
       }
     }
     li {
@@ -148,32 +148,6 @@ $anversary-image-size: 108px;
     justify-content: center;
     align-items: center;
     background-color: #5e4099;
-    @media screen and (max-width: 768px){
-      flex-direction: column;
-      width: fit-content;
-      padding: 16px;
-      .user-photo {
-        width: 250px;
-        height: 250px;
-        margin: 0;
-      }
-      .user-info {
-        width: 250px;
-        height: auto;
-        flex-direction: column;
-      }
-      .user-footer {
-        img {
-          &:first-of-type {
-            width: 40%;
-            margin-right: 10%;
-          }
-          &:last-of-type {
-            width: 30%;
-          }
-        }
-      }
-    }
     .user-photo {
       display: flex;
       justify-content: flex-start;
@@ -230,6 +204,35 @@ $anversary-image-size: 108px;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 32px;
+      }
+    }
+    @media screen and (max-width: 768px){
+      flex-direction: column;
+      width: fit-content;
+      padding: 16px;
+      .user-photo {
+        width: 250px;
+        height: 250px;
+        margin: 0;
+        img {
+          width: 30%;
+        }
+      }
+      .user-info {
+        width: 250px;
+        height: auto;
+        flex-direction: column;
+      }
+      .user-footer {
+        img {
+          &:first-of-type {
+            width: 40%;
+            margin-right: 10%;
+          }
+          &:last-of-type {
+            width: 30%;
+          }
+        }
       }
     }
   }
