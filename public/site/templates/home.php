@@ -30,7 +30,7 @@
         <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
           <div class="morphing-aniversary">
             <div class="user-photo" style="background-image: url('<?= $user->img1->url;?>');">
-              <img src="<?php echo $config->urls->templates; ?>images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
+              <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
             </div>
             <div class="user-info">
               <div class="user-body">
@@ -39,8 +39,8 @@
                     <p> <?= $user->body;?></p>    
                </div>
               <div class="user-footer">
-                <img src="<?php echo $config->urls->templates; ?>images/icon-gracias-a-ti.svg" width="166">
-                <img src="<?php echo $config->urls->templates; ?>images/icon-tercer-aniversario.svg" width="200" height="92">
+                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-gracias-a-ti.svg" width="166">
+                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-tercer-aniversario.svg" width="200" height="92">
               </div>
             </div>
           </div>
