@@ -22,7 +22,7 @@
           $image = $user->img1;
               if($image) {
                 $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
-        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-modal="true">
+        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
           <li>
             <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
           </li>
@@ -54,7 +54,7 @@
           $image = $user->img1;
               if($image) {
                 $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
-        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-modal="true">
+        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
           <li>
             <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
           </li>
@@ -258,5 +258,9 @@ $(document).ready(function() {
         duration: 1000
     });
   //setInterval(change, 4500);
+});
+$('[data-fancybox]' ).fancybox({
+  buttons : [
+  ]
 });
 </script>
