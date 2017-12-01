@@ -5,35 +5,93 @@
         <p><?php echo $page->notification ?></p>
       </div>
       <div class="k-message-close" onclick="toggMessage()">
-        <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/times.svg" alt="">
+        <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/times.svg" alt="">
       </div>
     </div>
   </section>
-  <!-- Jumbotron: Home -->
-  <div class="k-jumbotron" id="home-wrapper" style="background-image: url(<?php echo $page->banner->url ?>)">
-      <div class="k-jumbotron-color">
-        <div class="k-page-header-flex">
-          <h1 class="k-heading">
-            <span><?php echo __("MIBICI"); ?></span> 
-            <?php echo __("somos"); ?>
-            <span id="changeText"><?php echo __("miles de usuarios"); ?></span>
-          </h1>
-          <p><?php echo __("Súmate al sistema de transporte eficiente de la ciudad"); ?></p>
-          <div class="k-signup-button">
-            <a href="<?php echo $pages->get(1095)->url; ?>" alt="<?php echo $pages->get(1095)->title; ?>">
-              <button>
-              <?php echo __("Regístrate"); ?>
-                <span>
-                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15px" height="15px"><path d="M23.9 13.8L13.1 3C12 1.8 10 1.8 8.9 3c-1.2 1.2-1.2 3.1 0 4.2l8.8 8.8-8.8 8.8c-1.2 1.2-1.2 3.1 0 4.2 1.2 1.2 3.1 1.2 4.2 0l10.8-10.8c.6-.6.9-1.4.9-2.2 0-.8-.3-1.6-.9-2.2z" fill="#de223d"/></svg>
-                </span>
-              </button>
-            </a>
-          </div>
-          <a href="<?php echo $pages->get(1090
-          )->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>"><?php echo __("Conoce MIBICI"); ?></a>
-        </div>
+   <section class="j-workspace aniverary-hero">
+    <article class="j-wrap">
+      <div class="head-container">
+          <img src="<?php echo $config->urls->templates; ?>assets/images/tres-aniversario-logo.svg" alt="Mi Bici 3er Aniversario" height="160px">
       </div>
-    </div>
+    
+      <ul>
+        <!-- Foto Usuario -->
+      <?php $users=$pages->find("template=usertres, sort=random");  
+         foreach($users as $user){ 
+          $image = $user->img1;
+              if($image) {
+                $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
+        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
+          <li>
+            <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
+          </li>
+        </a>
+
+        <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
+          <div class="morphing-aniversary">
+            <?php $imgusr=$user->img1;
+                  if($imgusr) {
+                     $imgnw = $imgusr->size(600, 600, array('quality' => 80, 'upscaling' => false, 'cropping' => true)); } ?>
+            <div class="user-photo" style="background-image: url('<?= $imgnw->url;?>');">
+              <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
+            </div>
+            <div class="user-info">
+              <div class="user-body">
+                     <h2 class="aniversary-head"><?= $user->title;?></h2>
+                    <p><span><?= $user->subtitle;?></span></p>
+                    <p> <?= $user->body;?></p>    
+               </div>
+              <div class="user-footer">
+                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-gracias-a-ti.svg" width="166">
+                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-tercer-aniversario.svg" width="200" height="92">
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php } ?>
+        <?php $cuantos=$users->count();
+              $limit=78-$cuantos;
+              $users=$pages->find("template=usertres, sort=random, limit=$limit");  
+         foreach($users as $user){ 
+          $image = $user->img1;
+              if($image) {
+                $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
+        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
+          <li>
+            <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
+          </li>
+        </a>
+
+        <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
+          <div class="morphing-aniversary">
+            <?php $imgusr=$user->img1;
+                  if($imgusr) {
+                     $imgnw = $imgusr->size(600, 600, array('quality' => 80, 'upscaling' => false, 'cropping' => true)); } ?>
+            <div class="user-photo" style="background-image: url('<?= $imgnw->url;?>');">
+              <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
+            </div>
+            <div class="user-info">
+              <div class="user-body">
+                     <h2 class="aniversary-head"><?= $user->title;?></h2>
+                    <p><span><?= $user->subtitle;?></span></p>
+                    <p> <?= $user->body;?></p>    
+               </div>
+              <div class="user-footer">
+                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-gracias-a-ti.svg" width="166">
+                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-tercer-aniversario.svg" width="200" height="92">
+              </div>
+            </div>
+          </div>
+        </div>
+        <?php } ?>
+        
+        
+      </ul>
+    </article>
+  </section>
+  <!-- Jumbotron: Home -->
+  
   <!-- Liber,Pedalea,Devuelve -->
   <section class="k-section wrap wider">
     <div class="grid no-gutters">
@@ -41,7 +99,7 @@
       <div class="unit one-third">
           <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100">
             <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-              <div class="k-container-img" style="width: 198px"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/devuelve-icon.svg"></div>
+              <div class="k-container-img" style="width: 198px"><img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/devuelve-icon.svg"></div>
               <figcaption>
                 <h2 class="k-heading"><?php echo __("Libera"); ?></h2>
                 <p><?php echo __("Bicicletas siempre a tu disposición"); ?></p>
@@ -53,7 +111,7 @@
       <div class="unit one-third">
         <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="400">
           <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-            <div class="k-container-img"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/pedalea-icon.svg"></div>
+            <div class="k-container-img"><img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/pedalea-icon.svg"></div>
             <figcaption>
               <h2 class="k-heading"><?php echo __("Pedalea"); ?></h2>
               <p><?php echo __("¡Disfruta la ciudad!"); ?></p>
@@ -65,7 +123,7 @@
       <div class="unit one-third">
         <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="800">
           <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-            <div class="k-container-img" style="width: 156px"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/libera-icon.svg"></div>
+            <div class="k-container-img" style="width: 156px"><img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/libera-icon.svg"></div>
             <figcaption>
               <h2 class="k-heading"><?php echo __("Devuelve"); ?></h2>
               <p><?php echo __("Alguien más espera por ella."); ?></p>
@@ -167,7 +225,7 @@
       <div class="grid">
       <div class="instagram-head">
         <div class="instagram-logo-container">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/instagram-icon.svg" alt="">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/instagram-icon.svg" alt="">
         </div>
         <div class="instagram-text-container">
           <h2 class="k-xl"><?php echo __("MIBICI en fotografías #MIBICIpública"); ?></h2>
@@ -182,24 +240,11 @@
     </section>
   </div>
 <?php include('./_foot.php'); ?>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
 <script type="text/javascript">
   function toggMessage(){
     $("#home-message").slideToggle("");
-  }
-  var text1="<?php echo __("millones de viajes"); ?>";
-  var text2="<?php echo __("vanguardia"); ?>";
-  var text3="<?php echo __("destinos"); ?>";
-  var text4="<?php echo __("ciudad"); ?>";
-  var text5="<?php echo __("tecnología"); ?>";
-  var text6="<?php echo __("comunidad"); ?>";
-  var text7="<?php echo __("miles de usuarios"); ?>";
-  var text = [text1,text2,text3,text4,text5,text6,text7];
-  var counter = 0;
-  function change() {
-    document.getElementById("changeText").innerHTML = text[counter];
-      counter++;
-      if(counter >= text.length) counter = 0; 
   }
   var userFeed = new Instafeed({
     get: 'user',
@@ -218,6 +263,10 @@ $(document).ready(function() {
         easing: 'ease-in-back',
         duration: 1000
     });
-  setInterval(change, 4500);
+  //setInterval(change, 4500);
+});
+$('[data-fancybox]' ).fancybox({
+  buttons : [
+  ]
 });
 </script>
