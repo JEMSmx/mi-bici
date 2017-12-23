@@ -24,7 +24,7 @@
                 $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
         <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
           <li>
-            <img class="lazyload" src="<?= $img->url;?>" data-src="<?= $img->url;?>" alt="<?= $user->title;?>">
+            <img class="lazyload" src="<?= $img->url;?>" data-original="<?= $img->url;?>" alt="<?= $user->title;?>">
           </li>
         </a>
 
@@ -258,7 +258,7 @@
     links: false
   });
 $(document).ready(function() {
-  lazyload();
+  $("img.lazyload").lazyload();
   userFeed.run();
     AOS.init({
         easing: 'ease-in-back',
