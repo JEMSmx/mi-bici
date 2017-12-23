@@ -81,6 +81,7 @@
         </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
 <script src="<?php echo $config->urls->templates; ?>static/455375-1495356493/scripts/main.min.js"></script>
 <?php if (stripos($_SERVER['HTTP_USER_AGENT'],"Insights") === false) { ?> 
 <script>
