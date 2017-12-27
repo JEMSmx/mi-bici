@@ -21,10 +21,11 @@
          foreach($users as $user){ 
           $image = $user->img1;
               if($image) {
-                $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
+                $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true));
+                $lazimg = $image->size(1, 1, array('quality' => 50, 'upscaling' => false, 'cropping' => true)); } ?>
         <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
           <li>
-            <img class="lazyload" src="<?= $img->url;?>" data-original="<?= $img->url;?>" alt="<?= $user->title;?>">
+            <img class="lazyload" src="<?= $lazimg->url;?>" data-original="<?= $img->url;?>" alt="<?= $user->title;?>">
           </li>
         </a>
 
@@ -242,6 +243,7 @@
 <?php include('./_foot.php'); ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/instafeed.js/1.4.1/instafeed.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
 <script type="text/javascript">
   function toggMessage(){
     $("#home-message").slideToggle("");
@@ -268,6 +270,7 @@ $(document).ready(function() {
 });
 $('[data-fancybox]' ).fancybox({
   buttons : [
+    close
   ]
 });
 </script>
