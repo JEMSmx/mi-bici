@@ -25,7 +25,7 @@
                 $lazimg = $image->size(1, 1, array('quality' => 50, 'upscaling' => false, 'cropping' => true)); } ?>
         <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
           <li>
-            <img class="lazyload" src="<?= $lazimg->url;?>" data-original="<?= $img->url;?>" alt="<?= $user->title;?>"  width="108" height="108">
+            <img class="lazyload" src="<?= $lazimg->url;?>" data-src="<?= $img->url;?>" alt="<?= $user->title;?>"  width="108" height="108">
           </li>
         </a>
 
@@ -55,12 +55,13 @@
               $limit=78-$cuantos;
               $users=$pages->find("template=usertres, sort=random, limit=$limit");  
          foreach($users as $user){ 
-          $image = $user->img1;
+           $image = $user->img1;
               if($image) {
-                $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true)); } ?>
+                $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true));
+                $lazimg = $image->size(1, 1, array('quality' => 50, 'upscaling' => false, 'cropping' => true)); } ?>
         <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
           <li>
-            <img src="<?= $img->url;?>" alt="<?= $user->title;?>">
+            <img class="lazyload" src="<?= $lazimg->url;?>" data-src="<?= $img->url;?>" alt="<?= $user->title;?>"  width="108" height="108">
           </li>
         </a>
 
