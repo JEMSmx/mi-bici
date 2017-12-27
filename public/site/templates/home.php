@@ -25,7 +25,7 @@
                 $lazimg = $image->size(1, 1, array('quality' => 50, 'upscaling' => false, 'cropping' => true)); } ?>
         <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
           <li>
-            <img class="lazyload" src="<?= $lazimg->url;?>" data-original="<?= $img->url;?>" alt="<?= $user->title;?>">
+            <img class="lazyload" src="<?= $lazimg->url;?>" data-original="<?= $img->url;?>" alt="<?= $user->title;?>"  width="108" height="108">
           </li>
         </a>
 
