@@ -1,5 +1,5 @@
 <?php include('./_head.php'); ?>
-  <section class="k-message" id="home-message">
+  <section class="k-message" id="home-message" style="background-color:#5e4099">
     <div class="k-message-container">
       <div class="k-message-center">
         <p><?php echo $page->notification ?></p>
@@ -61,7 +61,7 @@
                 $lazimg = $image->size(1, 1, array('quality' => 50, 'upscaling' => false, 'cropping' => true)); } ?>
         <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
           <li>
-            <img class="lazyload" src="<?= $lazimg->url;?>" data-src="<?= $img->url;?>" alt="<?= $user->title;?>"  width="108" height="108">
+            <img class="lazyload" src="<?= $lazimg->url;?>" data-src="<?= $img->url;?>" alt="<?= $user->title;?>" width="108" height="108">
           </li>
         </a>
 
@@ -246,6 +246,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazyload@2.0.0-beta.2/lazyload.js"></script>
 <script type="text/javascript">
+  $(document).ready(function() {
+    $("img.lazyload").lazyload();
+    userFeed.run();
+    AOS.init({
+        easing: 'ease-in-back',
+        duration: 1000
+    });
+  });
   function toggMessage(){
     $("#home-message").slideToggle("");
   }
@@ -260,18 +268,9 @@
     limit: 8,
     links: false
   });
-$(document).ready(function() {
-  $("img.lazyload").lazyload();
-  userFeed.run();
-    AOS.init({
-        easing: 'ease-in-back',
-        duration: 1000
-    });
-  //setInterval(change, 4500);
-});
-$('[data-fancybox]' ).fancybox({
-  buttons : [
-    close
-  ]
-});
+    $('[data-fancybox]' ).fancybox({
+    buttons : [
+      'close'
+    ]
+  });
 </script>
