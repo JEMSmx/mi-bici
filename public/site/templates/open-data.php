@@ -10,7 +10,7 @@
     <div class="grid">
       <div class="unit half" align="center">
         <div class="head-data">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/icon-viajes.png" alt="<?php echo __("Total de viajes realizados"); ?>">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-1514363398/images/icon-viajes.png" alt="<?php echo __("Total de viajes realizados"); ?>">
           <h2> <?php echo __("Total de viajes realizados"); ?><?php echo '.';?></h2>
         </div>
         <div class="body-data">
@@ -21,7 +21,7 @@
       </div>
       <div class="unit half" align="center">
         <div class="head-data">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/user-icon.png" alt="<?php echo __("Usuarios registrados"); ?>">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-1514363398/images/user-icon.png" alt="<?php echo __("Usuarios registrados"); ?>">
           <h2> <?php echo __("Registros totales"); ?></h2>
         </div>
         <div class="body-data">
@@ -48,15 +48,15 @@
         <div class="unit half">
           <ul>
             <li>
-              <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/open-contraer.svg" alt="<?php echo __("Contrae información de manera general."); ?>">
+              <img src="<?php echo $config->urls->templates; ?>static/455375-1514363398/images/open-contraer.svg" alt="<?php echo __("Contrae información de manera general."); ?>">
                <?php echo __("Contrae información de manera general."); ?>
             </li>
             <li>
-              <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/open-desdoblar.svg" alt="<?php echo __("Desdobla información de manera agrupada."); ?>">
+              <img src="<?php echo $config->urls->templates; ?>static/455375-1514363398/images/open-desdoblar.svg" alt="<?php echo __("Desdobla información de manera agrupada."); ?>">
                <?php echo __("Desdobla información de manera agrupada."); ?>
             </li>
             <li>
-              <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/open-desdoblar-desagrupado.svg" alt="<?php echo __("Desdobla información de manera desagrupada."); ?>">
+              <img src="<?php echo $config->urls->templates; ?>static/455375-1514363398/images/open-desdoblar-desagrupado.svg" alt="<?php echo __("Desdobla información de manera desagrupada."); ?>">
                <?php echo __("Desdobla información de manera desagrupada."); ?>
             </li>
           </ul>
@@ -64,11 +64,11 @@
         <div class="unit half">
           <ul>
             <li>
-              <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/open-desdoblar-particular.svg" alt="<?php echo __("Desdobla información de manera particular."); ?>">
+              <img src="<?php echo $config->urls->templates; ?>static/455375-1514363398/images/open-desdoblar-particular.svg" alt="<?php echo __("Desdobla información de manera particular."); ?>">
                <?php echo __("Desdobla información de manera particular."); ?>
             </li>
             <li>
-              <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/open-boton-activado.svg" alt="<?php echo __("Botón activado."); ?>">
+              <img src="<?php echo $config->urls->templates; ?>static/455375-1514363398/images/open-boton-activado.svg" alt="<?php echo __("Botón activado."); ?>">
                <?php echo __("Botón activado."); ?>
             </li>
           </ul>
@@ -76,8 +76,8 @@
       </div>
       <p><a href="<?php echo $page->file1->url ?>"> <?php echo __("Manual para uso de datos abiertos."); ?> </a></p>
    </div>
-   <iframe class="power-bi-desktop" width="100%" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiY2ZhZjk0MDMtMmQ1OC00MjJjLTgxOTYtY2Q3YmNmZGZiNWI5IiwidCI6ImUzY2NhZGY3LWEwYzYtNDI0MC05OGE5LTg4MTY0ODEyZTNmMCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
-   <iframe class="power-bi-mobile" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiNTg5M2IyMWItZDUxZS00ZjAxLTg2ZGYtYTAwNWNiZTQyNDk2IiwidCI6ImUzY2NhZGY3LWEwYzYtNDI0MC05OGE5LTg4MTY0ODEyZTNmMCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+   <iframe class="power-bi-desktop" width="933" height="700" src="https://app.powerbi.com/view?r=eyJrIjoiZmI1N2UxMzktMzI3NC00ZjMxLTkwMDktYWFmZmJmZDU5NGVkIiwidCI6ImUzY2NhZGY3LWEwYzYtNDI0MC05OGE5LTg4MTY0ODEyZTNmMCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
+   <iframe class="power-bi-mobile" width="100%" height="600" src="https://app.powerbi.com/view?r=eyJrIjoiZmI1N2UxMzktMzI3NC00ZjMxLTkwMDktYWFmZmJmZDU5NGVkIiwidCI6ImUzY2NhZGY3LWEwYzYtNDI0MC05OGE5LTg4MTY0ODEyZTNmMCIsImMiOjR9" frameborder="0" allowFullScreen="true"></iframe>
   </section>
   <section class="k-section-80 data-download">
     <h2><?php echo __("Nivel de Servicio:").' '.$page->txt3.' %'; ?></h2>
@@ -131,7 +131,7 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <script>
 $(document).ready(function(){
-setInterval(loadApi,100000);
+setInterval(loadApi,60000);
 loadApi();
 });
 
@@ -141,8 +141,10 @@ function loadApi(){
        type:"get",
        dataType:"json",
        success:function(data) {
-          $("#trips").text(data['viajes']);
-          $("#users").text(data['clientes']);
+          if(parseInt(data['viajes'])>0)
+            $("#trips").text(data['viajes']);
+          if(parseInt(data['clientes'])>0)
+            $("#users").text(data['clientes']);
        },
        error:function(){
           console.log('ERROR');

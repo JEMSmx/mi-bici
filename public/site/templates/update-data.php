@@ -9,21 +9,11 @@
 	      $usuarios_registrados=$obj_registrados->result->respuesta->clientes_anuales_total;
 	
 	      $open_data=$pages->find("template=open-data");
-	      $open_data[0]->of(false);
-	      $open_data[0]->txt1=$viajes_totales;
-	      $open_data[0]->txt2=$usuarios_registrados;
-	      $open_data[0]->save();
-	      
-      }else{
-      	$get_total=file_get_contents('http://lareal.com.mx/data.php');
-        
-      	$obj_total = json_decode($get_total);
-      
-	
-	      $open_data=$pages->find("template=open-data");
-	      $open_data[0]->of(false);
-	      $open_data[0]->txt1=str_replace(",", "", $obj_total->viajes);
-	      $open_data[0]->txt2=str_replace(",", "", $obj_total->clientes);
-	      $open_data[0]->save(); 
-	      
+	      if($viajes_totales==0 || $usuarios_registrados==0 || empty($viajes_totales) || empty($usuarios_registrados)) exit;
+	      foreach($open_data as $open){
+	      	$open->of(false);
+			$open->txt1=$viajes_totales;
+			$open->txt2=$usuarios_registrados;
+			$open->save();
+	      }
       }
