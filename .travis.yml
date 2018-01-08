@@ -5,12 +5,8 @@ env:
     - secure: "XVFPYwGdwTdLk99opDAWgUKAuDta4EhuzM9km31CFVaxWFaFoqUYqz6q926NX9ZENjtmQGttdrknTh5E+M4vd+MlRLTawl7FBL4QdByDmbCN3m0zyBWLc56a/3UypsuU4P3e0UHPTvID9UXa/8Dp2J/YDdmzdilpWfc1lwUGG8bqdzu64iCpsRK4aNzFg4D6eDpHHvgKmgr6vvk0R9prsrgVtasj969BHxYgRxHnXFRKKQwseGaQcjgylphzb3qbFX8Q9wSLmRs3c9ZF2cYQn3EGtONTkfKZhdikZwLN13AIXT2LLnsyJJkJTH3maK9kQ4QxB9UoBoCK/rHrJJIDrm9gLLvyvhgwsniYWtEt4tjRRP0On9jZ0FQRLcrnolrKqcBAtJGRLbF/p7bOi6D5TBuWdMX16TiNKSL1JZKbHxD0hLdi/sDzwSm3N3Fg3baTBR2eoQojtjAGDcrXzQbN71EYnfP6t48SevB9zmsCDkHDWzDycWiftYNUeTdrhgMg6jxrLgbhr+lLi8h/6GWUZx7avhPyjPJTXytTiRFJjk13M2MnCLlzHqlT93Pbwh0rvdio6fh3VvRcxcX5ZSolqKhiYx6kdwNZJL2TLvKSVxytxfq0PXR1jkA5LZU4iHdL1Zl20xFz6gsTVfWvTptScOgik0eQKfpwzBhT+FO4QgI="
     # beta SHA256-af7507b9411c78ff3df1efd621fbcb9ec9ab7057af1aa1e543dbca6a9c4020f0
     - secure: "DnpSs+hAg2ITgC9E+Gm7Tlzq7juzbwSwkGRsal8tu1ZXZ69JF//TLcwkjH7KsXSySZgXXnCgReXFQp88gTRnSgLR8JcXydj+VMcWkEf8PhLBBZwlGDABPvZH1ZVFr8FP1Uc0IPwKxqE/dDagT5XwnfgvKEXeQ3I8wl0c9K31wxA1QPotiHy/W8KB1VfwUfmN6kh9hXRns7fJfvUmqr2g61ptpM0V7/3TV/GVZs80W634SrQNXxndhFJ6GipXlc4UTB4O+w40+FHqyj6xJuZUBjD+CghEKYYVHsJUIuaBpG4foGQRApDVyyVcedpFn5+p5kt3ztYsNwIKK4Cq0ZvnSDnNIdFQuIh30RQqTk3TrUt/Wd3MlnIdso3s8cT9lPibYxoL1ZjYVuUuhJ1wYfmcIasGDOTJ85xtJzbpMc2Ci6VW/RnmT8LpS8C0LBxFu1meB9lVpDd4arZldtCKcxTjJp9Axzg0rT0nXdjds2QYkPaVGqBGliAdXKoK1NVDVGnP2nBygpJvhtbE1ZZ6zwUK3rMY1TVkrY3/LEftZT1iMBeAue3wgSpkNiLWEIGoBSDd5PlqQUUNxf7IUTCaMqmsnBnmTq/VOBO87pJe2hNKWkJ9XVdEHs8dsUeRDIgUe4Ju4ZOreZcgr/rsjtemGriscqq269Tb96k0RmTv0Vh6x7Q="
-install:
-  - true
 script:
-  - "find $PWD -path */public/site/templates/* -type f -name k-*.css -size +1c | xargs --no-run-if-empty csslint"
-  - "find $PWD -path */public/site/templates/* -type f -name *.html -size +1c | xargs --no-run-if-empty htmlhint"
-  - "find $PWD -path */public/site/templates/* -type f -name *.html | xargs --no-run-if-empty -I{} phantomjs --ignore-ssl-errors=true --ssl-protocol=any /tmp/phantomjs-netlog.js file://{}"
+  - true
 notifications:
   email: false
 language: node_js
