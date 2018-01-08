@@ -10,87 +10,29 @@
     </div>
   </section>
    <section class="j-workspace aniverary-hero">
-    <article class="j-wrap">
-      <div class="head-container">
-          <img src="<?php echo $config->urls->templates; ?>assets/images/tres-aniversario-logo.svg" alt="Mi Bici 3er Aniversario" height="160px">
-      </div>
-    
-      <ul>
-        <!-- Foto Usuario -->
-      <?php $users=$pages->find("template=usertres, sort=random");  
-         foreach($users as $user){ 
-          $image = $user->img1;
-              if($image) {
-                $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true));
-                $lazimg = $image->size(1, 1, array('quality' => 50, 'upscaling' => false, 'cropping' => true)); } ?>
-        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
-          <li>
-            <img class="lazyload" src="<?= $lazimg->url;?>" data-src="<?= $img->url;?>" alt="<?= $user->title;?>"  width="108" height="108">
-          </li>
-        </a>
-
-        <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
-          <div class="morphing-aniversary">
-            <?php $imgusr=$user->img1;
-                  if($imgusr) {
-                     $imgnw = $imgusr->size(600, 600, array('quality' => 80, 'upscaling' => false, 'cropping' => true)); } ?>
-            <div class="user-photo" style="background-image: url('<?= $imgnw->url;?>');">
-              <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
-            </div>
-            <div class="user-info">
-              <div class="user-body">
-                     <h2 class="aniversary-head"><?= $user->title;?></h2>
-                    <p><span><?= $user->subtitle;?></span></p>
-                    <p> <?= $user->body;?></p>    
-               </div>
-              <div class="user-footer">
-                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-gracias-a-ti.svg" width="166">
-                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-tercer-aniversario.svg" width="200" height="92">
-              </div>
-            </div>
+    <!-- Jumbotron: Home -->
+  <div class="k-jumbotron" id="home-wrapper" style="background-image: url(<?php echo $page->banner->url ?>)">
+      <div class="k-jumbotron-color">
+        <div class="k-page-header-flex">
+          <h1 class="k-heading">
+            <span><?php //echo __("MIBICI"); ?></span> 
+            <?php //echo __("somos"); ?>
+            <span id="changeText"><?php //echo __("miles de usuarios"); ?></span>
+          </h1>
+          <p><?php //echo __("Súmate al sistema de transporte eficiente de la ciudad"); ?></p>
+          <div class="k-signup-button">
+            <a href="<?php echo $pages->get(1095)->url; ?>" alt="<?php echo $pages->get(1095)->title; ?>">
+              <button>
+              <?php echo __("Regístrate"); ?>
+                <span>
+                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="15px" height="15px"><path d="M23.9 13.8L13.1 3C12 1.8 10 1.8 8.9 3c-1.2 1.2-1.2 3.1 0 4.2l8.8 8.8-8.8 8.8c-1.2 1.2-1.2 3.1 0 4.2 1.2 1.2 3.1 1.2 4.2 0l10.8-10.8c.6-.6.9-1.4.9-2.2 0-.8-.3-1.6-.9-2.2z" fill="#de223d"/></svg>
+                </span>
+              </button>
+            </a>
           </div>
+          <a href="<?php echo $pages->get(1090
+          )->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>"><?php echo __("Conoce MIBICI"); ?></a>
         </div>
-        <?php } ?>
-        <?php $cuantos=$users->count();
-              $limit=78-$cuantos;
-              $users=$pages->find("template=usertres, sort=random, limit=$limit");  
-         foreach($users as $user){ 
-           $image = $user->img1;
-              if($image) {
-                $img = $image->size(256, 256, array('quality' => 90, 'upscaling' => false, 'cropping' => true));
-                $lazimg = $image->size(1, 1, array('quality' => 50, 'upscaling' => false, 'cropping' => true)); } ?>
-        <a data-fancybox data-animation-duration="700" id="morphing<?= $user->id;?>" data-src="#morphing-content<?= $user->id;?>" href="javascript:;" data-options='{"smallBtn" : false}'>
-          <li>
-            <img class="lazyload" src="<?= $lazimg->url;?>" data-src="<?= $img->url;?>" alt="<?= $user->title;?>" width="108" height="108">
-          </li>
-        </a>
-
-        <div id="morphing-content<?= $user->id;?>" class="morphing-content animated-modal" style="display: none;">
-          <div class="morphing-aniversary">
-            <?php $imgusr=$user->img1;
-                  if($imgusr) {
-                     $imgnw = $imgusr->size(600, 600, array('quality' => 80, 'upscaling' => false, 'cropping' => true)); } ?>
-            <div class="user-photo" style="background-image: url('<?= $imgnw->url;?>');">
-              <img src="<?php echo $config->urls->templates; ?>assets/images/icon-mi-ciudad.svg" alt="<?= $user->title; ?>" width="166">
-            </div>
-            <div class="user-info">
-              <div class="user-body">
-                     <h2 class="aniversary-head"><?= $user->title;?></h2>
-                    <p><span><?= $user->subtitle;?></span></p>
-                    <p> <?= $user->body;?></p>    
-               </div>
-              <div class="user-footer">
-                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-gracias-a-ti.svg" width="166">
-                <img src="<?php echo $config->urls->templates; ?>assets/images/icon-tercer-aniversario.svg" width="200" height="92">
-              </div>
-            </div>
-          </div>
-        </div>
-        <?php } ?>
-        
-        
-      </ul>
-    </article>
   </section>
   <!-- Jumbotron: Home -->
   
