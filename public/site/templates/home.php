@@ -5,13 +5,13 @@
         <p><?php echo $page->notification ?></p>
       </div>
       <div class="k-message-close" onclick="toggMessage()">
-        <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/times.svg" alt="">
+        <img src="<?php echo $config->urls->templates; ?>static/455375-1515453811/images/times.svg" alt="">
       </div>
     </div>
   </section>
    <section class="j-workspace aniverary-hero">
     <!-- Jumbotron: Home -->
-  <div class="k-jumbotron" id="home-wrapper" style="background-image: url(<?php echo $page->banner->url ?>)">
+  <div class="k-jumbotron" id="home-wrapper" style="background-image: url(<?php echo $page->banner->url ?>);background-position:center;">
       <div class="k-jumbotron-color" style="background-color: transparent;">
         <div class="k-page-header-flex">
           <h1 class="k-heading" style="margin-top: 40px;">
@@ -43,7 +43,7 @@
       <div class="unit one-third">
           <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100">
             <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-              <div class="k-container-img" style="width: 198px"><img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/devuelve-icon.svg"></div>
+              <div class="k-container-img" style="width: 198px"><img src="<?php echo $config->urls->templates; ?>static/455375-1515453811/images/devuelve-icon.svg"></div>
               <figcaption>
                 <h2 class="k-heading"><?php echo __("Libera"); ?></h2>
                 <p><?php echo __("Bicicletas siempre a tu disposición"); ?></p>
@@ -55,7 +55,7 @@
       <div class="unit one-third">
         <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="400">
           <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-            <div class="k-container-img"><img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/pedalea-icon.svg"></div>
+            <div class="k-container-img"><img src="<?php echo $config->urls->templates; ?>static/455375-1515453811/images/pedalea-icon.svg"></div>
             <figcaption>
               <h2 class="k-heading"><?php echo __("Pedalea"); ?></h2>
               <p><?php echo __("¡Disfruta la ciudad!"); ?></p>
@@ -67,7 +67,7 @@
       <div class="unit one-third">
         <figure class="k-figure" data-aos="zoom-in" data-aos-offset="-100" data-aos-delay="800">
           <a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>">
-            <div class="k-container-img" style="width: 156px"><img src="<?php echo $config->urls->templates; ?>static/455375-1511395627/images/libera-icon.svg"></div>
+            <div class="k-container-img" style="width: 156px"><img src="<?php echo $config->urls->templates; ?>static/455375-1515453811/images/libera-icon.svg"></div>
             <figcaption>
               <h2 class="k-heading"><?php echo __("Devuelve"); ?></h2>
               <p><?php echo __("Alguien más espera por ella."); ?></p>
