@@ -35,7 +35,7 @@
     <div class="j-wrap">
       <div class="grid">
         <div class="unit intro" style="">
-          <img src="assets/images/usuario-ejemplar.svg" width="70%" alt="">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/usuario-ejemplar.svg" width="70%" alt="">
           <h2>Todos podemos mejorar la percepción de nuestro sistema</h2>
           <button class="bg-color-success">Comenzar</button>
         </div>
@@ -136,13 +136,13 @@
         <div class="unit half">
           <div class="owl-carousel" id="carousel2">
             <div>
-              <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/slide-obligaciones-circulación.svg" alt="">
+              <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/slide-obligaciones-circulacion.svg" alt="">
             </div>
             <div>
               <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/slide-obligaciones-infrestructura.svg" alt="">
             </div>
             <div>
-              <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/slide-obligaciones-señalar.svg" alt="">
+              <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/slide-obligaciones-senalar.svg" alt="">
             </div>
             <div>
               <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/slide-obligaciones-evitar.svg" alt="">
