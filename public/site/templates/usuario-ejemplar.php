@@ -19,7 +19,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" integrity="sha256-K3Njjl2oe0gjRteXwX01fQD5fkk9JFFBdUHy/h38ggY=" crossorigin="anonymous" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css">
-  <link href="<?php echo $config->urls->templates; ?>/assets/usrej/main.css" rel="stylesheet">
+  <link href="<?php echo $config->urls->templates; ?>assets/usrej/main.css" rel="stylesheet">
   <link rel="apple-touch-icon" href="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/favicon-180x180.png">
   <link rel="shortcut icon" href="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/favicon-64x64.png">
   <style type="text/css">
@@ -228,15 +228,15 @@
       <nav>
         <!-- icon -->
         <a href="">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/assets/images/imtj-logo.svg" alt="">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/imtj-logo.svg" alt="">
         </a>
         <!-- icon -->
         <a href="">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/assets/images/mibici-logo.svg" alt="">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/mibici-logo.svg" alt="">
         </a>
         <!-- icon -->
         <a href="">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/assets/images/jalisco-logo.svg" alt="">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-1511338445/images/jalisco-logo.svg" alt="">
         </a>
       </nav>
     </div>
@@ -258,7 +258,6 @@
       $('#carousel1').on('changed.owl.carousel', function (e) {
           $('#car1 p').removeClass('text-bold')
           $("#car1 #slide-"+e.item.index).addClass('text-bold')
-          console.log(e.item.count)
           if(e.item.index==e.item.count+2)
             $("#car1 #slide-2").addClass('text-bold')
           
