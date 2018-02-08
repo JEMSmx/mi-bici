@@ -6,7 +6,7 @@ body.test {
 }
 .intro {
   width:100vw;
-  min-height: 100vh;
+  min-height: calc(100vh - 110px);
   align-items: center !important;
   justify-content: center !important;
   h2 {
@@ -17,7 +17,7 @@ body.test {
 .test-structure{
   position: absolute;
   width: 100%;
-  min-height: 100vh;
+  min-height: calc(100vh - 110px);
   top: 0;
   left: 0;
   display: flex;
@@ -63,9 +63,9 @@ body.test {
   .unit {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    max-height: 100vh;
+    max-height: calc(100vh - 110px);
     &:first-of-type {
       align-items: flex-start;
     }

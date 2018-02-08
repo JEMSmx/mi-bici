@@ -12,9 +12,9 @@
    <section class="j-workspace aniverary-hero">
     <!-- Jumbotron: Home -->
   <div class="k-jumbotron" id="home-wrapper" style="background-image: url(<?php echo $page->banner->url ?>)">
-      <div class="k-jumbotron-color">
+      <div class="k-jumbotron-color" style="background-color: transparent;">
         <div class="k-page-header-flex">
-          <h1 class="k-heading">
+          <h1 class="k-heading" style="margin-top: 40px;">
             <span><?php //echo __("MIBICI"); ?></span> 
             <?php //echo __("somos"); ?>
             <span id="changeText"><?php //echo __("miles de usuarios"); ?></span>
