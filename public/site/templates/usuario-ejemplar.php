@@ -232,7 +232,7 @@
               <b>1.  Sólo puedes pedalear sobre la banqueta si eres menor de
               <select class="custom-exam" name="questions[]" id="question-1">
                 <option value="1"> 17</option>
-                <option value="2"> 18</option>
+                <option value="2" selected=""> 18</option>
                 <option value="3"> 19</option>
               </select> años.</b>
             </p>
@@ -259,7 +259,7 @@
                 <label for="">Vehiculos Motorizados</label>
                 <select class="custom-exam" name="questions[]" id="question-3">
                   <option value="1">1</option>
-                  <option value="2">2</option>
+                  <option value="2" selected="">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
                 </select>
@@ -269,7 +269,7 @@
                 <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/examen-transporte-publico.svg" alt="" height="32px;">
                 <label for="">Transporte público</label>
                 <select class="custom-exam"  name="questions[]" id="question-4">
-                  <option value="1">1</option>
+                  <option value="1" selected="">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
                   <option value="4">4</option>
@@ -283,7 +283,7 @@
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
-                  <option value="4">4</option>
+                  <option value="4" selected="">4</option>
                 </select>
               </div>
               <!--  Option -->
@@ -293,7 +293,7 @@
                 <select class="custom-exam" name="questions[]" id="question-6">
                   <option value="1">1</option>
                   <option value="2">2</option>
-                  <option value="3">3</option>
+                  <option value="3" selected="">3</option>
                   <option value="4">4</option>
                 </select>
               </div>
