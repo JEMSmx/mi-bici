@@ -20,9 +20,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css" />
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.css">
   <link href="https://cdn.rawgit.com/cobyism/gridism/0.2.2/gridism.css" rel="stylesheet">
-  <link href="<?php echo $config->urls->templates; ?>static/455375-1495356493/styles/main.css" rel="stylesheet">
-  <link rel="apple-touch-icon" href="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/favicon-180x180.png">
-  <link rel="shortcut icon" href="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/favicon-64x64.png">
+  <link href="<?php echo $config->urls->templates; ?>static/455375-147357/styles/main.css" rel="stylesheet">
+  <link rel="apple-touch-icon" href="<?php echo $config->urls->templates; ?>static/455375-147357/images/favicon-180x180.png">
+  <link rel="shortcut icon" href="<?php echo $config->urls->templates; ?>static/455375-147357/images/favicon-64x64.png">
 </head>
 <body class="<?php echo ($page->template=='home') ? 'home':k::page_name(); ?> >">
 <svg style="display: none;">
@@ -37,7 +37,7 @@
   <header class="k-header">
     <div class="wrap wider grid">
       <div class="k-container">
-        <a href="<?php echo $config->urls->root ?>" class="k-logo"><img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/mibici-logo.svg" alt="<?php echo __("MiBici"); ?>"></a>
+        <a href="<?php echo $config->urls->root ?>" class="k-logo"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/mibici-logo.svg" alt="<?php echo __("MiBici"); ?>"></a>
         <nav class="k-navbar">
           <ul>
             <li><a href="<?php echo $pages->get(1090)->url; ?>" alt="<?php echo $pages->get(1090)->title; ?>"><?php echo $pages->get(1090)->title; ?></a></li>
@@ -57,7 +57,7 @@
           <ul>
             <li class="k-login-link">
               <a href="<?php echo $pages->get(1096)->url; ?>" alt="<?php echo $pages->get(1096)->title; ?>">
-               <img src="<?php echo $config->urls->templates; ?>static/455375-1495356493/images/user-icon.png" alt="<?php echo __("Iniciar sesión"); ?>"> 
+               <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/user-icon.png" alt="<?php echo __("Iniciar sesión"); ?>"> 
                <?php echo __("Iniciar sesión"); ?>
               </a>
             </li>

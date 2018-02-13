@@ -120,7 +120,6 @@
           <!-- Texto -->
           <ul>
             <li id="slide-2" class="text-bold">Respetar los semáforos y pedalear sobre y en el sentido de la vialidad, nunca por la banqueta.</li>
-            <li id="slide-2">Respetar los semáforos y pedalear sobre y en el sentido de la vialidad, nunca por la banqueta.</li>
             <li id="slide-2">Sólo niños y niñas menores de 12 años pueden pedalear por la banqueta. En caso de querer ir por la banqueta, debe bajarse de la bici y caminar.</li>
             <li id="slide-3">Utilizar la infraestructura ciclista existente y no utilizar los carriles exclusivos del transporte público masivo.</li>
             <li id="slide-3">Dar preferencia de paso a los peatones y personas con discapacidad.</li>
@@ -309,7 +308,7 @@
   <!--  Pantalla Examen -->
 <form id="questions-p2">
   <input type="hidden" name="p2" value="true">
-  <main id="screen-x-2" class="j-workspace test-structure" style="z-index:7;background-color:white;" >
+  <main id="screen-x-2" class="j-workspace test-structure" style="z-index:77;background-color:white;" >
     <div class="j-wrap">
       <div class="grid">
         <div class="unit half">
@@ -381,14 +380,14 @@
           <div class="question-six">
             <p><b>6. Circula tus obligaciones y /o derechos con base en la Ley de Movilidad y Transporte del Estado de Jalisco en su artículo 12 “De los derechos y obligaciones de las y los ciclistas”</b></p>
             <div class="option-group">
-                <p><input type="checkbox" name="gender" value="female">Respetar los señalamientos que regulan la circulación vial compartida o exclusiva, los espacios de circulación y de accesibilidad PEATONAL(banquetas).</p>
-                <p><input type="checkbox" name="gender" value="female">Circular por cualquier vía.</p>
-                <p><input type="checkbox" name="gender" value="female">Dar preferencia a las personas con discapacidad.</p>
-                <p><input type="checkbox" name="gender" value="female">Circular en el sentido de la vialidad.</p>
-                <p><input type="checkbox" name="gender" value="female">No exceder la capacidad de transporte o de carga de la bicicleta.</p>
-                <p><input type="checkbox" name="gender" value="female">Rebasar solo por el carril izquierdo.</p>
-                <p><input type="checkbox" name="gender" value="female">En horarios nocturnos, circular en el sentido que favorezca siempre y cuando se lleven luces y aditamentos para uso nocturno. Indicar los movimientos direccionales mediante señales con el brazo o la mano.</p>
-                <p><input type="checkbox" name="gender" value="female">De no existir la presencia de peatones en banquetas, circular por ellas.</p>
+                <p><input type="checkbox" name="options[]" value="1">Respetar los señalamientos que regulan la circulación vial compartida o exclusiva, los espacios de circulación y de accesibilidad PEATONAL(banquetas).</p>
+                <p><input type="checkbox" name="options[]" value="2">Circular por cualquier vía.</p>
+                <p><input type="checkbox" name="options[]" value="3">Dar preferencia a las personas con discapacidad.</p>
+                <p><input type="checkbox" name="options[]" value="4">Circular en el sentido de la vialidad.</p>
+                <p><input type="checkbox" name="options[]" value="5">No exceder la capacidad de transporte o de carga de la bicicleta.</p>
+                <p><input type="checkbox" name="options[]" value="6">Rebasar solo por el carril izquierdo.</p>
+                <p><input type="checkbox" name="options[]" value="7">En horarios nocturnos, circular en el sentido que favorezca siempre y cuando se lleven luces y aditamentos para uso nocturno. Indicar los movimientos direccionales mediante señales con el brazo o la mano.</p>
+                <p><input type="checkbox" name="options[]" value="8">De no existir la presencia de peatones en banquetas, circular por ellas.</p>
             </div>
           </div>
           <button class="bg-color-success">Siguiente</button>
@@ -537,20 +536,9 @@
       url: "<?=$page->url?>res",
       type: "post",
       data: $(this).serialize(),
-      dataType: "json",
+      dataType: "html",
       }).done(function(msg){
-        if(msg.state=='approved'){
-          por+=12.5
-         $('#p-bar').css('width', por+'%')
-         let rand=Math.floor((Math.random() * 8))
-         $("#screen-x-2").addClass(clases[rand]);
-        }else{
-          $.each(msg, function( key, value ) {
-              $("#question-"+(parseInt(key)+7)).removeClass('success')
-              $("#question-"+(parseInt(key)+7)).addClass('wrong')
-              $("body").animateCss('shake');
-          })
-        }
+        console.log(msg);
       }).fail(function (jqXHR, textStatus) {
           console.log(textStatus)
       })
