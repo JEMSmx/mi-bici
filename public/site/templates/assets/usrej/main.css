@@ -358,6 +358,69 @@ body.test {
   .test-structure.hide-right {
     left: 100vw; }
 
+select.custom-exam {
+  margin: 0;
+  min-width: 48px;
+  max-width: fit-content;
+  padding: 8px;
+  border: solid;
+  height: 40px;
+  font-weight: bold; }
+  select.custom-exam.success {
+    border-color: #10AD9B; }
+  select.custom-exam.wrong {
+    border-color: #f44336; }
+
+.option-group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%; }
+  .option-group.horizontal {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; }
+  .option-group p {
+    margin-bottom: 8px; }
+  .option-group input[type=checkbox] {
+    margin: 0;
+    margin-right: 8px; }
+  .option-group .question-option-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 16px; }
+  .option-group .test-option-order {
+    display: flex;
+    width: 320px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px; }
+    .option-group .test-option-order img, .option-group .test-option-order label {
+      margin: 0;
+      margin-right: 8px; }
+    .option-group .test-option-order select {
+      margin-left: auto; }
+
+.question-three {
+  margin-top: 64px; }
+
+.question-four {
+  margin-bottom: 24px; }
+
+.over-screen {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background-color: transparent; }
+  .over-screen .success {
+    background-color: rgba(16, 173, 155, 0.2); }
+  .over-screen .danger {
+    background-color: rgba(244, 67, 54, 0.2); }
+
 .aniverary-hero {
   position: relative;
   height: calc(100vh - 158px);
@@ -945,26 +1008,6 @@ textarea, select {
   input[type=password]:focus,
   textarea:focus, select:focus {
     outline: none; }
-  input[type=text]:active, input[type=text]:focus, input[type=text]:visited,
-  input[type=email]:active,
-  input[type=email]:focus,
-  input[type=email]:visited,
-  input[type=search]:active,
-  input[type=search]:focus,
-  input[type=search]:visited,
-  input[type=tel]:active,
-  input[type=tel]:focus,
-  input[type=tel]:visited,
-  input[type=url]:active,
-  input[type=url]:focus,
-  input[type=url]:visited,
-  input[type=password]:active,
-  input[type=password]:focus,
-  input[type=password]:visited,
-  textarea:active,
-  textarea:focus,
-  textarea:visited, select:active, select:focus, select:visited {
-    border-bottom-color: #FFF; }
 
 select {
   border: none; }

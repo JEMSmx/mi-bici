@@ -83,3 +83,79 @@ body.test {
     left: 100vw;
   }
 }
+// Styles for the exam particular
+select.custom-exam {
+  margin: 0;
+  min-width: 48px;
+  max-width: fit-content;
+  padding: 8px;
+  border: solid;
+  height: 40px;
+  font-weight: bold;
+  &.success {
+    border-color: $color-success;
+  }
+  &.wrong {
+    border-color: $color-danger;
+  }
+}
+.option-group {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  width: 100%;
+  &.horizontal {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  p {
+    margin-bottom: 8px;
+  }
+  input[type=checkbox] {
+    margin: 0;
+    margin-right: 8px;
+  }
+  .question-option-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 16px;
+  }
+  .test-option-order {
+    display: flex;
+    width: 320px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+    img,label {
+      margin: 0;
+      margin-right: 8px;
+    }
+    select {
+      margin-left: auto;
+    }
+  }
+}
+// Questions special requesting
+.question-three {
+  margin-top: 64px;
+}
+.question-four {
+  margin-bottom: 24px;
+}
+.over-screen {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 100;
+  background-color: transparent;
+  .success {
+    background-color: rgba($color-success, 0.2);
+  }
+  .danger {
+    background-color: rgba($color-danger, 0.2);
+  }
+}
