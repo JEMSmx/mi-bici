@@ -220,7 +220,8 @@
     </div>
   </main>
   <form id="questions-p1">
-  <main id="screen-x" class="j-workspace test-structure" style="z-index:100;background-color:white;" >
+  <input type="hidden" name="p1" value="true">
+  <main id="screen-x" class="j-workspace test-structure" style="z-index:8;background-color:white;" >
     <div class="j-wrap">
       <div class="grid">
         <div class="unit half">
@@ -230,7 +231,7 @@
           <div class="question-one">
             <p>
               <b>1.  Sólo puedes pedalear sobre la banqueta si eres menor de
-              <select class="custom-exam" name="q1" id="question-1">
+              <select class="custom-exam" name="questions[]" id="question-1">
                 <option value="1"> 17</option>
                 <option value="2"> 18</option>
                 <option value="3"> 19</option>
@@ -240,7 +241,7 @@
           <!--  Pregunta dos-->
           <div class="question-two">
             <p><b>2.Sí andas en bici y no hay carril exclusivo o preferencia ciclista, debes circular por:</b></p>
-            <select class="custom-exam" id="question-2">
+            <select class="custom-exam" name="questions[]" id="question-2">
               <option value="1">La banqueta.</option>
               <option value="2">Extrema derecha del carril derecho.</option>
               <option value="3">Por el centro del carril derecho.</option>
@@ -257,7 +258,7 @@
               <div class="test-option-order">
                 <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/examen-automotor.svg" alt="" height="32px;">
                 <label for="">Vehiculos Motorizados</label>
-                <select class="custom-exam" id="question-3">
+                <select class="custom-exam" name="questions[]" id="question-3">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -268,7 +269,7 @@
               <div class="test-option-order">
                 <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/examen-transporte-publico.svg" alt="" height="32px;">
                 <label for="">Transporte público</label>
-                <select class="custom-exam"  id="question-4">
+                <select class="custom-exam"  name="questions[]" id="question-4">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -279,7 +280,7 @@
               <div class="test-option-order">
                 <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/examen-ciclista.svg" alt="" height="32px;">
                 <label for="">Ciclistas</label>
-                <select class="custom-exam"  id="question-5">
+                <select class="custom-exam"  name="questions[]" id="question-5">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -290,7 +291,7 @@
               <div class="test-option-order">
                 <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/examen-peaton.svg" alt="" height="32px;">
                 <label for="">Peaton </label>
-                <select class="custom-exam"  id="question-6">
+                <select class="custom-exam" name="questions[]" id="question-6">
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -299,13 +300,15 @@
               </div>
             </div>
           </div>
-          <button class="bg-color-success questions">Siguiente</button>
+          <button type="submit" class="bg-color-success questions">Siguiente</button>
         </div>
       </div>
     </div>
   </main>
 </form>
   <!--  Pantalla Examen -->
+<form id="questions-p2">
+  <input type="hidden" name="p2" value="true">
   <main id="screen-x-2" class="j-workspace test-structure" style="z-index:7;background-color:white;" >
     <div class="j-wrap">
       <div class="grid">
@@ -319,7 +322,7 @@
               <!-- Option one-->
               <div class="question-option-vertical">
                 <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/examen-senale-primera.svg" alt="" height="80px">
-                <select class="custom-exam" id="question-7">
+                <select class="custom-exam" name="questions[]" id="question-7">
                   <option value="1">Vuelta a la derecha</option>
                   <option value="2">Vuelta a la izquierda</option>
                   <option value="3">Alto</option>
@@ -328,7 +331,7 @@
               <!-- Option two-->
               <div class="question-option-vertical">
                 <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/examen-senale-segunda.svg" alt="" height="80px">
-                <select class="custom-exam" id="question-8">
+                <select class="custom-exam" name="questions[]" id="question-8">
                   <option value="1">Vuelta a la derecha</option>
                   <option value="2">Vuelta a la izquierda</option>
                   <option value="3">Alto</option>
@@ -337,7 +340,7 @@
               <!-- Option three-->
               <div class="question-option-vertical">
                 <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/examen-senale-tercera.svg" alt="" height="80px">
-                <select class="custom-exam" id="question-9">
+                <select class="custom-exam" name="questions[]" id="question-9">
                   <option value="1">Vuelta a la derecha</option>
                   <option value="2">Vuelta a la izquierda</option>
                   <option value="3">Alto</option>
@@ -355,7 +358,7 @@
               <div class="question-option-vertical">
                 <label for="">Lateral</label>
                 <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/examen-distancia-vertical.svg" alt="" height="48px;">
-                <select class="custom-exam" id="question-10">
+                <select class="custom-exam" name="questions[]" id="question-10">
                   <option value="1"> 30 cm</option>
                   <option value="2"> 1.5 metros</option>
                   <option value="3"> 5.5 metros</option>
@@ -364,7 +367,7 @@
               <div class="question-option-vertical">
                 <label for="">Frontal</label>
                 <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/examen-distancia-horizontal.svg" alt="" height="48px;">
-                <select class="custom-exam" id="question-11">
+                <select class="custom-exam" name="questions[]" id="question-11">
                   <option value="1"> Entre 1 y 2 metros</option>
                   <option value="2"> Entre 5 y 7 metros</option>
                   <option value="3"> entre 10 y 15 metros</option>
@@ -393,6 +396,7 @@
       </div>
     </div>
   </main>
+</form>
   <footer>
     <div class="j-wrap">
       <!-- Progress bar -->
@@ -504,19 +508,54 @@
       $("body").animateCss('shake');
     }
   })
-  $('#questions-p1').on('submit', function (e) { 
-    $.ajax({
-      url: "/answers",
+  $("#questions-p1").submit(function( event ) {
+      $.ajax({
+      url: "<?=$page->url?>res",
       type: "post",
-      data: {q1:$("question-1").val()},
-      dataType: "html",
-    }).done(function(msg){
-      console.log(msg);
-    }).fail(function (jqXHR, textStatus) {
-        
-    });
-    e.preventDefault(); 
-  })
+      data: $(this).serialize(),
+      dataType: "json",
+      }).done(function(msg){
+        if(msg.state=='approved'){
+          por+=12.5
+         $('#p-bar').css('width', por+'%')
+         let rand=Math.floor((Math.random() * 8))
+         $("#screen-x").addClass(clases[rand]);
+        }else{
+          $.each(msg, function( key, value ) {
+              $("#question-"+(parseInt(key)+1)).removeClass('success')
+              $("#question-"+(parseInt(key)+1)).addClass('wrong')
+              $("body").animateCss('shake');
+          })
+        }
+      }).fail(function (jqXHR, textStatus) {
+          console.log(textStatus)
+      })
+    event.preventDefault();  
+  });
+  $("#questions-p2").submit(function( event ) {
+      $.ajax({
+      url: "<?=$page->url?>res",
+      type: "post",
+      data: $(this).serialize(),
+      dataType: "json",
+      }).done(function(msg){
+        if(msg.state=='approved'){
+          por+=12.5
+         $('#p-bar').css('width', por+'%')
+         let rand=Math.floor((Math.random() * 8))
+         $("#screen-x-2").addClass(clases[rand]);
+        }else{
+          $.each(msg, function( key, value ) {
+              $("#question-"+(parseInt(key)+7)).removeClass('success')
+              $("#question-"+(parseInt(key)+7)).addClass('wrong')
+              $("body").animateCss('shake');
+          })
+        }
+      }).fail(function (jqXHR, textStatus) {
+          console.log(textStatus)
+      })
+    event.preventDefault();  
+  });
 </script>
 </body>
 </html>
