@@ -308,7 +308,7 @@
   <!--  Pantalla Examen -->
 <form id="questions-p2">
   <input type="hidden" name="p2" value="true">
-  <main id="screen-x-2" class="j-workspace test-structure" style="z-index:77;background-color:white;" >
+  <main id="screen-x-2" class="j-workspace test-structure" style="z-index:7;background-color:white;" >
     <div class="j-wrap">
       <div class="grid">
         <div class="unit half">
