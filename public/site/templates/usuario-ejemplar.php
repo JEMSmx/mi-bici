@@ -408,7 +408,7 @@
           <button class="bg-color-success">Zona Usuarios</button>
         </div>
         <div class="unit half image-container">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/assets/images/medal.svg" alt="">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/medal.svg" alt="">
         </div>
       </div>
     </div>
