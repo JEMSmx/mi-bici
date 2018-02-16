@@ -30,8 +30,11 @@
   </style>
 </head>
 
-<body class="test animated">
- 
+<body class="test">
+ <div class="progress">
+    <div id="p-bar" class="progress-bar" style="width:0%;">
+    </div>
+  </div>
   <!--  Pantalla uno -->
   <main id="screen-0" class="j-workspace test-structure" style="z-index:15;background-color:white;" >
     <div class="j-wrap">
@@ -182,7 +185,7 @@
     </div>
   </main>
   <!--  Pantalla Seis -->
-  <main id="screen-6" class="j-workspace test-structure" style="z-index:9;background-color:white;" >
+  <main id="screen-6" class="j-workspace test-structure" style="z-index:9;background-color:white;font-size:75%;" >
     <div class="j-wrap">
       <div class="grid">
         <div class="unit half" id="car4">
@@ -206,14 +209,9 @@
           </div>
         </div>
         <div class="unit half">
-          <div class="owl-carousel" id="carousel4">
-            <div>
-              <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/slide-seguridad-vial-indicar.svg" alt="">
-            </div>
-            <div>
-              <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/slide-seguridad-vial-puntos-ciegos.svg" alt="">
-            </div>
-          </div>
+          <div class="unit half image-container">
+            <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/slide-infrestructura.svg" alt="">
+           </div>
         </div>
       </div>
     </div>
@@ -224,8 +222,8 @@
     <div class="j-wrap">
       <div class="grid">
         <div class="unit half">
-          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/title-piramide-movilidad.svg" alt="" height="48px">
-          <p>Todos los actores de la movilidad son diferentes y para lograr la seguridad de todos debemos de aprender a convivir en armonia respetando la prelación de paso segun el medio en el que nos movemos.</p>
+          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/title-examen.svg" alt="" height="48px">
+          <p style="text-align: justify;">Todos los actores de la movilidad son diferentes y para lograr la seguridad de todos debemos de aprender a convivir en armonia respetando la prelación de paso segun el medio en el que nos movemos.</p>
           <!-- Pregunta uno -->
           <div class="question-one">
             <p>
@@ -299,7 +297,10 @@
               </div>
             </div>
           </div>
-          <button type="submit" class="bg-color-success questions">Siguiente</button>
+          <div class="horizontal-btn-group">
+            <button type="submit" class="bg-color-success questions">Siguiente</button>
+            <button class=" btn-outline bg-color-info sm">Regresar</button>
+          </div>
         </div>
       </div>
     </div>
@@ -333,7 +334,7 @@
                 <select class="custom-exam" name="questions[]" id="question-8">
                   <option value="1">Vuelta a la derecha</option>
                   <option value="2">Vuelta a la izquierda</option>
-                  <option value="3">Alto</option>
+                  <option value="3" selected>Alto</option>
                 </select>
               </div>
               <!-- Option three-->
@@ -396,13 +397,24 @@
     </div>
   </main>
 </form>
-  <footer>
+ <main id="screen-9" class="j-workspace test-structure" style="z-index:6;background-color:white;" >
     <div class="j-wrap">
-      <!-- Progress bar -->
-      <div class="progress">
-        <div id="p-bar" class="progress-bar" style="width:0%;">
+      <div class="grid">
+        <div class="unit half">
+        <h1>Felicidades Erick eres un usuarix ejemplar</h1>
+          <p> [UN TEXTO SUPER MOTIVACIONAL SOBRE QUE LO QUE ACABAN DE HACER SIRVE PARA ALGO]Ahora que conoces bla bla bla bla bla un</p>
+          <button style="display: flex;justify-content: center;align-items: center;background-color: #3b5998;"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/icon-facebook.svg" style="margin:0;height:16px;margin-right:8px;" alt=""> Compartir</button>
+          <button style="display: flex;justify-content: center;align-items: center;background-color: #00aced;"><img src="<?php echo $config->urls->templates; ?>static/455375-147357/images/icon-twitter.svg" style="margin:0;height:16px;margin-right:8px;" alt=""> Compartir</button>
+          <button class="bg-color-success">Zona Usuarios</button>
+        </div>
+        <div class="unit half image-container">
+          <img src="<?php echo $config->urls->templates; ?>static/455375-147357/assets/images/medal.svg" alt="">
         </div>
       </div>
+    </div>
+  </main>
+  <footer>
+    <div class="j-wrap">
       <!-- Navegation Icons  -->
       <nav>
         <!-- icon -->
@@ -457,14 +469,14 @@
   let por=0
   const clases=["hide-top", "hide-bottom", "hide-left", "hide-right", "hide-right", "hide-left", "hide-bottom", "hide-top"];
   $('.next').click(function() {
-     por+=12.5
+     por+=11.1111111
      $('#p-bar').css('width', por+'%')
      let rand=Math.floor((Math.random() * 8))
      let id=$(this).closest('main').attr('id')
      $("#"+id).addClass(clases[rand]);
    })
   $('.btn-outline').click(function() {
-    por-=12.5
+    por-=11.1111111
      $('#p-bar').css('width', por+'%')
     let num = parseInt($(this).closest('main').attr('id').replace("screen-", ""))
      $("#screen-"+(num-1)).removeClass("hide-top").removeClass("hide-left").removeClass("hide-right").removeClass("hide-bottom")
@@ -515,7 +527,7 @@
       dataType: "json",
       }).done(function(msg){
         if(msg.state=='approved'){
-          por+=12.5
+          por+=11.1111111
          $('#p-bar').css('width', por+'%')
          let rand=Math.floor((Math.random() * 8))
          $("#screen-x").addClass(clases[rand]);
@@ -536,9 +548,20 @@
       url: "<?=$page->url?>res",
       type: "post",
       data: $(this).serialize(),
-      dataType: "html",
+      dataType: "json",
       }).done(function(msg){
-        console.log(msg);
+        if(msg.state=='approved'){
+          por+=11.1111111
+         $('#p-bar').css('width', por+'%')
+         let rand=Math.floor((Math.random() * 8))
+         $("#screen-x-2").addClass(clases[rand]);
+        }else{
+          $.each(msg, function( key, value ) {
+              $("#question-"+(parseInt(key)+7)).removeClass('success')
+              $("#question-"+(parseInt(key)+7)).addClass('wrong')
+              $("body").animateCss('shake');
+          })
+        }
       }).fail(function (jqXHR, textStatus) {
           console.log(textStatus)
       })

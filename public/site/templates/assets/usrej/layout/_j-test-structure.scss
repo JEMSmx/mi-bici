@@ -17,7 +17,7 @@ body.test {
 .test-structure{
   position: absolute;
   width: 100%;
-  min-height: calc(100vh - 110px);
+  min-height: calc(100vh - 88px);
   top: 0;
   left: 0;
   display: flex;
@@ -25,6 +25,9 @@ body.test {
   align-items: center;
   -webkit-transition: all 650ms ease-in-out;
   transition: all 650ms ease-in-out;
+  img {
+    max-height: 400px;
+  }
   .option-with-select {
     &-senales {
       display: flex;
@@ -63,9 +66,15 @@ body.test {
   .unit {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    max-width: 100%;
     max-height: calc(100vh - 110px);
+    &.image-container {
+      @media screen and (max-width: 768px){
+        display: none;
+      }
+    }
     &:first-of-type {
       align-items: flex-start;
     }
@@ -141,7 +150,7 @@ select.custom-exam {
 }
 // Questions special requesting
 .question-three {
-  margin-top: 64px;
+  margin-top: 120px;
 }
 .question-four {
   margin-bottom: 24px;
@@ -152,10 +161,10 @@ select.custom-exam {
   width: 100vw;
   z-index: 100;
   background-color: transparent;
-  .success {
+  &.success {
     background-color: rgba($color-success, 0.2);
   }
-  .danger {
+  &.danger {
     background-color: rgba($color-danger, 0.2);
   }
 }

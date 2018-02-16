@@ -17,6 +17,8 @@ body {
 }
 *{
   box-sizing: border-box;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
   &:focus, &:active {
     outline: none;
   }

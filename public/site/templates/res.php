@@ -39,27 +39,24 @@
 		$answers=array(2,1,3,2,2);
 		$answers_opt=array("0"=>1,"1"=>3,"2"=>4,"3"=>5,"4"=>6);
 
-		var_dump($options);
-		var_dump($answers_opt);
+
 		$diff_opt=array_diff_assoc($answers_opt, $options);
-		var_dump($diff_opt);
 		$diff = array_diff_assoc($answers, $questions);
 
 		foreach ($diff as $key => $value) {
-			$result['questions'][$key]=$value;
+			$result[$key]=$value;
 		}
 
-		foreach ($diff_opt as $key => $value) {
-			$result['options'][$key]=$value;
-		}
-
-		if($options==NULL){
+			
+		if(count($result)>0){
 			$result['state']='denied';
-			header('Content-type: application/json; charset=utf-8');
-			echo json_encode($result);
-			exit();
+		}else{
+			$result['state']='approved';
 		}
 
+		header('Content-type: application/json; charset=utf-8');
+		echo json_encode($result);
+		exit();
 		
 
 	}
