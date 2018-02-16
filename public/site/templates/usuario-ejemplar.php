@@ -391,7 +391,8 @@
                 <p><input type="checkbox" name="options[]" value="8">De no existir la presencia de peatones en banquetas, circular por ellas.</p>
             </div>
           </div>
-          <button class="bg-color-success">Siguiente</button>
+            <button type="submit" class="bg-color-success">Finalizar</button>
+            <button class=" btn-outline bg-color-info sm">Regresar</button>
         </div>
       </div>
     </div>
