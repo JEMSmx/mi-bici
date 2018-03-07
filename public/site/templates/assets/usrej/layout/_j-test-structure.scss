@@ -139,6 +139,9 @@ select.custom-exam {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 16px;
+    img {
+      max-width: 50%;
+    }
     img,label {
       margin: 0;
       margin-right: 8px;
@@ -149,9 +152,6 @@ select.custom-exam {
   }
 }
 // Questions special requesting
-.question-three {
-  margin-top: 120px;
-}
 .question-four {
   margin-bottom: 24px;
 }

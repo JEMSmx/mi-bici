@@ -406,14 +406,13 @@ select.custom-exam {
     justify-content: flex-start;
     align-items: center;
     margin-bottom: 16px; }
+    .option-group .test-option-order img {
+      max-width: 50%; }
     .option-group .test-option-order img, .option-group .test-option-order label {
       margin: 0;
       margin-right: 8px; }
     .option-group .test-option-order select {
       margin-left: auto; }
-
-.question-three {
-  margin-top: 120px; }
 
 .question-four {
   margin-bottom: 24px; }
@@ -469,6 +468,51 @@ select.custom-exam {
         /* Standard syntax */ }
       .aniverary-hero ul li img {
         margin: 0; }
+
+.test-structure.slide .grid {
+  min-height: calc(100vh - 88px); }
+  .test-structure.slide .grid .unit.half {
+    min-height: calc(100vh - 88px);
+    display: flex;
+    justify-content: space-between; }
+    .test-structure.slide .grid .unit.half.test:last-child .unit-body {
+      width: 100%;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding-top: 32px;
+      margin: 0; }
+    .test-structure.slide .grid .unit.half:last-child .unit-body {
+      width: 100%;
+      padding-top: 0;
+      justify-content: center;
+      align-items: flex-start; }
+    .test-structure.slide .grid .unit.half .unit-head {
+      height: 80px;
+      margin-top: 32px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%; }
+      .test-structure.slide .grid .unit.half .unit-head img {
+        height: 56px;
+        margin: 0; }
+    .test-structure.slide .grid .unit.half .unit-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      height: 100%;
+      padding: 32px 0; }
+      .test-structure.slide .grid .unit.half .unit-body img {
+        width: 100%;
+        margin: 0; }
+    .test-structure.slide .grid .unit.half .unit-footer {
+      height: 80px;
+      margin-bottom: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%; }
 
 .bkt-strengths {
   padding: 64px;
@@ -854,7 +898,7 @@ button, .btn-solid {
   max-width: 320px;
   padding-top: 16px;
   padding-right: 24px;
-  padding-bottom: 13px;
+  padding-bottom: 14px;
   padding-left: 24px;
   border: none;
   border-radius: 12px;

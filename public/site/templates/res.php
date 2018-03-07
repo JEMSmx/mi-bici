@@ -4,7 +4,7 @@
 	$questions=$input->post->questions;
 
 	if($input->post->p1==true){
-		$answers=array(1,3,4,3,2,1);
+		$answers=array(2,3,4,3,2,1);
 
 		$diff = array_diff_assoc($answers, $questions);
 
